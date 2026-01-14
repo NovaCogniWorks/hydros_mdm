@@ -1,0 +1,358 @@
+ -
+  biz_scenario_id: 100001
+  biz_scenario_name: 京石段-感知演示场景
+  waterway:
+    waterway_id: 50
+    waterway_name: 京石段
+  agent_list:
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+  features:
+   - 支持基于水动力学仿真的本体仿真智能体
+   - 支持传感器模拟/控制器模拟
+   - 支持闸门开度指令下发，支持基于PID目标水位下发
+   - 支持告警规则下发和业务告警
+  auto_hydro_events:
+   -
+    hydro_event_type: HYDRO_MONITOR_RULE
+    hydro_event_id: template-AutoMonitorRuleEvent-001
+    hydro_event_name: 自动预警规则下发事件
+    auto_schedule_at_step: 1
+    monitoring_rule:
+      rule_id: MRULE_202601141425_ZROXZM6K
+      rule_name: 自动下发的水位监控规则
+      biz_status: NORMAL
+      trigger_conditions:
+        object_id: 1064
+        object_name: QD-5#断面#001
+        trigger_expression: water_level > 60.8
+    priority: MEDIUM
+   -
+    hydro_event_type: TIME_SERIES_DATA_UPDATED
+    hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
+    hydro_event_name: "尾边界节点出流为0,模拟泵站故障"
+    auto_schedule_at_step: 10
+    hydro_event_source_type: DEVICE_FAULT
+    hydro_event_source: 模拟的故障
+    object_time_series:
+     -
+      object_id: 1064
+      object_type: CrossSection
+      object_name: QD-14#断面#002
+      metrics_code: water_flow
+    priority: HIGH
+    valid: true
+   -
+    hydro_event_type: WEATHER_FORECAST
+    hydro_event_id: template-WeatherForecastHydroEvent-001
+    hydro_event_name: 天气预报事件
+    auto_schedule_at_step: 10
+    hydro_event_source_type: WEATHER_FOR_CAST
+    hydro_event_description: 系统预制的暴雨事件
+    dem_data_file_url: http://testmockdata
+    priority: MEDIUM
+  auto_hydro_event_enable: false
+  hydro_environment_type: NORMAL
+  status: NORMAL
+ -
+  biz_scenario_id: 100002
+  biz_scenario_name: 京石段-天气预报/用水计划/故障等综合场景
+  waterway:
+    waterway_id: 50
+    waterway_name: 京石段
+  agent_list:
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
+  features:
+   - 支持基于水动力学仿真的本体仿真智能体
+   - 支持传感器模拟/控制器模拟
+   - 支持闸门开度指令下发，支持基于PID目标水位下发
+   - 支持告警规则下发和业务告警
+   - 天气预报手动或自动注入
+   - 用水计划手动或自动注入
+  auto_hydro_events:
+   -
+    hydro_event_type: WEATHER_FORECAST
+    hydro_event_id: template-WeatherForecastHydroEvent-001
+    hydro_event_name: 天气预报事件
+    auto_schedule_at_step: 10
+    hydro_event_source_type: WEATHER_FOR_CAST
+    hydro_event_description: 系统预制的暴雨事件
+    dem_data_file_url: http://testmockdata
+    priority: MEDIUM
+   -
+    hydro_event_type: TIME_SERIES_DATA_UPDATED
+    hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
+    hydro_event_name: "尾边界节点出流为0,模拟泵站故障"
+    auto_schedule_at_step: 10
+    hydro_event_source_type: DEVICE_FAULT
+    hydro_event_source: 模拟的故障
+    object_time_series:
+     -
+      object_id: 1064
+      object_type: CrossSection
+      object_name: QD-14#断面#002
+      metrics_code: water_flow
+    priority: HIGH
+    valid: true
+  auto_hydro_event_enable: false
+  hydro_environment_type: NORMAL
+  status: NORMAL
+ -
+  biz_scenario_id: 100003
+  biz_scenario_name: SIL京石段-天气预报/用水计划/故障等综合场景
+  waterway:
+    waterway_id: 50
+    waterway_name: 京石段
+  agent_list:
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
+  features:
+   - ★★★支持SIL在环验证★★★★
+   - 支持基于水动力学仿真的本体仿真智能体
+   - 支持传感器模拟/控制器模拟
+   - 支持闸门开度指令下发，支持基于PID目标水位下发
+   - 支持告警规则下发和业务告警
+   - 天气预报手动或自动注入
+   - 用水计划手动或自动注入
+  auto_hydro_event_enable: false
+  hydro_environment_type: SIL
+  status: NORMAL
+ -
+  biz_scenario_id: 100004
+  biz_scenario_name: HIL京石段-天气预报/用水计划/故障等综合场景
+  waterway:
+    waterway_id: 50
+    waterway_name: 京石段
+  agent_list:
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
+  features:
+   - ★★★支持HIL在环验证★★★★
+   - 支持基于水动力学仿真的本体仿真智能体
+   - 支持传感器模拟/控制器模拟
+   - 支持闸门开度指令下发，支持基于PID目标水位下发
+   - 支持告警规则下发和业务告警
+   - 天气预报手动或自动注入
+   - 用水计划手动或自动注入
+  auto_hydro_event_enable: false
+  hydro_environment_type: HIL
+  status: NORMAL
+ -
+  biz_scenario_id: 100005
+  biz_scenario_name: 京石段-一中心多边缘-天气预报/用水计划/故障等综合场景
+  waterway:
+    waterway_id: 50
+    waterway_name: 京石段
+  agent_list:
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
+  features:
+   - ★★★支持HIL/SIL在环验证★★★★
+   - 支持基于水动力学仿真的本体仿真智能体
+   - 支持传感器模拟/控制器模拟
+   - 支持闸门开度指令下发，支持基于PID目标水位下发
+   - 支持告警规则下发和业务告警
+   - 天气预报手动或自动注入
+   - 用水计划手动或自动注入
+  auto_hydro_event_enable: false
+  hydro_environment_type: XIL
+  status: NORMAL
+ -
+  biz_scenario_id: 100006
+  biz_scenario_name: 大渡河-感知&天气预报&水位耦合演示场景
+  waterway:
+    waterway_id: 60
+    waterway_name: 大渡河
+  agent_list:
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/ontology_simulation/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/channel/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/weather_forecast/agent_config.yaml
+  features:
+   - 支持基于水动力学仿真的本体仿真智能体
+   - 天气预报注入，手动或自动注入
+   - 水文模型耦合计算协调
+  auto_hydro_event_enable: false
+  hydro_environment_type: NORMAL
+  status: NORMAL
+ -
+  biz_scenario_id: 100007
+  biz_scenario_name: 京石段-孪生与参数辨识
+  waterway:
+    waterway_id: 50
+    waterway_name: 京石段
+  agent_list:
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
+   -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
+  features:
+   - 孪生智能体-参数辨识跟随水动力学仿真的本体仿真智能体的仿真变化
+   - IDZ数字孪生
+   - 实时参数辨识
+  auto_hydro_event_enable: false
+  hydro_environment_type: NORMAL
+  status: NORMAL

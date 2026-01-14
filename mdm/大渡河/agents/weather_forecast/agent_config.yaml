@@ -1,0 +1,28 @@
+agent_code: WEATHER_FORECAST_AGENT
+agent_type: WEATHER_FORECAST_AGENT
+agent_name: 天气预报智能体
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 魏家好
+description: 接收突发的天气预报事件，调用水文模型计算服务，完成天气预报/未来暴雨场景的入流事件序列的计算和广播
+properties:
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/京石段/modelingV2/objects.yaml
+hydro_node_id: DEFAULT_CENTRAL
+components:
+ -
+  component_id: HAC000000011
+  component_name: 水文计算算法
+  version: v0.0.1
+  release_at: 2025/12/12
+  author:
+    user_name: 施垚
+  description: 基于地形/土壤下渗/流域水系/断面坐标/雨量分布等输入，完成产汇流的流量序列数据生成
+  enabled: true
+  properties:
+    rain: http://47.97.1.45:9000/hydros/大渡河/weather_watershed/data/rain.csv
+    catchment: http://47.97.1.45:9000/hydros/大渡河/weather_watershed/data/catchment.nc
+    river_flag: http://47.97.1.45:9000/hydros/大渡河/weather_watershed/data/river_flag.nc
+    dem: http://47.97.1.45:9000/hydros/大渡河/weather_watershed/data/dem.nc
+    land_use: http://47.97.1.45:9000/hydros/大渡河/weather_watershed/data/land_use.nc
+    cross_section_mileage: http://47.97.1.45:9000/hydros/大渡河/weather_watershed/data/cross_section_mileage.nc
