@@ -1,0 +1,13 @@
+agent_code: WEATHER_FORECAST_AGENT
+agent_type: WEATHER_FORECAST_AGENT
+agent_name: 天气预报智能体
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 魏家好
+description: 接收突发的天气预报事件，注入提前预制的天气预报/未来暴雨场景的入流事件序列的计算和广播
+properties:
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/modeling/objects.yaml
+hydro_node_id: DEFAULT_CENTRAL
+components:
+

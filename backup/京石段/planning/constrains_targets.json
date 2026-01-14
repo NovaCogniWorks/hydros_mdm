@@ -1,0 +1,93 @@
+{
+    "control_targets": [
+        {
+            "node_id": 1009,
+            "target_water_level": 61.17,
+            "min_water_level": 55.76,
+            "max_water_level": 64.76,
+            "min_flow": 5.0,
+            "max_flow": 150.0
+        },
+        {
+            "node_id": 1018,
+            "target_water_level": 60.5,
+            "min_water_level": 55.60,
+            "max_water_level": 63.68,
+            "min_flow": 5.0,
+            "max_flow": 150.0
+        }
+
+    ],
+    "control_domains": [
+        {
+            "device_id": 1066,
+            "node_id": 1004,
+            "min_value": 0,
+            "max_value": 30,
+            "max_opening_increase": 10
+        },
+        {
+            "device_id": 1067,
+            "node_id": 1006,
+            "min_value": 0,
+            "max_value": 30,
+            "max_opening_increase": 10
+        },
+        {
+            "device_id": 1073,
+            "node_id": 1020,
+            "min_value": 0,
+            "max_value": 30,
+            "max_opening_increase": 10
+        },
+        {
+            "device_id": 1074,
+            "node_id": 1022,
+            "min_value": 0,
+            "max_value": 30,
+            "max_opening_increase": 10
+        },
+        {
+            "device_id": 1077,
+            "node_id": 1027,
+            "min_value": 0,
+            "max_value": 30,
+            "max_opening_increase": 10
+        },
+        {
+            "device_id": 1078,
+            "node_id": 1029,
+            "min_value": 0,
+            "max_value": 30,
+            "max_opening_increase": 10
+        },
+        {
+            "device_id": 1041,
+            "node_id": 1009,
+            "min_value": 0,
+            "max_value": 5.0,
+            "max_opening_increase": 0.6
+        },
+        {
+            "device_id": 1042,
+            "node_id": 1009,
+            "min_value": 0,
+            "max_value": 5.0,
+            "max_opening_increase": 0.6
+        },
+        {
+            "device_id": 1052,
+            "node_id": 1018,
+            "min_value": 0,
+            "max_value": 5.0,
+            "max_opening_increase": 0.6
+        },
+        {
+            "device_id": 1053,
+            "node_id": 1018,
+            "min_value": 0,
+            "max_value": 5.0,
+            "max_opening_increase": 0.6
+        }
+    ]
+}

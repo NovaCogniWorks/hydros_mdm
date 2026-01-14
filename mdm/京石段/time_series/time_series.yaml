@@ -1,0 +1,1424 @@
+success: true
+data:
+  hydro_event_id: AAAAAAAA
+  hydro_event_name: 边界时间序列
+  auto_schedule_at_step: -1
+  object_time_series:
+   -
+    time_series_name: 上游边界-流量时间序列
+    object_id: 1031
+    object_type: CrossSection
+    object_name: QD-1#断面#001
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: 26.25767096
+     -
+      step: 120
+      value: 26.53002834
+     -
+      step: 240
+      value: 26.51762012
+     -
+      step: 360
+      value: 26.85961601
+     -
+      step: 480
+      value: 27.0620137
+     -
+      step: 600
+      value: 26.51391526
+     -
+      step: 720
+      value: 28.81300714
+     -
+      step: 840
+      value: 27.206448
+     -
+      step: 960
+      value: 27.04495894
+     -
+      step: 1080
+      value: 27.78208941
+     -
+      step: 1200
+      value: 28.54880891
+     -
+      step: 1320
+      value: 27.56
+     -
+      step: 1440
+      value: 26.0583133
+     -
+      step: 1560
+      value: 27.60811142
+     -
+      step: 1680
+      value: 27.5377418
+     -
+      step: 1800
+      value: 27.75938999
+     -
+      step: 1920
+      value: 27.90066712
+     -
+      step: 2040
+      value: 27.04867572
+     -
+      step: 2160
+      value: 28.53962375
+     -
+      step: 2280
+      value: 27.07826148
+     -
+      step: 2400
+      value: 27.34522593
+     -
+      step: 2520
+      value: 27.54644894
+     -
+      step: 2640
+      value: 27.66940369
+     -
+      step: 2760
+      value: 26.8415112
+     -
+      step: 2880
+      value: 28.2079042
+     -
+      step: 3000
+      value: 25.63409928
+     -
+      step: 3120
+      value: 26.94710418
+     -
+      step: 3240
+      value: 26.63725651
+     -
+      step: 3360
+      value: 26.28259403
+     -
+      step: 3480
+      value: 26.08325958
+     -
+      step: 3600
+      value: 26.65436612
+     -
+      step: 3720
+      value: 27.94618529
+     -
+      step: 3840
+      value: 27.03566109
+     -
+      step: 3960
+      value: 26.57103693
+     -
+      step: 4080
+      value: 27.78852582
+     -
+      step: 4200
+      value: 27.21155192
+     -
+      step: 4320
+      value: 28.17445816
+   -
+    time_series_name: 下流边界-流量时间序列
+    object_id: 1065
+    object_type: Pipe_child
+    object_name: DHX1-1
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: -25.20020816
+     -
+      step: 120
+      value: -25.31242074
+     -
+      step: 240
+      value: -25.40466407
+     -
+      step: 360
+      value: -25.44526259
+     -
+      step: 480
+      value: -25.39156638
+     -
+      step: 600
+      value: -25.31461223
+     -
+      step: 720
+      value: -25.25117683
+     -
+      step: 840
+      value: -25.10905338
+     -
+      step: 960
+      value: -25.35648994
+     -
+      step: 1080
+      value: -25.42937261
+     -
+      step: 1200
+      value: -25.66546599
+     -
+      step: 1320
+      value: -25.42006648
+     -
+      step: 1440
+      value: -25.47430697
+     -
+      step: 1560
+      value: -25.43212032
+     -
+      step: 1680
+      value: -25.57781025
+     -
+      step: 1800
+      value: -25.73344393
+     -
+      step: 1920
+      value: -25.49046894
+     -
+      step: 2040
+      value: -25.09374755
+     -
+      step: 2160
+      value: -25.47607051
+     -
+      step: 2280
+      value: -26.12387053
+     -
+      step: 2400
+      value: -25.57693831
+     -
+      step: 2520
+      value: -25.71343228
+     -
+      step: 2640
+      value: -25.5355998
+     -
+      step: 2760
+      value: -25.85351098
+     -
+      step: 2880
+      value: -25.69736995
+     -
+      step: 3000
+      value: -25.48445795
+     -
+      step: 3120
+      value: -25.60392376
+     -
+      step: 3240
+      value: -25.47701505
+     -
+      step: 3360
+      value: -25.53205112
+     -
+      step: 3480
+      value: -25.64374391
+     -
+      step: 3600
+      value: -25.28738511
+     -
+      step: 3720
+      value: -25.57462452
+     -
+      step: 3840
+      value: -25.26928214
+     -
+      step: 3960
+      value: -25.40571573
+     -
+      step: 4080
+      value: -25.59146136
+     -
+      step: 4200
+      value: -25.39477456
+     -
+      step: 4320
+      value: -25.42429129
+   -
+    time_series_name: ZM1-节制闸#1时间序列
+    object_id: 1041
+    object_type: Gate
+    object_name: ZM1-节制闸#1
+    metrics_code: gate_opening
+    time_series:
+     -
+      step: 0
+      value: 1.05
+     -
+      step: 120
+      value: 1.05
+     -
+      step: 240
+      value: 1.05
+     -
+      step: 360
+      value: 1.05
+     -
+      step: 480
+      value: 1.05
+     -
+      step: 600
+      value: 1.05
+     -
+      step: 720
+      value: 1.1
+     -
+      step: 840
+      value: 1.1
+     -
+      step: 960
+      value: 1.1
+     -
+      step: 1080
+      value: 1.1
+     -
+      step: 1200
+      value: 1.1
+     -
+      step: 1320
+      value: 1.04
+     -
+      step: 1440
+      value: 1.04
+     -
+      step: 1560
+      value: 1.04
+     -
+      step: 1680
+      value: 1.04
+     -
+      step: 1800
+      value: 1.04
+     -
+      step: 1920
+      value: 1.04
+     -
+      step: 2040
+      value: 1.04
+     -
+      step: 2160
+      value: 1.04
+     -
+      step: 2280
+      value: 1.04
+     -
+      step: 2400
+      value: 1.04
+     -
+      step: 2520
+      value: 1.04
+     -
+      step: 2640
+      value: 1.04
+     -
+      step: 2760
+      value: 1.04
+     -
+      step: 2880
+      value: 1.04
+     -
+      step: 3000
+      value: 1.04
+     -
+      step: 3120
+      value: 1.04
+     -
+      step: 3240
+      value: 1.04
+     -
+      step: 3360
+      value: 1.04
+     -
+      step: 3480
+      value: 1.04
+     -
+      step: 3600
+      value: 1.04
+     -
+      step: 3720
+      value: 1.04
+     -
+      step: 3840
+      value: 1.04
+     -
+      step: 3960
+      value: 1.04
+     -
+      step: 4080
+      value: 1.04
+     -
+      step: 4200
+      value: 1.04
+     -
+      step: 4320
+      value: 1.04
+   -
+    time_series_name: ZM1-节制闸#2时间序列
+    object_id: 1042
+    object_type: Gate
+    object_name: ZM1-节制闸#2
+    metrics_code: gate_opening
+    time_series:
+     -
+      step: 0
+      value: 1.05
+     -
+      step: 120
+      value: 1.05
+     -
+      step: 240
+      value: 1.05
+     -
+      step: 360
+      value: 1.05
+     -
+      step: 480
+      value: 1.05
+     -
+      step: 600
+      value: 1.05
+     -
+      step: 720
+      value: 1.1
+     -
+      step: 840
+      value: 1.1
+     -
+      step: 960
+      value: 1.1
+     -
+      step: 1080
+      value: 1.1
+     -
+      step: 1200
+      value: 1.1
+     -
+      step: 1320
+      value: 1.1
+     -
+      step: 1440
+      value: 1.1
+     -
+      step: 1560
+      value: 1.1
+     -
+      step: 1680
+      value: 1.1
+     -
+      step: 1800
+      value: 1.1
+     -
+      step: 1920
+      value: 1.1
+     -
+      step: 2040
+      value: 1.1
+     -
+      step: 2160
+      value: 1.1
+     -
+      step: 2280
+      value: 1.1
+     -
+      step: 2400
+      value: 1.1
+     -
+      step: 2520
+      value: 1.1
+     -
+      step: 2640
+      value: 1.1
+     -
+      step: 2760
+      value: 1.1
+     -
+      step: 2880
+      value: 1.1
+     -
+      step: 3000
+      value: 1.0
+     -
+      step: 3120
+      value: 1.0
+     -
+      step: 3240
+      value: 1.0
+     -
+      step: 3360
+      value: 1.0
+     -
+      step: 3480
+      value: 1.0
+     -
+      step: 3600
+      value: 1.0
+     -
+      step: 3720
+      value: 1.04
+     -
+      step: 3840
+      value: 1.04
+     -
+      step: 3960
+      value: 1.04
+     -
+      step: 4080
+      value: 1.04
+     -
+      step: 4200
+      value: 1.04
+     -
+      step: 4320
+      value: 1.04
+   -
+    time_series_name: ZM2-节制闸#1时间序列
+    object_id: 1052
+    object_type: Gate
+    object_name: ZM2-节制闸#1
+    metrics_code: gate_opening
+    time_series:
+     -
+      step: 0
+      value: 0.85
+     -
+      step: 120
+      value: 0.85
+     -
+      step: 240
+      value: 0.85
+     -
+      step: 360
+      value: 0.85
+     -
+      step: 480
+      value: 0.85
+     -
+      step: 600
+      value: 0.85
+     -
+      step: 720
+      value: 0.85
+     -
+      step: 840
+      value: 0.85
+     -
+      step: 960
+      value: 0.85
+     -
+      step: 1080
+      value: 0.85
+     -
+      step: 1200
+      value: 0.85
+     -
+      step: 1320
+      value: 0.85
+     -
+      step: 1440
+      value: 0.85
+     -
+      step: 1560
+      value: 0.85
+     -
+      step: 1680
+      value: 0.85
+     -
+      step: 1800
+      value: 0.85
+     -
+      step: 1920
+      value: 0.85
+     -
+      step: 2040
+      value: 0.85
+     -
+      step: 2160
+      value: 0.85
+     -
+      step: 2280
+      value: 0.85
+     -
+      step: 2400
+      value: 0.85
+     -
+      step: 2520
+      value: 0.85
+     -
+      step: 2640
+      value: 0.85
+     -
+      step: 2760
+      value: 0.85
+     -
+      step: 2880
+      value: 0.85
+     -
+      step: 3000
+      value: 0.79
+     -
+      step: 3120
+      value: 0.79
+     -
+      step: 3240
+      value: 0.79
+     -
+      step: 3360
+      value: 0.79
+     -
+      step: 3480
+      value: 0.79
+     -
+      step: 3600
+      value: 0.79
+     -
+      step: 3720
+      value: 0.83
+     -
+      step: 3840
+      value: 0.83
+     -
+      step: 3960
+      value: 0.83
+     -
+      step: 4080
+      value: 0.83
+     -
+      step: 4200
+      value: 0.83
+     -
+      step: 4320
+      value: 0.83
+   -
+    time_series_name: ZM2-节制闸#2时间序列
+    object_id: 1053
+    object_type: Gate
+    object_name: ZM2-节制闸#2
+    metrics_code: gate_opening
+    time_series:
+     -
+      step: 0
+      value: 0.8
+     -
+      step: 120
+      value: 0.8
+     -
+      step: 240
+      value: 0.8
+     -
+      step: 360
+      value: 0.8
+     -
+      step: 480
+      value: 0.8
+     -
+      step: 600
+      value: 0.8
+     -
+      step: 720
+      value: 0.8
+     -
+      step: 840
+      value: 0.8
+     -
+      step: 960
+      value: 0.8
+     -
+      step: 1080
+      value: 0.8
+     -
+      step: 1200
+      value: 0.88
+     -
+      step: 1320
+      value: 0.83
+     -
+      step: 1440
+      value: 0.83
+     -
+      step: 1560
+      value: 0.83
+     -
+      step: 1680
+      value: 0.83
+     -
+      step: 1800
+      value: 0.83
+     -
+      step: 1920
+      value: 0.83
+     -
+      step: 2040
+      value: 0.83
+     -
+      step: 2160
+      value: 0.83
+     -
+      step: 2280
+      value: 0.83
+     -
+      step: 2400
+      value: 0.83
+     -
+      step: 2520
+      value: 0.83
+     -
+      step: 2640
+      value: 0.83
+     -
+      step: 2760
+      value: 0.83
+     -
+      step: 2880
+      value: 0.83
+     -
+      step: 3000
+      value: 0.83
+     -
+      step: 3120
+      value: 0.83
+     -
+      step: 3240
+      value: 0.83
+     -
+      step: 3360
+      value: 0.83
+     -
+      step: 3480
+      value: 0.83
+     -
+      step: 3600
+      value: 0.83
+     -
+      step: 3720
+      value: 0.83
+     -
+      step: 3840
+      value: 0.83
+     -
+      step: 3960
+      value: 0.83
+     -
+      step: 4080
+      value: 0.83
+     -
+      step: 4200
+      value: 0.83
+     -
+      step: 4320
+      value: 0.83
+   -
+    time_series_name: 荆柯山分水口时间序列
+    object_id: 1004
+    object_type: DisturbanceNode
+    object_name: FSK1-荆柯山分水口
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: 0.22
+     -
+      step: 120
+      value: 0.22
+     -
+      step: 240
+      value: 0.22
+     -
+      step: 360
+      value: 0.22
+     -
+      step: 480
+      value: 0.22
+     -
+      step: 600
+      value: 0.22
+     -
+      step: 720
+      value: 0.22
+     -
+      step: 840
+      value: 0.22
+     -
+      step: 960
+      value: 0.22
+     -
+      step: 1080
+      value: 0.22
+     -
+      step: 1200
+      value: 0.22
+     -
+      step: 1320
+      value: 0.22
+     -
+      step: 1440
+      value: 0.22
+     -
+      step: 1560
+      value: 0.22
+     -
+      step: 1680
+      value: 0.22
+     -
+      step: 1800
+      value: 0.22
+     -
+      step: 1920
+      value: 0.22
+     -
+      step: 2040
+      value: 0.22
+     -
+      step: 2160
+      value: 0.22
+     -
+      step: 2280
+      value: 0.22
+     -
+      step: 2400
+      value: 0.22
+     -
+      step: 2520
+      value: 0.22
+     -
+      step: 2640
+      value: 0.22
+     -
+      step: 2760
+      value: 0.22
+     -
+      step: 2880
+      value: 0.22
+     -
+      step: 3000
+      value: 0.22
+     -
+      step: 3120
+      value: 0.22
+     -
+      step: 3240
+      value: 2.2
+     -
+      step: 3360
+      value: 2.2
+     -
+      step: 3480
+      value: 2.2
+     -
+      step: 3600
+      value: 0.22
+     -
+      step: 3720
+      value: 0.22
+     -
+      step: 3840
+      value: 0.22
+     -
+      step: 3960
+      value: 0.22
+     -
+      step: 4080
+      value: 0.22
+     -
+      step: 4200
+      value: 0.22
+     -
+      step: 4320
+      value: 0.22
+   -
+    time_series_name: 北易水退水闸时间序列
+    object_id: 1006
+    object_type: DisturbanceNode
+    object_name: FSK2-北易水退水闸
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: 0.0
+     -
+      step: 120
+      value: 0.0
+     -
+      step: 240
+      value: 0.0
+     -
+      step: 360
+      value: 0.0
+     -
+      step: 480
+      value: 0.0
+     -
+      step: 600
+      value: 0.0
+     -
+      step: 720
+      value: 0.0
+     -
+      step: 840
+      value: 0.0
+     -
+      step: 960
+      value: 0.0
+     -
+      step: 1080
+      value: 0.0
+     -
+      step: 1200
+      value: 0.0
+     -
+      step: 1320
+      value: 0.0
+     -
+      step: 1440
+      value: 0.0
+     -
+      step: 1560
+      value: 0.0
+     -
+      step: 1680
+      value: 0.0
+     -
+      step: 1800
+      value: 0.0
+     -
+      step: 1920
+      value: 0.0
+     -
+      step: 2040
+      value: 0.0
+     -
+      step: 2160
+      value: 0.0
+     -
+      step: 2280
+      value: 0.0
+     -
+      step: 2400
+      value: 0.0
+     -
+      step: 2520
+      value: 0.0
+     -
+      step: 2640
+      value: 0.0
+     -
+      step: 2760
+      value: 0.0
+     -
+      step: 2880
+      value: 0.0
+     -
+      step: 3000
+      value: 0.0
+     -
+      step: 3120
+      value: 0.0
+     -
+      step: 3240
+      value: 0.0
+     -
+      step: 3360
+      value: 0.0
+     -
+      step: 3480
+      value: 0.0
+     -
+      step: 3600
+      value: 0.0
+     -
+      step: 3720
+      value: 0.0
+     -
+      step: 3840
+      value: 0.0
+     -
+      step: 3960
+      value: 0.0
+     -
+      step: 4080
+      value: 0.0
+     -
+      step: 4200
+      value: 0.0
+     -
+      step: 4320
+      value: 0.0
+   -
+    time_series_name: 下车亭分水口时间序列
+    object_id: 1020
+    object_type: DisturbanceNode
+    object_name: FSK3-下车亭分水口
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: 0.63
+     -
+      step: 120
+      value: 0.63
+     -
+      step: 240
+      value: 0.63
+     -
+      step: 360
+      value: 0.63
+     -
+      step: 480
+      value: 0.63
+     -
+      step: 600
+      value: 0.63
+     -
+      step: 720
+      value: 0.63
+     -
+      step: 840
+      value: 0.63
+     -
+      step: 960
+      value: 0.63
+     -
+      step: 1080
+      value: 0.63
+     -
+      step: 1200
+      value: 0.63
+     -
+      step: 1320
+      value: 0.63
+     -
+      step: 1440
+      value: 0.63
+     -
+      step: 1560
+      value: 0.63
+     -
+      step: 1680
+      value: 0.63
+     -
+      step: 1800
+      value: 0.63
+     -
+      step: 1920
+      value: 0.63
+     -
+      step: 2040
+      value: 0.63
+     -
+      step: 2160
+      value: 0.63
+     -
+      step: 2280
+      value: 0.63
+     -
+      step: 2400
+      value: 0.63
+     -
+      step: 2520
+      value: 0.63
+     -
+      step: 2640
+      value: 0.63
+     -
+      step: 2760
+      value: 0.63
+     -
+      step: 2880
+      value: 0.63
+     -
+      step: 3000
+      value: 0.63
+     -
+      step: 3120
+      value: 0.63
+     -
+      step: 3240
+      value: 0.63
+     -
+      step: 3360
+      value: 0.63
+     -
+      step: 3480
+      value: 0.63
+     -
+      step: 3600
+      value: 0.63
+     -
+      step: 3720
+      value: 0.63
+     -
+      step: 3840
+      value: 0.63
+     -
+      step: 3960
+      value: 0.63
+     -
+      step: 4080
+      value: 0.63
+     -
+      step: 4200
+      value: 0.63
+     -
+      step: 4320
+      value: 0.63
+   -
+    time_series_name: 水北沟退水闸时间序列
+    object_id: 1022
+    object_type: DisturbanceNode
+    object_name: FSK4-水北沟退水闸
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: 0.0
+     -
+      step: 120
+      value: 0.0
+     -
+      step: 240
+      value: 0.0
+     -
+      step: 360
+      value: 0.0
+     -
+      step: 480
+      value: 0.0
+     -
+      step: 600
+      value: 0.0
+     -
+      step: 720
+      value: 0.0
+     -
+      step: 840
+      value: 0.0
+     -
+      step: 960
+      value: 0.0
+     -
+      step: 1080
+      value: 0.0
+     -
+      step: 1200
+      value: 0.0
+     -
+      step: 1320
+      value: 0.0
+     -
+      step: 1440
+      value: 0.0
+     -
+      step: 1560
+      value: 0.0
+     -
+      step: 1680
+      value: 0.0
+     -
+      step: 1800
+      value: 0.0
+     -
+      step: 1920
+      value: 0.0
+     -
+      step: 2040
+      value: 0.0
+     -
+      step: 2160
+      value: 0.0
+     -
+      step: 2280
+      value: 0.0
+     -
+      step: 2400
+      value: 0.0
+     -
+      step: 2520
+      value: 0.0
+     -
+      step: 2640
+      value: 0.0
+     -
+      step: 2760
+      value: 0.0
+     -
+      step: 2880
+      value: 0.0
+     -
+      step: 3000
+      value: 0.0
+     -
+      step: 3120
+      value: 0.0
+     -
+      step: 3240
+      value: 0.0
+     -
+      step: 3360
+      value: 0.0
+     -
+      step: 3480
+      value: 0.0
+     -
+      step: 3600
+      value: 0.0
+     -
+      step: 3720
+      value: 0.0
+     -
+      step: 3840
+      value: 0.0
+     -
+      step: 3960
+      value: 0.0
+     -
+      step: 4080
+      value: 0.0
+     -
+      step: 4200
+      value: 0.0
+     -
+      step: 4320
+      value: 0.0
+   -
+    time_series_name: 三岔沟分水口时间序列
+    object_id: 1027
+    object_type: DisturbanceNode
+    object_name: FSK5-三岔沟分水口
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: 1.34
+     -
+      step: 120
+      value: 1.34
+     -
+      step: 240
+      value: 1.34
+     -
+      step: 360
+      value: 1.34
+     -
+      step: 480
+      value: 1.34
+     -
+      step: 600
+      value: 1.34
+     -
+      step: 720
+      value: 1.34
+     -
+      step: 840
+      value: 1.34
+     -
+      step: 960
+      value: 1.34
+     -
+      step: 1080
+      value: 1.34
+     -
+      step: 1200
+      value: 1.34
+     -
+      step: 1320
+      value: 1.34
+     -
+      step: 1440
+      value: 1.3
+     -
+      step: 1560
+      value: 1.3
+     -
+      step: 1680
+      value: 1.3
+     -
+      step: 1800
+      value: 1.3
+     -
+      step: 1920
+      value: 1.3
+     -
+      step: 2040
+      value: 1.3
+     -
+      step: 2160
+      value: 1.3
+     -
+      step: 2280
+      value: 1.3
+     -
+      step: 2400
+      value: 1.3
+     -
+      step: 2520
+      value: 1.3
+     -
+      step: 2640
+      value: 1.3
+     -
+      step: 2760
+      value: 1.3
+     -
+      step: 2880
+      value: 1.26
+     -
+      step: 3000
+      value: 1.26
+     -
+      step: 3120
+      value: 1.26
+     -
+      step: 3240
+      value: 1.26
+     -
+      step: 3360
+      value: 1.26
+     -
+      step: 3480
+      value: 1.26
+     -
+      step: 3600
+      value: 1.26
+     -
+      step: 3720
+      value: 1.26
+     -
+      step: 3840
+      value: 1.26
+     -
+      step: 3960
+      value: 1.26
+     -
+      step: 4080
+      value: 1.26
+     -
+      step: 4200
+      value: 1.26
+     -
+      step: 4320
+      value: 1.27
+   -
+    time_series_name: 北拒马退水闸时间序列
+    object_id: 1029
+    object_type: DisturbanceNode
+    object_name: FSK6-北拒马退水闸
+    metrics_code: water_flow
+    time_series:
+     -
+      step: 0
+      value: 0.5
+     -
+      step: 120
+      value: 0.5
+     -
+      step: 240
+      value: 0.5
+     -
+      step: 360
+      value: 0.5
+     -
+      step: 480
+      value: 0.5
+     -
+      step: 600
+      value: 0.5
+     -
+      step: 720
+      value: 0.5
+     -
+      step: 840
+      value: 0.5
+     -
+      step: 960
+      value: 0.5
+     -
+      step: 1080
+      value: 0.5
+     -
+      step: 1200
+      value: 0.5
+     -
+      step: 1320
+      value: 0.5
+     -
+      step: 1440
+      value: 0.5
+     -
+      step: 1560
+      value: 0.5
+     -
+      step: 1680
+      value: 0.5
+     -
+      step: 1800
+      value: 0.5
+     -
+      step: 1920
+      value: 0.5
+     -
+      step: 2040
+      value: 0.5
+     -
+      step: 2160
+      value: 0.5
+     -
+      step: 2280
+      value: 0.5
+     -
+      step: 2400
+      value: 0.5
+     -
+      step: 2520
+      value: 0.5
+     -
+      step: 2640
+      value: 0.5
+     -
+      step: 2760
+      value: 0.5
+     -
+      step: 2880
+      value: 0.5
+     -
+      step: 3000
+      value: 0.5
+     -
+      step: 3120
+      value: 0.5
+     -
+      step: 3240
+      value: 0.5
+     -
+      step: 3360
+      value: 0.5
+     -
+      step: 3480
+      value: 0.5
+     -
+      step: 3600
+      value: 0.5
+     -
+      step: 3720
+      value: 0.5
+     -
+      step: 3840
+      value: 0.5
+     -
+      step: 3960
+      value: 0.5
+     -
+      step: 4080
+      value: 0.5
+     -
+      step: 4200
+      value: 0.5
+     -
+      step: 4320
+      value: 0.5
+  priority: HIGH
+  valid: true

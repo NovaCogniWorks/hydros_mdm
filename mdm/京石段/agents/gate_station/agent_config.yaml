@@ -1,0 +1,196 @@
+agent_code: GATE_STATION_AGENT
+agent_type: GATE_STATION_AGENT
+agent_name: 闸站智能体
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 黄军平
+description: 执行人工闸门开度指令或MPC下发的目标水位等电机操作指令
+properties:
+  hydro_environment_type: SIL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/modeling/objects.yaml
+hydro_node_id: DEFAULT_EDGE
+components:
+ -
+  component_id: HAC000000009
+  component_name: PID控制算法
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: 提供标准型的PID控制算法，结合本体仿真智能体的电机模拟器，输入闸门水位控制目标，输出闸门开度指令，实现闭环水利电机指令的闭环控制执行模拟
+  enabled: false
+  properties:
+    kp: 25
+    kd: 1
+    ki: 1
+ -
+  component_id: HAC000000010
+  component_name: 硬件适配器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: 支持HIL在环场景，通过OPCUA协议对接软件或硬件PLC，下发闸门开度指令至本体仿真智能体
+  enabled: false
+managed_top_objects:
+ -
+  object_id: 1002
+  object_type: Pipe
+  object_name: DHX1-中易水渠道倒虹吸
+ -
+  object_id: 1004
+  object_type: DisturbanceNode
+  object_name: FSK1-荆柯山分水口
+ -
+  object_id: 1006
+  object_type: DisturbanceNode
+  object_name: FSK2-北易水退水闸
+ -
+  object_id: 1008
+  object_type: Pipe
+  object_name: DHX2-北易水渠道倒虹吸
+ -
+  object_id: 1009
+  object_type: GateStation
+  object_name: ZM1-北易水倒虹吸出口节制闸
+ -
+  object_id: 1011
+  object_type: Pipe
+  object_name: DHX3-厂城渠道倒虹吸
+ -
+  object_id: 1013
+  object_type: Pipe
+  object_name: DHX4-七里庄沟渠道倒虹吸
+ -
+  object_id: 1015
+  object_type: Pipe
+  object_name: DHX5-马头沟渠道倒虹吸
+ -
+  object_id: 1017
+  object_type: Pipe
+  object_name: DHX6-坟庄河渠道倒虹吸
+ -
+  object_id: 1018
+  object_type: GateStation
+  object_name: ZM2-坟庄河倒虹吸出口节制闸
+ -
+  object_id: 1020
+  object_type: DisturbanceNode
+  object_name: FSK3-下车亭分水口
+ -
+  object_id: 1022
+  object_type: DisturbanceNode
+  object_name: FSK4-水北沟退水闸
+ -
+  object_id: 1024
+  object_type: Pipe
+  object_name: DHX7-南拒马河渠道倒虹吸
+ -
+  object_id: 1026
+  object_type: Pipe
+  object_name: DHX8-北拒马河南支渠道倒虹吸
+ -
+  object_id: 1027
+  object_type: DisturbanceNode
+  object_name: FSK5-三岔沟分水口
+ -
+  object_id: 1029
+  object_type: DisturbanceNode
+  object_name: FSK6-北拒马退水闸
+device_mapping:
+  controllers:
+   -
+    endpoint_uri: opc.tcp://192.168.1.24:4840/hydros
+    controller_id: SOFTWARE_PLC_001
+    controller_name: 软件PLC
+    controller_type: SOFTWARE
+  devices:
+   -
+    object_id: 1039
+    object_type: CrossSection
+    object_name: ZM1-入口断面
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR001
+      metrics_code: water_level
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR001
+      metrics_code: water_flow
+   -
+    object_id: 1040
+    object_type: CrossSection
+    object_name: QD-5#断面#001
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR002
+      metrics_code: water_level
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR002
+      metrics_code: water_flow
+   -
+    object_id: 1041
+    object_type: Gate
+    object_name: ZM1-节制闸#1
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.Gate.GATE001
+      metrics_code: gate_opening
+   -
+    object_id: 1042
+    object_type: Gate
+    object_name: ZM1-节制闸#2
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.Gate.GATE002
+      metrics_code: gate_opening
+   -
+    object_id: 1050
+    object_type: CrossSection
+    object_name: ZM2-入口断面
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR003
+      metrics_code: water_level
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR003
+      metrics_code: water_flow
+   -
+    object_id: 1051
+    object_type: CrossSection
+    object_name: QD-9#断面#001
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR004
+      metrics_code: water_level
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR004
+      metrics_code: water_flow
+   -
+    object_id: 1052
+    object_type: Gate
+    object_name: ZM2-节制闸#1
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.Gate.GATE003
+      metrics_code: gate_opening
+   -
+    object_id: 1053
+    object_type: Gate
+    object_name: ZM2-节制闸#2
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.Gate.GATE004
+      metrics_code: gate_opening

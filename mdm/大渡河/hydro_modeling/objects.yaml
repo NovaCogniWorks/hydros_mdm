@@ -1,0 +1,534 @@
+cross_sections:
+ -
+  id: 100101
+  type: CrossSection
+  name: DM1
+ -
+  id: 100102
+  type: CrossSection
+  name: DM3
+ -
+  id: 100103
+  type: CrossSection
+  name: DM5
+ -
+  id: 100104
+  type: CrossSection
+  name: DM6
+ -
+  id: 100105
+  type: CrossSection
+  name: SP7
+ -
+  id: 100106
+  type: CrossSection
+  name: SP9
+ -
+  id: 100107
+  type: CrossSection
+  name: SP10
+ -
+  id: 100108
+  type: CrossSection
+  name: SP11
+ -
+  id: 100109
+  type: CrossSection
+  name: SP12
+ -
+  id: 100110
+  type: CrossSection
+  name: SP13
+ -
+  id: 100111
+  type: CrossSection
+  name: SP16
+ -
+  id: 100112
+  type: CrossSection
+  name: SP19
+ -
+  id: 100113
+  type: CrossSection
+  name: SP20
+ -
+  id: 100114
+  type: CrossSection
+  name: SP21
+ -
+  id: 100115
+  type: CrossSection
+  name: SP22
+ -
+  id: 100116
+  type: CrossSection
+  name: SP23
+ -
+  id: 100117
+  type: CrossSection
+  name: SP24
+ -
+  id: 100118
+  type: CrossSection
+  name: SP25
+ -
+  id: 100119
+  type: CrossSection
+  name: SP26
+ -
+  id: 100120
+  type: CrossSection
+  name: SP27
+ -
+  id: 100121
+  type: CrossSection
+  name: SP28
+ -
+  id: 100122
+  type: CrossSection
+  name: SP30
+ -
+  id: 100123
+  type: CrossSection
+  name: SP31
+ -
+  id: 100124
+  type: CrossSection
+  name: SP32
+ -
+  id: 100125
+  type: CrossSection
+  name: SP33
+ -
+  id: 100126
+  type: CrossSection
+  name: SP34
+ -
+  id: 100127
+  type: CrossSection
+  name: SP36
+ -
+  id: 100128
+  type: CrossSection
+  name: SP38
+ -
+  id: 100129
+  type: CrossSection
+  name: SP39
+ -
+  id: 100130
+  type: CrossSection
+  name: SP40
+ -
+  id: 100131
+  type: CrossSection
+  name: SP41
+ -
+  id: 100132
+  type: CrossSection
+  name: SP42
+ -
+  id: 100133
+  type: CrossSection
+  name: SP43
+ -
+  id: 100134
+  type: CrossSection
+  name: SP45
+ -
+  id: 100135
+  type: CrossSection
+  name: SP46
+ -
+  id: 100136
+  type: CrossSection
+  name: SP47
+ -
+  id: 100137
+  type: CrossSection
+  name: SP48
+ -
+  id: 100138
+  type: CrossSection
+  name: SP49
+ -
+  id: 100139
+  type: CrossSection
+  name: SP53
+ -
+  id: 100140
+  type: CrossSection
+  name: SP54
+ -
+  id: 100141
+  type: CrossSection
+  name: SP55
+ -
+  id: 100142
+  type: CrossSection
+  name: SP56
+ -
+  id: 100143
+  type: CrossSection
+  name: SP57
+ -
+  id: 100144
+  type: CrossSection
+  name: SP59
+ -
+  id: 100145
+  type: CrossSection
+  name: SP60
+ -
+  id: 100146
+  type: CrossSection
+  name: SP65
+ -
+  id: 100147
+  type: CrossSection
+  name: SP68
+ -
+  id: 100148
+  type: CrossSection
+  name: SP69
+ -
+  id: 100149
+  type: CrossSection
+  name: SP70
+ -
+  id: 100150
+  type: CrossSection
+  name: SP71
+objects:
+ -
+  id: 1001
+  type: UnifiedCanal
+  name: sm-pbg
+  geometry_coordination:
+   -
+     - 102.346094658
+     - 29.226466396
+   -
+     - 102.353826198
+     - 29.235824524
+   -
+     - 102.35614446
+     - 29.241853914
+   -
+     - 102.373948715
+     - 29.246352768
+   -
+     - 102.383314497
+     - 29.250063162
+   -
+     - 102.394627622
+     - 29.246909327
+   -
+     - 102.41377647
+     - 29.246909327
+   -
+     - 102.416558389
+     - 29.25094438
+   -
+     - 102.413683742
+     - 29.259571048
+   -
+     - 102.420035782
+     - 29.262956783
+   -
+     - 102.435336316
+     - 29.255211334
+   -
+     - 102.456710698
+     - 29.261565384
+   -
+     - 102.455737023
+     - 29.272418289
+   -
+     - 102.458750765
+     - 29.276870761
+   -
+     - 102.465473725
+     - 29.275386604
+   -
+     - 102.472474881
+     - 29.27807664
+   -
+     - 102.474746779
+     - 29.273438648
+   -
+     - 102.472150322
+     - 29.266574418
+   -
+     - 102.489259097
+     - 29.261797282
+   -
+     - 102.49843942
+     - 29.279143377
+   -
+     - 102.514157239
+     - 29.284940868
+   -
+     - 102.541280911
+     - 29.291202157
+   -
+     - 102.554819566
+     - 29.310820868
+   -
+     - 102.551713096
+     - 29.323621729
+   -
+     - 102.553289514
+     - 29.330532338
+   -
+     - 102.565669035
+     - 29.3292337
+   -
+     - 102.582916913
+     - 29.315134201
+   -
+     - 102.595528262
+     - 29.318241657
+   -
+     - 102.615530442
+     - 29.330884799
+   -
+     - 102.644647821
+     - 29.322443652
+   -
+     - 102.667088605
+     - 29.317017201
+   -
+     - 102.68044733
+     - 29.327269379
+   -
+     - 102.742573291
+     - 29.305896546
+   -
+     - 102.765254195
+     - 29.31071913
+   -
+     - 102.786072419
+     - 29.308198233
+   -
+     - 102.810177729
+     - 29.29164799
+   -
+     - 102.817299747
+     - 29.281345188
+   -
+     - 102.806671491
+     - 29.268411885
+   -
+     - 102.814670074
+     - 29.249559954
+   -
+     - 102.832201213
+     - 29.245723802
+   -
+     - 102.834173466
+     - 29.212513711
+   -
+     - 102.838770725
+     - 29.211680632
+  cross_section_children:
+   -
+    id: 100101
+    type: CrossSection
+    name: DM1
+   -
+    id: 100102
+    type: CrossSection
+    name: DM3
+   -
+    id: 100103
+    type: CrossSection
+    name: DM5
+   -
+    id: 100104
+    type: CrossSection
+    name: DM6
+   -
+    id: 100105
+    type: CrossSection
+    name: SP7
+   -
+    id: 100106
+    type: CrossSection
+    name: SP9
+   -
+    id: 100107
+    type: CrossSection
+    name: SP10
+   -
+    id: 100108
+    type: CrossSection
+    name: SP11
+   -
+    id: 100109
+    type: CrossSection
+    name: SP12
+   -
+    id: 100110
+    type: CrossSection
+    name: SP13
+   -
+    id: 100111
+    type: CrossSection
+    name: SP16
+   -
+    id: 100112
+    type: CrossSection
+    name: SP19
+   -
+    id: 100113
+    type: CrossSection
+    name: SP20
+   -
+    id: 100114
+    type: CrossSection
+    name: SP21
+   -
+    id: 100115
+    type: CrossSection
+    name: SP22
+   -
+    id: 100116
+    type: CrossSection
+    name: SP23
+   -
+    id: 100117
+    type: CrossSection
+    name: SP24
+   -
+    id: 100118
+    type: CrossSection
+    name: SP25
+   -
+    id: 100119
+    type: CrossSection
+    name: SP26
+   -
+    id: 100120
+    type: CrossSection
+    name: SP27
+   -
+    id: 100121
+    type: CrossSection
+    name: SP28
+   -
+    id: 100122
+    type: CrossSection
+    name: SP30
+   -
+    id: 100123
+    type: CrossSection
+    name: SP31
+   -
+    id: 100124
+    type: CrossSection
+    name: SP32
+   -
+    id: 100125
+    type: CrossSection
+    name: SP33
+   -
+    id: 100126
+    type: CrossSection
+    name: SP34
+   -
+    id: 100127
+    type: CrossSection
+    name: SP36
+   -
+    id: 100128
+    type: CrossSection
+    name: SP38
+   -
+    id: 100129
+    type: CrossSection
+    name: SP39
+   -
+    id: 100130
+    type: CrossSection
+    name: SP40
+   -
+    id: 100131
+    type: CrossSection
+    name: SP41
+   -
+    id: 100132
+    type: CrossSection
+    name: SP42
+   -
+    id: 100133
+    type: CrossSection
+    name: SP43
+   -
+    id: 100134
+    type: CrossSection
+    name: SP45
+   -
+    id: 100135
+    type: CrossSection
+    name: SP46
+   -
+    id: 100136
+    type: CrossSection
+    name: SP47
+   -
+    id: 100137
+    type: CrossSection
+    name: SP48
+   -
+    id: 100138
+    type: CrossSection
+    name: SP49
+   -
+    id: 100139
+    type: CrossSection
+    name: SP53
+   -
+    id: 100140
+    type: CrossSection
+    name: SP54
+   -
+    id: 100141
+    type: CrossSection
+    name: SP55
+   -
+    id: 100142
+    type: CrossSection
+    name: SP56
+   -
+    id: 100143
+    type: CrossSection
+    name: SP57
+   -
+    id: 100144
+    type: CrossSection
+    name: SP59
+   -
+    id: 100145
+    type: CrossSection
+    name: SP60
+   -
+    id: 100146
+    type: CrossSection
+    name: SP65
+   -
+    id: 100147
+    type: CrossSection
+    name: SP68
+   -
+    id: 100148
+    type: CrossSection
+    name: SP69
+   -
+    id: 100149
+    type: CrossSection
+    name: SP70
+   -
+    id: 100150
+    type: CrossSection
+    name: SP71

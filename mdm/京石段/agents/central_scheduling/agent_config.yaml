@@ -1,0 +1,26 @@
+agent_code: CENTRAL_SCHEDULING_AGENT
+agent_type: CENTRAL_SCHEDULING_AGENT
+agent_name: 中央调度智能体
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 吴晓红/徐开朗
+description: 基于MPC等规划调度控制算法，实现水网控制调度决策智能中控
+properties:
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/modeling/objects.yaml
+hydro_node_id: DEFAULT_CENTRAL
+components:
+ -
+  component_id: HAC000000005
+  component_name: MPC调度算法
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 黄志峰/廖运宝
+  description: 基于遗传算法的水网规划调度MPC算法
+  enabled: true
+  properties:
+    roll_steps: 10
+    auto_execute_decision: true
+    mpc_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/planning/mpc_config.yaml
+    target_and_constrain_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/planning/constrains_targets.yaml
