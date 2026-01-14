@@ -22,5 +22,5 @@ components:
   properties:
     roll_steps: 10
     auto_execute_decision: true
-    mpc_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/planning/mpc_config.yaml
-    target_and_constrain_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/planning/constrains_targets.yaml
+    mpc_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/mpc_config.yaml
+    target_and_constrain_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/constrains_targets.yaml
