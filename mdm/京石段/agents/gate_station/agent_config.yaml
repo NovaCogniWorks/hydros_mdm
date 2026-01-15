@@ -8,8 +8,8 @@ author:
 description: 执行人工闸门开度指令或MPC下发的目标水位等电机操作指令
 properties:
   hydro_environment_type: SIL
-  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/modeling/objects.yaml
-hydro_node_id: DEFAULT_EDGE
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
 components:
  -
   component_id: HAC000000009

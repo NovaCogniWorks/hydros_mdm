@@ -1,0 +1,37 @@
+agent_code: GATE_STATION_AGENT
+agent_type: GATE_STATION_AGENT
+agent_name: 闸站智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/gate_station/agent_config.yaml
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 黄军平
+description: 执行人工闸门开度指令或MPC下发的目标水位等电机操作指令
+properties:
+  hydro_environment_type: NORMAL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
+components:
+ -
+  component_id: HAC000000009
+  component_name: PID控制算法
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: 提供标准型的PID控制算法，结合本体仿真智能体的电机模拟器，输入闸门水位控制目标，输出闸门开度指令，实现闭环水利电机指令的闭环控制执行模拟
+  enabled: false
+  properties:
+    kp: 25
+    kd: 1
+    ki: 1
+ -
+  component_id: HAC000000010
+  component_name: 硬件适配器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: 支持HIL在环场景，通过OPCUA协议对接软件或硬件PLC，下发闸门开度指令至本体仿真智能体
+  enabled: false
+managed_top_objects: []

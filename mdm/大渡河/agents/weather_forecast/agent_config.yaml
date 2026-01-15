@@ -8,7 +8,7 @@ author:
 description: 接收突发的天气预报事件，调用水文模型计算服务，完成天气预报/未来暴雨场景的入流事件序列的计算和广播
 properties:
   hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/京石段/modelingV2/objects.yaml
-hydro_node_id: DEFAULT_CENTRAL
+hydro_node_id: default_central
 components:
  -
   component_id: HAC000000011

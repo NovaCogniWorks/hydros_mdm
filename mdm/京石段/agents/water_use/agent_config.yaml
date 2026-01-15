@@ -7,6 +7,6 @@ author:
   user_name: 魏家好
 description: 针对计划性的用水需水计划，输入需求总流量和输水时间分布，输出分水口流量序列
 properties:
-  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/modeling/objects.yaml
-hydro_node_id: DEFAULT_CENTRAL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_central
 components: []

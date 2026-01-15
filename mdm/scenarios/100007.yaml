@@ -12,30 +12,30 @@ agents:
   agent_name: 本体仿真智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  agent_code: CHANNEL_AGENT
+  agent_type: CHANNEL_AGENT
+  agent_name: 渠池智能体
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  agent_code: GATE_STATION_AGENT
+  agent_type: GATE_STATION_AGENT
+  agent_name: 闸站智能体
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  agent_code: WATER_USE_AGENT
+  agent_type: WATER_USE_AGENT
+  agent_name: 用水计划智能体
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  agent_code: WEATHER_FORECAST_AGENT
+  agent_type: WEATHER_FORECAST_AGENT
+  agent_name: 天气预报智能体
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  agent_code: CENTRAL_SCHEDULING_AGENT
+  agent_type: CENTRAL_SCHEDULING_AGENT
+  agent_name: 中央调度智能体
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
 auto_schedule_event_enabled: false
 mqtt_broker:
   mqtt_host: 192.168.1.24

@@ -1,0 +1,13 @@
+agent_code: PARAMETER_IDENTIFICATION_AGENT
+agent_type: PARAMETER_IDENTIFICATION_AGENT
+agent_name: 参数辨识智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/parameter_identification/agent_config.yaml
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 马显华
+description: 通过对边缘采集数据的数据处理，实时辨识关键的机理模型参数，并将辨识的更新参数通过更新指令同步至孪生或中央调度等智能体
+properties:
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
+components: []

@@ -1,0 +1,77 @@
+agent_code: CHANNEL_AGENT
+agent_type: CHANNEL_AGENT
+agent_name: 渠池智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/channel/agent_config.yaml
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 黄军平
+description: 实时本体仿真智能体中各水网对象的时序状态数据（水位/流量），并提供水位监控告警，数据清洗，边缘数据上报等基础功能
+properties:
+  hydro_environment_type: NORMAL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
+components:
+ -
+  component_id: HAC000000006
+  component_name: 边缘数据采集器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: "基于Source/Sink/Process的边缘采集框架，Source支持MQTT/OPCUA协议,Sink支持MQTT和SQLITE，\
+    Process支持数据聚合去噪/补齐/单位转换等"
+  enabled: false
+  properties:
+    sink_configs:
+     -
+      name: MetricsMqttDataSink
+      enabled: true
+      properties: {}
+     -
+      name: MetricsSqliteDataSink
+      enabled: false
+      properties: {}
+    processor_configs:
+     -
+      name: AggregationProcessor
+      enabled: true
+      properties:
+        sample_data_aggregate_method: AVG
+        biz_start_time: 2025/01/01 00:00:00
+        data_resolution: 60
+     -
+      name: ImputationProcessor
+      enabled: false
+      properties: {}
+     -
+      name: NoiseRemovalProcessor
+      enabled: true
+      properties: {}
+     -
+      name: AttributeFixProcessor
+      enabled: true
+      properties: {}
+ -
+  component_id: HAC000000007
+  component_name: 监控告警器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 黄军平
+  description: 支持设置被控对象和监控监控条件，与边缘数据采集集成，实现对水位超限/设备故障等异常工况实时巡检监控和告警上报
+  enabled: false
+ -
+  component_id: HAC000000008
+  component_name: 硬件适配器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: 支持HIL在环场景，通过OPCUA协议对接软件或硬件PLC，实现对传感器数据点位数据的采集，并转换成HYDROS水网对象的时序状态数据
+  enabled: false
+managed_top_objects:
+ -
+  object_id: 1001
+  object_type: UnifiedCanal
+  object_name: sm-pbg

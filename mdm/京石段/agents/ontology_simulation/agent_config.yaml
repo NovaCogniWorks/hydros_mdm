@@ -11,8 +11,8 @@ properties:
   step_resolution: 60
   total_steps: 4320
   hydro_environment_type: SIL
-  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/modeling/objects.yaml
-hydro_node_id: DEFAULT_EDGE
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
 components:
  -
   component_id: HAC000000001
@@ -35,7 +35,7 @@ components:
     hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
     step_resolution: 60
     driven_by_coordinator: true
-    hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology/hydro_dyn_config.yaml
+    hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/hydro_dyn_config.yaml
     biz_start_time: 2025/01/01 00:00:00
     global_data: "{\"channels\":{\"water_flow\":0.0,\"water_level\":0.0}}"
     calculation_resolution: 60

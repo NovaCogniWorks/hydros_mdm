@@ -1,0 +1,83 @@
+agent_code: ONTOLOGY_SIMULATION_AGENT
+agent_type: ONTOLOGY_SIMULATION_AGENT
+agent_name: 本体仿真智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/ontology_simulation/agent_config.yaml
+version: v0.0.9
+release_at: 2025/12/13
+author:
+  user_name: 屠泽帅
+description: 提供水网本体模拟仿真功能，支撑上层控制/孪生/辨识/告警等水网调度业务流程，并基于OPCUA协议对硬件适配对接，实现在环仿真控制验证一体化环境，包含一维水动力仿真/传感器模拟/控制器模拟/HIL适配
+properties:
+  biz_start_time: 2025/01/01 00:00:00
+  step_resolution: 60
+  total_steps: 4320
+  hydro_environment_type: NORMAL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
+components:
+ -
+  component_id: HAC000000001
+  component_name: 一维水动力仿真
+  version: v0.1.2
+  release_at: 2025/12/12
+  author:
+    user_name: 王孝群
+  description: 一维水动力仿真，对河渠/闸站/分水口/倒虹吸等水网对象进行拓扑建模.....
+  enabled: true
+  properties:
+    output_config:
+      output_mode: MQTT
+      mqtt_broker:
+        mqtt_host: 192.168.1.24
+        mqtt_port: 1883
+        server_uri: tcp://192.168.1.24:1883
+      mqtt_topic: +/hydros/simulation/jobs/+/realtime/objects
+    step_speed: 1.0
+    hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
+    step_resolution: 60
+    driven_by_coordinator: true
+    hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/ontology_simulation/hydro_dyn_config.yaml
+    biz_start_time: 2025/01/01 00:00:00
+    global_data: "{\"channels\":{\"water_flow\":0.0,\"water_level\":0.0}}"
+    calculation_resolution: 60
+    total_steps: 4320
+    time_series_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/time_series/time_series.yaml
+    simulation_mode: hydro1d_wxq
+    steady: "{\"skip_steady_state_calculation\":true,\"nstep_max\":10000,\"n_step_max\"\
+      :10000,\"threshold_z\":1.0E-8}"
+    solver: FDM
+ -
+  component_id: HAC000000002
+  component_name: 传感器模拟
+  version: v0.0.1
+  release_at: 2025/09/28
+  author:
+    user_name: 张雷
+  description: 传感器模拟，支持传感器故障/噪声注入/零点飘逸等传感器物理属性的模拟
+  enabled: false
+  properties: {}
+ -
+  component_id: HAC000000003
+  component_name: 控制器模拟
+  version: v0.0.1
+  release_at: 2025/09/28
+  author:
+    user_name: 张雷
+  description: 控制器模拟，支持电机故障/电机梯度加减速调度等电机物理属性的模拟
+  enabled: false
+  properties: {}
+ -
+  component_id: HAC000000004
+  component_name: HIL适配
+  version: v0.0.1
+  release_at: 2025-10-20
+  author:
+    user_name: 屠泽帅/黄军平
+  description: HIL适配
+  enabled: false
+  properties: {}
+managed_top_objects:
+ -
+  object_id: 1001
+  object_type: UnifiedCanal
+  object_name: sm-pbg

@@ -8,8 +8,8 @@ author:
 description: 实时本体仿真智能体中各水网对象的时序状态数据（水位/流量），并提供水位监控告警，数据清洗，边缘数据上报等基础功能
 properties:
   hydro_environment_type: SIL
-  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/modeling/objects.yaml
-hydro_node_id: DEFAULT_EDGE
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
 components:
  -
   component_id: HAC000000006

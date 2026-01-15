@@ -12,15 +12,15 @@ agents:
   agent_name: 本体仿真智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/ontology_simulation/agent_config.yaml
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/ontology_simulation/agent_config.yaml
+  agent_code: CHANNEL_AGENT
+  agent_type: CHANNEL_AGENT
+  agent_name: 渠池智能体
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/channel/agent_config.yaml
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/ontology_simulation/agent_config.yaml
+  agent_code: WEATHER_FORECAST_AGENT
+  agent_type: WEATHER_FORECAST_AGENT
+  agent_name: 天气预报智能体
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/weather_forecast/agent_config.yaml
 auto_schedule_event_enabled: false
 mqtt_broker:
   mqtt_host: 192.168.1.24
