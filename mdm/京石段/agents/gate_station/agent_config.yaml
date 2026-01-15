@@ -1,13 +1,17 @@
 agent_code: GATE_STATION_AGENT
 agent_type: GATE_STATION_AGENT
 agent_name: 闸站智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
 version: v0.0.1
 release_at: 2025/12/20
 author:
   user_name: 黄军平
 description: 执行人工闸门开度指令或MPC下发的目标水位等电机操作指令
+waterway:
+  waterway_id: 50
+  waterway_name: 京石段
 properties:
-  hydro_environment_type: SIL
+  hydro_environment_type: NORMAL
   hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 hydro_node_id: default_edge
 components:
@@ -98,99 +102,3 @@ managed_top_objects:
   object_id: 1029
   object_type: DisturbanceNode
   object_name: FSK6-北拒马退水闸
-device_mapping:
-  controllers:
-   -
-    endpoint_uri: opc.tcp://192.168.1.24:4840/hydros
-    controller_id: SOFTWARE_PLC_001
-    controller_name: 软件PLC
-    controller_type: SOFTWARE
-  devices:
-   -
-    object_id: 1039
-    object_type: CrossSection
-    object_name: ZM1-入口断面
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR001
-      metrics_code: water_level
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR001
-      metrics_code: water_flow
-   -
-    object_id: 1040
-    object_type: CrossSection
-    object_name: QD-5#断面#001
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR002
-      metrics_code: water_level
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR002
-      metrics_code: water_flow
-   -
-    object_id: 1041
-    object_type: Gate
-    object_name: ZM1-节制闸#1
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.Gate.GATE001
-      metrics_code: gate_opening
-   -
-    object_id: 1042
-    object_type: Gate
-    object_name: ZM1-节制闸#2
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.Gate.GATE002
-      metrics_code: gate_opening
-   -
-    object_id: 1050
-    object_type: CrossSection
-    object_name: ZM2-入口断面
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR003
-      metrics_code: water_level
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR003
-      metrics_code: water_flow
-   -
-    object_id: 1051
-    object_type: CrossSection
-    object_name: QD-9#断面#001
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR004
-      metrics_code: water_level
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR004
-      metrics_code: water_flow
-   -
-    object_id: 1052
-    object_type: Gate
-    object_name: ZM2-节制闸#1
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.Gate.GATE003
-      metrics_code: gate_opening
-   -
-    object_id: 1053
-    object_type: Gate
-    object_name: ZM2-节制闸#2
-    points:
-     -
-      controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.Gate.GATE004
-      metrics_code: gate_opening
