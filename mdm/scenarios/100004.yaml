@@ -1,64 +1,228 @@
-biz_scenario:
-  biz_scenario_id: 100004
-  biz_scenario_name: HIL京石段-天气预报/用水计划/故障等综合场景
+agent_code: CHANNEL_AGENT
+agent_type: CHANNEL_AGENT
+agent_name: 渠池智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+version: v0.0.1
+release_at: 2025/12/20
+author:
+  user_name: 黄军平
+description: 实时本体仿真智能体中各水网对象的时序状态数据（水位/流量），并提供水位监控告警，数据清洗，边缘数据上报等基础功能
 waterway:
   waterway_id: 50
   waterway_name: 京石段
-hydro_environment_type: HIL
-agents:
+properties:
+  hydro_environment_type: HIL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
+components:
  -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  component_id: HAC000000006
+  component_name: 边缘数据采集器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: "基于Source/Sink/Process的边缘采集框架，Source支持MQTT/OPCUA协议,Sink支持MQTT和SQLITE，\
+    Process支持数据聚合去噪/补齐/单位转换等"
+  enabled: true
+  properties:
+    sink_configs:
+     -
+      name: MetricsMqttDataSink
+      enabled: true
+      properties: {}
+     -
+      name: MetricsSqliteDataSink
+      enabled: false
+      properties: {}
+    processor_configs:
+     -
+      name: AggregationProcessor
+      enabled: true
+      properties:
+        biz_start_time: 2025/01/01 00:00:00
+        data_resolution: 60
+        sample_data_aggregate_method: AVG
+     -
+      name: ImputationProcessor
+      enabled: false
+      properties: {}
+     -
+      name: NoiseRemovalProcessor
+      enabled: true
+      properties: {}
+     -
+      name: AttributeFixProcessor
+      enabled: true
+      properties: {}
  -
-  agent_code: CHANNEL_AGENT
-  agent_type: CHANNEL_AGENT
-  agent_name: 渠池智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+  component_id: HAC000000007
+  component_name: 监控告警器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 黄军平
+  description: 支持设置被控对象和监控监控条件，与边缘数据采集集成，实现对水位超限/设备故障等异常工况实时巡检监控和告警上报
+  enabled: false
  -
-  agent_code: GATE_STATION_AGENT
-  agent_type: GATE_STATION_AGENT
-  agent_name: 闸站智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+  component_id: HAC000000008
+  component_name: 硬件适配器
+  version: v0.1.1
+  release_at: 2025/12/12
+  author:
+    user_name: 魏家好
+  description: 支持HIL在环场景，通过OPCUA协议对接软件或硬件PLC，实现对传感器数据点位数据的采集，并转换成HYDROS水网对象的时序状态数据
+  enabled: false
+managed_top_objects:
  -
-  agent_code: WATER_USE_AGENT
-  agent_type: WATER_USE_AGENT
-  agent_name: 用水计划智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
+  object_id: 1001
+  object_type: UnifiedCanal
+  object_name: QD-1
  -
-  agent_code: WEATHER_FORECAST_AGENT
-  agent_type: WEATHER_FORECAST_AGENT
-  agent_name: 天气预报智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
+  object_id: 1003
+  object_type: UnifiedCanal
+  object_name: QD-2
  -
-  agent_code: CENTRAL_SCHEDULING_AGENT
-  agent_type: CENTRAL_SCHEDULING_AGENT
-  agent_name: 中央调度智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
-auto_schedule_event_enabled: false
-mqtt_broker:
-  mqtt_host: 192.168.1.24
-  mqtt_port: 1883
-  server_uri: tcp://192.168.1.24:1883
-total_steps: 4320
-step_resolution: 60
-biz_start_time: 2025/01/01 00:00:00
-hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
-default_rendering_objects:
+  object_id: 1005
+  object_type: UnifiedCanal
+  object_name: QD-3
  -
-  object_id: 1041
-  object_type: Gate
-  object_name: ZM1-节制闸#1
+  object_id: 1007
+  object_type: UnifiedCanal
+  object_name: QD-4
  -
-  object_id: 1053
-  object_type: Gate
-  object_name: ZM2-节制闸#2
+  object_id: 1010
+  object_type: UnifiedCanal
+  object_name: QD-5
  -
-  object_id: 1040
-  object_type: CrossSection
-  object_name: QD-5#断面#001
+  object_id: 1012
+  object_type: UnifiedCanal
+  object_name: QD-6
  -
-  object_id: 1052
-  object_type: Gate
-  object_name: ZM2-节制闸#1
+  object_id: 1014
+  object_type: UnifiedCanal
+  object_name: QD-7
+ -
+  object_id: 1016
+  object_type: UnifiedCanal
+  object_name: QD-8
+ -
+  object_id: 1019
+  object_type: UnifiedCanal
+  object_name: QD-9
+ -
+  object_id: 1021
+  object_type: UnifiedCanal
+  object_name: QD-10
+ -
+  object_id: 1023
+  object_type: UnifiedCanal
+  object_name: QD-11
+ -
+  object_id: 1025
+  object_type: UnifiedCanal
+  object_name: QD-12
+ -
+  object_id: 1028
+  object_type: UnifiedCanal
+  object_name: QD-13
+ -
+  object_id: 1030
+  object_type: UnifiedCanal
+  object_name: QD-14
+device_mapping:
+  controllers:
+   -
+    endpoint_uri: opc.tcp://185j95k614.iask.in:19097
+    controller_id: HARDWARE_PLC_002
+    controller_name: 硬件PLC
+    controller_type: PHYSICAL
+  devices:
+   -
+    object_id: 1039
+    object_type: CrossSection
+    object_name: ZM1-入口断面
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR001
+      metrics_code: water_level
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR001
+      metrics_code: water_flow
+   -
+    object_id: 1040
+    object_type: CrossSection
+    object_name: QD-5#断面#001
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR002
+      metrics_code: water_level
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR002
+      metrics_code: water_flow
+   -
+    object_id: 1041
+    object_type: Gate
+    object_name: ZM1-节制闸#1
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.Gate.GATE001
+      metrics_code: gate_opening
+   -
+    object_id: 1042
+    object_type: Gate
+    object_name: ZM1-节制闸#2
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.Gate.GATE002
+      metrics_code: gate_opening
+   -
+    object_id: 1050
+    object_type: CrossSection
+    object_name: ZM2-入口断面
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR003
+      metrics_code: water_level
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR003
+      metrics_code: water_flow
+   -
+    object_id: 1051
+    object_type: CrossSection
+    object_name: QD-9#断面#001
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR004
+      metrics_code: water_level
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR004
+      metrics_code: water_flow
+   -
+    object_id: 1052
+    object_type: Gate
+    object_name: ZM2-节制闸#1
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.Gate.GATE003
+      metrics_code: gate_opening
+   -
+    object_id: 1053
+    object_type: Gate
+    object_name: ZM2-节制闸#2
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.Gate.GATE004
+      metrics_code: gate_opening
