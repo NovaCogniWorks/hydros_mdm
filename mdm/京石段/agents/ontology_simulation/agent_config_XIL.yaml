@@ -1,0 +1,303 @@
+agent_code: ONTOLOGY_SIMULATION_AGENT
+agent_type: ONTOLOGY_SIMULATION_AGENT
+agent_name: 本体仿真智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+version: v0.0.9
+release_at: 2025/12/13
+author:
+  user_name: 屠泽帅
+description: 提供水网本体模拟仿真功能，支撑上层控制/孪生/辨识/告警等水网调度业务流程，并基于OPCUA协议对硬件适配对接，实现在环仿真控制验证一体化环境，包含一维水动力仿真/传感器模拟/控制器模拟/HIL适配
+waterway:
+  waterway_id: 50
+  waterway_name: 京石段
+properties:
+  biz_start_time: 2025/01/01 00:00:00
+  step_resolution: 60
+  total_steps: 4320
+  hydro_environment_type: XIL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_edge
+components:
+ -
+  component_id: HAC000000001
+  component_name: 一维水动力仿真
+  version: v0.1.2
+  release_at: 2025/12/12
+  author:
+    user_name: 王孝群
+  description: 一维水动力仿真，对河渠/闸站/分水口/倒虹吸等水网对象进行拓扑建模.....
+  enabled: true
+  properties:
+    output_config:
+      output_mode: MQTT
+      mqtt_broker:
+        mqtt_host: 192.168.1.24
+        mqtt_port: 1883
+        server_uri: tcp://192.168.1.24:1883
+      mqtt_topic: +/hydros/simulation/jobs/+/realtime/objects
+    step_speed: 1.0
+    hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
+    step_resolution: 60
+    driven_by_coordinator: true
+    hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/hydro_dyn_config.yaml
+    biz_start_time: 2025/01/01 00:00:00
+    global_data: "{\"channels\":{\"water_flow\":0.0,\"water_level\":0.0}}"
+    calculation_resolution: 60
+    total_steps: 4320
+    time_series_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/time_series/time_series.yaml
+    simulation_mode: hydro1d_wxq
+    steady: "{\"skip_steady_state_calculation\":true,\"nstep_max\":10000,\"n_step_max\"\
+      :10000,\"threshold_z\":1.0E-8}"
+    solver: FDM
+ -
+  component_id: HAC000000002
+  component_name: 传感器模拟
+  version: v0.0.1
+  release_at: 2025/09/28
+  author:
+    user_name: 张雷
+  description: 传感器模拟，支持传感器故障/噪声注入/零点飘逸等传感器物理属性的模拟
+  enabled: false
+  properties: {}
+ -
+  component_id: HAC000000003
+  component_name: 控制器模拟
+  version: v0.0.1
+  release_at: 2025/09/28
+  author:
+    user_name: 张雷
+  description: 控制器模拟，支持电机故障/电机梯度加减速调度等电机物理属性的模拟
+  enabled: false
+  properties: {}
+ -
+  component_id: HAC000000004
+  component_name: HIL适配
+  version: v0.0.1
+  release_at: 2025-10-20
+  author:
+    user_name: 屠泽帅/黄军平
+  description: HIL适配
+  enabled: false
+  properties: {}
+managed_top_objects:
+ -
+  object_id: 1001
+  object_type: UnifiedCanal
+  object_name: QD-1
+ -
+  object_id: 1002
+  object_type: Pipe
+  object_name: DHX1-中易水渠道倒虹吸
+ -
+  object_id: 1003
+  object_type: UnifiedCanal
+  object_name: QD-2
+ -
+  object_id: 1004
+  object_type: DisturbanceNode
+  object_name: FSK1-荆柯山分水口
+ -
+  object_id: 1005
+  object_type: UnifiedCanal
+  object_name: QD-3
+ -
+  object_id: 1006
+  object_type: DisturbanceNode
+  object_name: FSK2-北易水退水闸
+ -
+  object_id: 1007
+  object_type: UnifiedCanal
+  object_name: QD-4
+ -
+  object_id: 1008
+  object_type: Pipe
+  object_name: DHX2-北易水渠道倒虹吸
+ -
+  object_id: 1009
+  object_type: GateStation
+  object_name: ZM1-北易水倒虹吸出口节制闸
+ -
+  object_id: 1010
+  object_type: UnifiedCanal
+  object_name: QD-5
+ -
+  object_id: 1011
+  object_type: Pipe
+  object_name: DHX3-厂城渠道倒虹吸
+ -
+  object_id: 1012
+  object_type: UnifiedCanal
+  object_name: QD-6
+ -
+  object_id: 1013
+  object_type: Pipe
+  object_name: DHX4-七里庄沟渠道倒虹吸
+ -
+  object_id: 1014
+  object_type: UnifiedCanal
+  object_name: QD-7
+ -
+  object_id: 1015
+  object_type: Pipe
+  object_name: DHX5-马头沟渠道倒虹吸
+ -
+  object_id: 1016
+  object_type: UnifiedCanal
+  object_name: QD-8
+ -
+  object_id: 1017
+  object_type: Pipe
+  object_name: DHX6-坟庄河渠道倒虹吸
+ -
+  object_id: 1018
+  object_type: GateStation
+  object_name: ZM2-坟庄河倒虹吸出口节制闸
+ -
+  object_id: 1019
+  object_type: UnifiedCanal
+  object_name: QD-9
+ -
+  object_id: 1020
+  object_type: DisturbanceNode
+  object_name: FSK3-下车亭分水口
+ -
+  object_id: 1021
+  object_type: UnifiedCanal
+  object_name: QD-10
+ -
+  object_id: 1022
+  object_type: DisturbanceNode
+  object_name: FSK4-水北沟退水闸
+ -
+  object_id: 1023
+  object_type: UnifiedCanal
+  object_name: QD-11
+ -
+  object_id: 1024
+  object_type: Pipe
+  object_name: DHX7-南拒马河渠道倒虹吸
+ -
+  object_id: 1025
+  object_type: UnifiedCanal
+  object_name: QD-12
+ -
+  object_id: 1026
+  object_type: Pipe
+  object_name: DHX8-北拒马河南支渠道倒虹吸
+ -
+  object_id: 1027
+  object_type: DisturbanceNode
+  object_name: FSK5-三岔沟分水口
+ -
+  object_id: 1028
+  object_type: UnifiedCanal
+  object_name: QD-13
+ -
+  object_id: 1029
+  object_type: DisturbanceNode
+  object_name: FSK6-北拒马退水闸
+ -
+  object_id: 1030
+  object_type: UnifiedCanal
+  object_name: QD-14
+device_mapping:
+  controllers:
+   -
+    endpoint_uri: opc.tcp://192.168.1.24:4840/hydros
+    controller_id: SOFTWARE_PLC_001
+    controller_name: 软件PLC
+    controller_type: SOFTWARE
+   -
+    endpoint_uri: opc.tcp://185j95k614.iask.in:19097
+    controller_id: HARDWARE_PLC_002
+    controller_name: 硬件PLC
+    controller_type: PHYSICAL
+  devices:
+   -
+    object_id: 1039
+    object_type: CrossSection
+    object_name: ZM1-入口断面
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR001
+      metrics_code: water_level
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR001
+      metrics_code: water_flow
+   -
+    object_id: 1040
+    object_type: CrossSection
+    object_name: QD-5#断面#001
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR002
+      metrics_code: water_level
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR002
+      metrics_code: water_flow
+   -
+    object_id: 1041
+    object_type: Gate
+    object_name: ZM1-节制闸#1
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.Gate.GATE001
+      metrics_code: gate_opening
+   -
+    object_id: 1042
+    object_type: Gate
+    object_name: ZM1-节制闸#2
+    points:
+     -
+      controller_id: SOFTWARE_PLC_001
+      device_id: 变量表|Hydros.Gate.GATE002
+      metrics_code: gate_opening
+   -
+    object_id: 1050
+    object_type: CrossSection
+    object_name: ZM2-入口断面
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR003
+      metrics_code: water_level
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR003
+      metrics_code: water_flow
+   -
+    object_id: 1051
+    object_type: CrossSection
+    object_name: QD-9#断面#001
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR004
+      metrics_code: water_level
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR004
+      metrics_code: water_flow
+   -
+    object_id: 1052
+    object_type: Gate
+    object_name: ZM2-节制闸#1
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.Gate.GATE003
+      metrics_code: gate_opening
+   -
+    object_id: 1053
+    object_type: Gate
+    object_name: ZM2-节制闸#2
+    points:
+     -
+      controller_id: HARDWARE_PLC_002
+      device_id: 变量表|Hydros.Gate.GATE004
+      metrics_code: gate_opening
