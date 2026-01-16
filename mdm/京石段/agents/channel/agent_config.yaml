@@ -24,7 +24,7 @@ components:
     user_name: 魏家好
   description: "基于Source/Sink/Process的边缘采集框架，Source支持MQTT/OPCUA协议,Sink支持MQTT和SQLITE，\
     Process支持数据聚合去噪/补齐/单位转换等"
-  enabled: false
+  enabled: true
   properties:
     sink_configs:
      -
