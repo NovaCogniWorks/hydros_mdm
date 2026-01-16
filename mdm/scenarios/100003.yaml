@@ -10,17 +10,17 @@ agents:
   agent_code: ONTOLOGY_SIMULATION_AGENT
   agent_type: ONTOLOGY_SIMULATION_AGENT
   agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config_SIL.yaml
  -
   agent_code: CHANNEL_AGENT
   agent_type: CHANNEL_AGENT
   agent_name: 渠池智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config_SIL.yaml
  -
   agent_code: GATE_STATION_AGENT
   agent_type: GATE_STATION_AGENT
   agent_name: 闸站智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config_SIL.yaml
  -
   agent_code: WATER_USE_AGENT
   agent_type: WATER_USE_AGENT
