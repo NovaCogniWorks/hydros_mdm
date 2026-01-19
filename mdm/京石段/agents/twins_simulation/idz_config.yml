@@ -334,929 +334,17 @@ connections:
     name: QD-14
     id: 1030
     to_port: inlet
-cross_sections:
- -
-  id: 1031
-  type: CrossSection
-  name: QD-1#断面#001
-  parameters:
-    location: 0
-    cross_section_type: trapezoidal
-    bottom_elevation: 57.492
-    t_top_elevation: 62.992
-    t_bottom_width: 10
-    t_side_slope_ratio: 0
-    cr_width: 5
-    cr_height: 2
-    pressure_wave_velocity: 1000
-    cc_circumferential_segment_count: 100
-    cc_radius: 20
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 62.992
-       -
-         - 0
-         - 57.492
-       -
-         - 10
-         - 57.492
-       -
-         - 10
-         - 62.992
-      left_bank_geometry_coordination:
-       -
-         - 115.39067441212269
-         - 39.20365984770055
-      right_bank_geometry_coordination:
-       -
-         - 115.3923695682201
-         - 39.204003170454456
- -
-  id: 1032
-  type: CrossSection
-  name: QD-1#断面#002
-  parameters:
-    location: 10133
-    bottom_elevation: 59.207
-    t_top_elevation: 65.31
-    t_bottom_width: 11.2
-    t_side_slope_ratio: 2.5
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 65.31
-       -
-         - 15.257500000000004
-         - 59.207
-       -
-         - 26.457500000000003
-         - 59.207
-       -
-         - 41.715
-         - 65.31
-      left_bank_geometry_coordination:
-       -
-         - 115.43587566791315
-         - 39.26749549940032
-      right_bank_geometry_coordination:
-       -
-         - 115.43748499332209
-         - 39.26740966871184
- -
-  id: 1033
-  type: CrossSection
-  name: QD-2#断面#001
-  parameters:
-    location: 10652
-    bottom_elevation: 59.207
-    t_top_elevation: 65.31
-    t_bottom_width: 11.2
-    t_side_slope_ratio: 2.5
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 65.31
-       -
-         - 15.2575
-         - 59.207
-       -
-         - 26.4575
-         - 59.207
-       -
-         - 41.715
-         - 65.31
-      left_bank_geometry_coordination:
-       -
-         - 115.43626190601131
-         - 39.27231274679107
-      right_bank_geometry_coordination:
-       -
-         - 115.43787123142025
-         - 39.27218400075836
- -
-  id: 1035
-  type: CrossSection
-  name: QD-3#断面#001
-  parameters:
-    location: 17250
-    bottom_elevation: 58.737
-    t_top_elevation: 64.739
-    t_bottom_width: 9
-    t_side_slope_ratio: 0.8
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.73
-       -
-         - 4.801600000000002
-         - 58.737
-       -
-         - 13.801600000000002
-         - 58.737
-       -
-         - 18.603200000000005
-         - 64.73
-      left_bank_geometry_coordination:
-       -
-         - 115.45516611514827
-         - 39.32642899587554
-      right_bank_geometry_coordination:
-       -
-         - 115.45658232150814
-         - 39.326493368891896
- -
-  id: 1037
-  type: CrossSection
-  name: QD-4#断面#001
-  parameters:
-    location: 20161
-    bottom_elevation: 58.652
-    t_top_elevation: 64.723
-    t_bottom_width: 7.5
-    t_side_slope_ratio: 2.5
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.723
-       -
-         - 15.177499999999995
-         - 58.652
-       -
-         - 22.677499999999995
-         - 58.652
-       -
-         - 37.85499999999999
-         - 64.723
-      left_bank_geometry_coordination:
-       -
-         - 115.45898819875846
-         - 39.354108864647245
-      right_bank_geometry_coordination:
-       -
-         - 115.4603829474462
-         - 39.353615338188504
- -
-  id: 1038
-  type: CrossSection
-  name: QD-4#断面#002
-  parameters:
-    location: 20339
-    bottom_elevation: 55.674
-    t_top_elevation: 64.721
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.721
-       -
-         - 0
-         - 55.674
-       -
-         - 12.1
-         - 55.674
-       -
-         - 12.1
-         - 64.721
-      left_bank_geometry_coordination:
-       -
-         - 115.45973921728263
-         - 39.35522466359744
-      right_bank_geometry_coordination:
-       -
-         - 115.46089793157707
-         - 39.35479551015506
- -
-  id: 1039
-  type: CrossSection
-  name: ZM1-入口断面
-  devices:
-   -
-    device_metrics_code: LevelMeasurementValue
-    device_id: HydroHardware.LevelSensor_SENSOR001
-   -
-    device_metrics_code: FlowMeasurementValue
-    device_id: HydroHardware.FlowSensor_SENSOR001
-  parameters:
-    location: 20800
-    bottom_elevation: 55.764
-    t_top_elevation: 64.764
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.764
-       -
-         - 0
-         - 55.764
-       -
-         - 12.1
-         - 55.764
-       -
-         - 12.1
-         - 64.764
-      left_bank_geometry_coordination:
-       -
-         - 115.46069525447362
-         - 39.35789033051253
-      right_bank_geometry_coordination:
-       -
-         - 115.46224055800246
-         - 39.3573947102953
- -
-  id: 1040
-  type: CrossSection
-  name: QD-5#断面#001
-  devices:
-   -
-    device_metrics_code: LevelMeasurementValue
-    device_id: HydroHardware.LevelSensor_SENSOR002
-   -
-    device_metrics_code: FlowMeasurementValue
-    device_id: HydroHardware.FlowSensor_SENSOR002
-  parameters:
-    location: 20811
-    bottom_elevation: 55.764
-    t_top_elevation: 64.764
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.764
-       -
-         - 0
-         - 55.764
-       -
-         - 12.1
-         - 55.764
-       -
-         - 12.1
-         - 64.764
-      left_bank_geometry_coordination:
-       -
-         - 115.46079064321646
-         - 39.358142907005636
-      right_bank_geometry_coordination:
-       -
-         - 115.46239996862539
-         - 39.35771375356325
- -
-  id: 1043
-  type: CrossSection
-  name: QD-5#断面#002
-  parameters:
-    location: 21198
-    bottom_elevation: 55.556
-    t_top_elevation: 64.477
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.477
-       -
-         - 0
-         - 55.556
-       -
-         - 12.1
-         - 55.556
-       -
-         - 12.1
-         - 64.477
-      left_bank_geometry_coordination:
-       -
-         - 115.46333689368672
-         - 39.361150497426436
-      right_bank_geometry_coordination:
-       -
-         - 115.4645599809975
-         - 39.36052822493498
- -
-  id: 1044
-  type: CrossSection
-  name: QD-6#断面#001
-  parameters:
-    location: 21450
-    bottom_elevation: 56.241
-    t_top_elevation: 64.589
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.589
-       -
-         - 0
-         - 56.241
-       -
-         - 12.1
-         - 56.241
-       -
-         - 12.1
-         - 64.589
-      left_bank_geometry_coordination:
-       -
-         - 115.46513933814472
-         - 39.362910026540206
-      right_bank_geometry_coordination:
-       -
-         - 115.46629805243916
-         - 39.362159008016036
- -
-  id: 1045
-  type: CrossSection
-  name: QD-6#断面#002
-  parameters:
-    location: 26385
-    bottom_elevation: 55.31
-    t_top_elevation: 64.354
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.354
-       -
-         - 0
-         - 55.31
-       -
-         - 12.1
-         - 55.31
-       -
-         - 12.1
-         - 64.354
-      left_bank_geometry_coordination:
-       -
-         - 115.52048292984821
-         - 39.36761816231692
-      right_bank_geometry_coordination:
-       -
-         - 115.52050438752033
-         - 39.36615904061282
- -
-  id: 1046
-  type: CrossSection
-  name: QD-7#断面#001
-  parameters:
-    location: 26576
-    bottom_elevation: 55.892
-    t_top_elevation: 64.282
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 64.282
-       -
-         - 0
-         - 55.892
-       -
-         - 12.1
-         - 55.892
-       -
-         - 12.1
-         - 64.282
-      left_bank_geometry_coordination:
-       -
-         - 115.52310076584675
-         - 39.36742504326785
-      right_bank_geometry_coordination:
-       -
-         - 115.52318659653523
-         - 39.36590154854739
- -
-  id: 1047
-  type: CrossSection
-  name: QD-7#断面#002
-  parameters:
-    location: 33026
-    bottom_elevation: 55
-    t_top_elevation: 63.978
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 63.978
-       -
-         - 0
-         - 55
-       -
-         - 12.1
-         - 55
-       -
-         - 12.1
-         - 63.978
-      left_bank_geometry_coordination:
-       -
-         - 115.56264672398552
-         - 39.4077434776029
-      right_bank_geometry_coordination:
-       -
-         - 115.56361231923088
-         - 39.407378697176874
- -
-  id: 1048
-  type: CrossSection
-  name: QD-8#断面#001
-  parameters:
-    location: 33323
-    bottom_elevation: 55.5
-    t_top_elevation: 63.882
-    t_bottom_width: 12.1
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 63.882
-       -
-         - 0
-         - 55.5
-       -
-         - 12.1
-         - 55.5
-       -
-         - 12.1
-         - 63.882
-      left_bank_geometry_coordination:
-       -
-         - 115.56395851406656
-         - 39.410618467391934
-      right_bank_geometry_coordination:
-       -
-         - 115.56541763577066
-         - 39.410124940933194
- -
-  id: 1049
-  type: CrossSection
-  name: QD-8#断面#002
-  parameters:
-    location: 35299
-    bottom_elevation: 55.065
-    t_top_elevation: 63.791
-    t_bottom_width: 11.9
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 63.791
-       -
-         - 0
-         - 55.065
-       -
-         - 11.9
-         - 55.065
-       -
-         - 11.9
-         - 63.791
-      left_bank_geometry_coordination:
-       -
-         - 115.58129631313884
-         - 39.42218415266415
-      right_bank_geometry_coordination:
-       -
-         - 115.58211170467936
-         - 39.421111269058194
- -
-  id: 1050
-  type: CrossSection
-  name: ZM2-入口断面
-  devices:
-   -
-    device_metrics_code: LevelMeasurementValue
-    device_id: HydroHardware.LevelSensor_SENSOR003
-   -
-    device_metrics_code: FlowMeasurementValue
-    device_id: HydroHardware.FlowSensor_SENSOR003
-  parameters:
-    location: 35560
-    bottom_elevation: 55.596
-    t_top_elevation: 63.676
-    t_bottom_width: 11.9
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 63.676
-       -
-         - 0
-         - 55.596
-       -
-         - 11.9
-         - 55.596
-       -
-         - 11.9
-         - 63.676
-      left_bank_geometry_coordination:
-       -
-         - 115.58344494982407
-         - 39.423468478643045
-      right_bank_geometry_coordination:
-       -
-         - 115.58424621788386
-         - 39.42243911236828
- -
-  id: 1051
-  type: CrossSection
-  name: QD-9#断面#001
-  devices:
-   -
-    device_metrics_code: LevelMeasurementValue
-    device_id: HydroHardware.LevelSensor_SENSOR004
-   -
-    device_metrics_code: FlowMeasurementValue
-    device_id: HydroHardware.FlowSensor_SENSOR004
-  parameters:
-    location: 35571
-    bottom_elevation: 55.596
-    t_top_elevation: 63.676
-    t_bottom_width: 11.9
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 63.676
-       -
-         - 0
-         - 55.596
-       -
-         - 11.9
-         - 55.596
-       -
-         - 11.9
-         - 63.676
-      left_bank_geometry_coordination:
-       -
-         - 115.5833831045645
-         - 39.424166639607265
-      right_bank_geometry_coordination:
-       -
-         - 115.58469202256377
-         - 39.422407110493495
- -
-  id: 1055
-  type: CrossSection
-  name: QD-10#断面#001
-  parameters:
-    location: 43098
-    bottom_elevation: 57.202
-    t_top_elevation: 63.202
-    t_bottom_width: 13
-    t_side_slope_ratio: 2
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 63.202
-       -
-         - 12
-         - 57.202
-       -
-         - 25
-         - 57.202
-       -
-         - 37
-         - 63.202
-      left_bank_geometry_coordination:
-       -
-         - 115.66249946705597
-         - 39.42463862901662
-      right_bank_geometry_coordination:
-       -
-         - 115.66329340092437
-         - 39.42356574541066
- -
-  id: 1057
-  type: CrossSection
-  name: QD-11#断面#001
-  parameters:
-    location: 46526
-    bottom_elevation: 57.06
-    t_top_elevation: 63.049
-    t_bottom_width: 11.4
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 63.049
-       -
-         - 14.9725
-         - 57.06
-       -
-         - 23.4725
-         - 57.06
-       -
-         - 38.445
-         - 63.049
-      left_bank_geometry_coordination:
-       -
-         - 115.68292836244754
-         - 39.447916858600934
-      right_bank_geometry_coordination:
-       -
-         - 115.68402270372562
-         - 39.44802414696153
- -
-  id: 1058
-  type: CrossSection
-  name: QD-11#断面#002
-  parameters:
-    location: 54292
-    bottom_elevation: 53.996
-    t_top_elevation: 62.614
-    t_bottom_width: 11.4
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 62.614
-       -
-         - 0
-         - 53.996
-       -
-         - 11.4
-         - 53.996
-       -
-         - 11.4
-         - 62.614
-      left_bank_geometry_coordination:
-       -
-         - 115.73402222643172
-         - 39.48174705079327
-      right_bank_geometry_coordination:
-       -
-         - 115.73406514177596
-         - 39.48035230210552
- -
-  id: 1059
-  type: CrossSection
-  name: QD-12#断面#001
-  parameters:
-    location: 54970
-    bottom_elevation: 54.53
-    t_top_elevation: 62.369
-    t_bottom_width: 11.4
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 62.369
-       -
-         - 0
-         - 54.53
-       -
-         - 11.4
-         - 54.53
-       -
-         - 11.4
-         - 62.369
-      left_bank_geometry_coordination:
-       -
-         - 115.74224051485335
-         - 39.48161830476055
-      right_bank_geometry_coordination:
-       -
-         - 115.74226197252547
-         - 39.480309386761284
- -
-  id: 1060
-  type: CrossSection
-  name: QD-12#断面#002
-  parameters:
-    location: 57194
-    bottom_elevation: 53.486
-    t_top_elevation: 62.271
-    t_bottom_width: 11.4
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 62.271
-       -
-         - 0
-         - 53.486
-       -
-         - 11.4
-         - 53.486
-       -
-         - 11.4
-         - 62.271
-      left_bank_geometry_coordination:
-       -
-         - 115.766571659632
-         - 39.484588646178665
-      right_bank_geometry_coordination:
-       -
-         - 115.76700081307439
-         - 39.48353722024483
- -
-  id: 1061
-  type: CrossSection
-  name: QD-13#断面#001
-  parameters:
-    location: 57879
-    bottom_elevation: 56.619
-    t_top_elevation: 62.879
-    t_bottom_width: 11.4
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 62.879
-       -
-         - 0
-         - 56.619
-       -
-         - 11.4
-         - 56.619
-       -
-         - 11.4
-         - 62.879
-      left_bank_geometry_coordination:
-       -
-         - 115.77412476021794
-         - 39.48748543191475
-      right_bank_geometry_coordination:
-       -
-         - 115.77476849038152
-         - 39.486047767882766
- -
-  id: 1063
-  type: CrossSection
-  name: QD-14#断面#001
-  parameters:
-    location: 58883
-    bottom_elevation: 56.578
-    t_top_elevation: 62.369
-    t_bottom_width: 11
-    t_side_slope_ratio: 2.5
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 62.369
-       -
-         - 14.477499999999992
-         - 56.578
-       -
-         - 25.477499999999992
-         - 56.578
-       -
-         - 39.954999999999984
-         - 62.369
-      left_bank_geometry_coordination:
-       -
-         - 115.78542720777038
-         - 39.491666023256094
-      right_bank_geometry_coordination:
-       -
-         - 115.78604948026184
-         - 39.49106520843676
- -
-  id: 1064
-  type: CrossSection
-  name: QD-14#断面#002
-  parameters:
-    location: 60828
-    bottom_elevation: 55.974
-    t_top_elevation: 62.271
-    t_bottom_width: 12.7
-    t_side_slope_ratio: 0
-    min_sectional_area: 500
-    cross_section_geometry:
-      data_points:
-       -
-         - 0
-         - 62.271
-       -
-         - 0
-         - 55.974
-       -
-         - 12.7
-         - 55.974
-       -
-         - 12.7
-         - 62.271
-      left_bank_geometry_coordination:
-       -
-         - 115.79135584456995
-         - 39.5075570250372
-      right_bank_geometry_coordination:
-       -
-         - 115.7926433048971
-         - 39.50704204090634
 objects:
  -
   id: 1001
   type: UnifiedCanal
   name: QD-1
-  geometry_coordination:
-   -
-     - 115.39180517604598
-     - 39.203693807483866
-   -
-     - 115.38892325680794
-     - 39.212767327190505
-   -
-     - 115.38961888908734
-     - 39.21624758132455
-   -
-     - 115.44457408177777
-     - 39.24389074387012
-   -
-     - 115.44576659642297
-     - 39.2465755121036
-   -
-     - 115.44457408177777
-     - 39.249956330025924
-   -
-     - 115.43831336093595
-     - 39.25194504762225
-   -
-     - 115.4364252064295
-     - 39.253834329955176
-   -
-     - 115.43563019919331
-     - 39.25820950430493
-   -
-     - 115.43633532416185
-     - 39.26240082680301
-   -
-     - 115.43658319602453
-     - 39.26479836006196
-   -
-     - 115.43661856669796
-     - 39.267358859115234
   initial_state:
     average_water_level: 63.0348223033652
   parameters:
-    location: 0
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1031
-    type: CrossSection
-    name: QD-1#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 2
-    boundary_initial_state: 25.25767096
-   -
-    id: 1032
-    type: CrossSection
-    name: QD-1#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1002
   type: Pipe
@@ -1266,33 +354,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 10133
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.43661856669796
-     - 39.26737603589969
-   -
-     - 115.43715071670458
-     - 39.27240871842495
-  cross_section_children:
-   -
-    id: 1032
-    type: CrossSection
-    name: QD-1#断面#002
-   -
-    id: 1033
-    type: CrossSection
-    name: QD-2#断面#001
   device_children:
    -
     id: 1065
@@ -1304,82 +365,22 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 519
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.1
-      single_orifice_height: 5.1
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: 0
-        c_discharge: 0
+      single_orifice_height: 5.1
+      length: 519
+      single_orifice_width: 5.1
+      manning_n: 0.015
  -
   id: 1003
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.43711339908326
-     - 39.27250108823582
-   -
-     - 115.43835268215138
-     - 39.28443632370795
-   -
-     - 115.44013415266981
-     - 39.28652886415693
-   -
-     - 115.44993224495326
-     - 39.29145021166851
-   -
-     - 115.45082298168981
-     - 39.293155245201795
-   -
-     - 115.45194608363231
-     - 39.29935536730901
-   -
-     - 115.45473753165575
-     - 39.30335282434199
-   -
-     - 115.45554433718661
-     - 39.31487946669529
-   -
-     - 115.45585086046658
-     - 39.325627947317756
   name: QD-2
   initial_state:
     average_water_level: 62.907563085
   parameters:
-    location: 10652
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1033
-    type: CrossSection
-    name: QD-2#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1035
-    type: CrossSection
-    name: QD-3#断面#001
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1004
   type: DisturbanceNode
@@ -1389,21 +390,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 17250
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.45582476287447
-     - 39.325674095395605
   device_children:
    -
     id: 1066
@@ -1414,62 +400,16 @@ objects:
       water_level: 0
       inflow: 0
       water_level_back: 0
-    parameters:
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
  -
   id: 1005
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.45591279479545
-     - 39.32585585181748
-   -
-     - 115.4563637466396
-     - 39.33894572925943
-   -
-     - 115.45817026744366
-     - 39.3514265727782
-   -
-     - 115.45901140845267
-     - 39.352972447669245
   name: QD-3
   initial_state:
     average_water_level: 62.82780435
   parameters:
-    location: 17250
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1035
-    type: CrossSection
-    name: QD-3#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1037
-    type: CrossSection
-    name: QD-4#断面#001
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1006
   type: DisturbanceNode
@@ -1479,21 +419,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 20161
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.45908007326538
-     - 39.35311415302867
   device_children:
    -
     id: 1067
@@ -1504,56 +429,16 @@ objects:
       water_level: 0
       inflow: 0
       water_level_back: 0
-    parameters:
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
  -
   id: 1007
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.45916590395386
-     - 39.353135623517815
-   -
-     - 115.45966372220896
-     - 39.354045972781876
   name: QD-4
   initial_state:
     average_water_level: 62.79996535
   parameters:
-    location: 20161
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1037
-    type: CrossSection
-    name: QD-4#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1038
-    type: CrossSection
-    name: QD-4#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1008
   type: Pipe
@@ -1563,33 +448,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 10133
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.45968247801889
-     - 39.354028863208676
-   -
-     - 115.46167374972961
-     - 39.35794508029824
-  cross_section_children:
-   -
-    id: 1038
-    type: CrossSection
-    name: QD-4#断面#002
-   -
-    id: 1039
-    type: CrossSection
-    name: ZM1-入口断面
   device_children:
    -
     id: 1068
@@ -1601,72 +459,26 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 490
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.5
-      single_orifice_height: 5.5
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: 0
-        c_discharge: 0
+      single_orifice_height: 5.5
+      length: 490
+      single_orifice_width: 5.5
+      manning_n: 0.015
  -
   id: 1009
   type: GateStation
-  geometry_coordination:
-   -
-     - 115.4616576774201
-     - 39.35809389771608
   name: ZM1-北易水倒虹吸出口节制闸
   initial_state:
     outflow: 31.4518086415417
     water_level: 63.0240575682442
     inflow: 30.42490457138925
     water_level_back: 62.3945286588849
-  parameters:
-    location: 20811
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 1
-      beta_h: 3.8361E-4
-      gamma_h: -3.3327E-4
-      delta_down: 0
-      eta_h: -4.8827E-4
-  cross_section_children:
-   -
-    id: 1039
-    type: CrossSection
-    name: ZM1-入口断面
-   -
-    id: 1040
-    type: CrossSection
-    name: QD-5#断面#001
   device_children:
    -
     id: 1041
     type: Gate
     name: ZM1-节制闸#1
-    devices:
-     -
-      device_metrics_code: GateOpening
-      device_id: HydroHardware.WaterGate_GATE001
     initial_state:
       outflow: 15.72590432077085
       water_level: 63.0240575682442
@@ -1676,40 +488,10 @@ objects:
     parameters:
       gate_width: 5.5
       max_opening: 5
-      bottom_elevation: 55.764
-      count_of_gates: 1
-      gate_flow_calculation_method:
-        type: 1
-        free_orifice_flow: 0
-        submerged_orifice_flow: 0
-        free_weir_flow: 0.89
-        submerged_weir_flow: 0
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 1
-        beta_tail: 7.8E-7
-        delta_down: 0
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 0
-        beta_control: 0
-        c_discharge: 15.09671355
    -
     id: 1042
     type: Gate
     name: ZM1-节制闸#2
-    devices:
-     -
-      device_metrics_code: GateOpening
-      device_id: HydroHardware.WaterGate_GATE002
     initial_state:
       outflow: 15.72590432077085
       water_level: 63.0240575682442
@@ -1719,63 +501,16 @@ objects:
     parameters:
       gate_width: 5.5
       max_opening: 5
-      bottom_elevation: 55.764
-      count_of_gates: 1
-      gate_flow_calculation_method:
-        type: 2
-        free_orifice_flow: 0
-        submerged_orifice_flow: 0
-        free_weir_flow: 0.89
-        submerged_weir_flow: 0
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 1
-        beta_tail: 7.8E-7
-        delta_down: 0
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 0
-        beta_control: 0
-        c_discharge: 15.09671355
  -
   id: 1010
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.4616576774201
-     - 39.35809389771608
-   -
-     - 115.46384522390547
-     - 39.36076798339033
   name: QD-5
   initial_state:
     average_water_level: 62.1540568839285
   parameters:
-    location: 20811
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1040
-    type: CrossSection
-    name: QD-5#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1043
-    type: CrossSection
-    name: QD-5#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1011
   type: Pipe
@@ -1785,33 +520,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 21198
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.46385735494505
-     - 39.3607580241307
-   -
-     - 115.46541947321339
-     - 39.36221801739277
-  cross_section_children:
-   -
-    id: 1043
-    type: CrossSection
-    name: QD-5#断面#002
-   -
-    id: 1044
-    type: CrossSection
-    name: QD-6#断面#001
   device_children:
    -
     id: 1069
@@ -1823,76 +531,22 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 187
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.5
-      single_orifice_height: 5.5
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
+      single_orifice_height: 5.5
+      length: 187
+      single_orifice_width: 5.5
+      manning_n: 0.015
  -
   id: 1012
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.46542364011471
-     - 39.36221189537108
-   -
-     - 115.46858220905774
-     - 39.36557846780741
-   -
-     - 115.47076230933085
-     - 39.36652316932992
-   -
-     - 115.47453885962382
-     - 39.36681516811338
-   -
-     - 115.49014287905081
-     - 39.36714151882765
-   -
-     - 115.50790292979603
-     - 39.367696847365465
-   -
-     - 115.5204255295199
-     - 39.366917774578745
   name: QD-6
   initial_state:
     average_water_level: 62.1097009392021
   parameters:
-    manning_n: 0.018
-    location: 21450
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1044
-    type: CrossSection
-    name: QD-6#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1045
-    type: CrossSection
-    name: QD-6#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1013
   type: Pipe
@@ -1902,33 +556,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 26385
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.5204444788178
-     - 39.36690438074739
-   -
-     - 115.52319106084904
-     - 39.36674979296343
-  cross_section_children:
-   -
-    id: 1045
-    type: CrossSection
-    name: QD-6#断面#002
-   -
-    id: 1046
-    type: CrossSection
-    name: QD-7#断面#001
   device_children:
    -
     id: 1070
@@ -1940,73 +567,22 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 191
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.5
-      single_orifice_height: 5.6
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
+      single_orifice_height: 5.6
+      length: 191
+      single_orifice_width: 5.5
+      manning_n: 0.015
  -
   id: 1014
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.52320893271046
-     - 39.366733308604886
-   -
-     - 115.53246148119017
-     - 39.36609778265028
-   -
-     - 115.5348754018628
-     - 39.36615021218553
-   -
-     - 115.54609315548743
-     - 39.372141914029285
-   -
-     - 115.5591073466228
-     - 39.39419137711904
-   -
-     - 115.56312757517725
-     - 39.40758433056562
   name: QD-7
   initial_state:
     average_water_level: 62.019948581608
   parameters:
-    location: 26576
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1046
-    type: CrossSection
-    name: QD-7#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1047
-    type: CrossSection
-    name: QD-7#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1015
   type: Pipe
@@ -2016,33 +592,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 33026
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.56319745102967
-     - 39.40762278472785
-   -
-     - 115.56483541196944
-     - 39.41050003431455
-  cross_section_children:
-   -
-    id: 1047
-    type: CrossSection
-    name: QD-7#断面#002
-   -
-    id: 1048
-    type: CrossSection
-    name: QD-8#断面#001
   device_children:
    -
     id: 1071
@@ -2054,64 +603,22 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 297
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.5
-      single_orifice_height: 5.6
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
+      single_orifice_height: 5.6
+      length: 297
+      single_orifice_width: 5.5
+      manning_n: 0.015
  -
   id: 1016
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.56489792333389
-     - 39.4103539475031
-   -
-     - 115.56553012685153
-     - 39.411724538193056
-   -
-     - 115.5817917770435
-     - 39.42167010237372
   name: QD-8
   initial_state:
     average_water_level: 61.9570745782143
   parameters:
-    location: 33323
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1048
-    type: CrossSection
-    name: QD-8#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1049
-    type: CrossSection
-    name: QD-8#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1017
   type: Pipe
@@ -2121,33 +628,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 35299
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.58180655531388
-     - 39.42163713292458
-   -
-     - 115.58407248496579
-     - 39.42306277327297
-  cross_section_children:
-   -
-    id: 1049
-    type: CrossSection
-    name: QD-8#断面#002
-   -
-    id: 1050
-    type: CrossSection
-    name: ZM2-入口断面
   device_children:
    -
     id: 1072
@@ -2159,72 +639,26 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 213
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.4
-      single_orifice_height: 5.4
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
+      single_orifice_height: 5.4
+      length: 213
+      single_orifice_width: 5.4
+      manning_n: 0.015
  -
   id: 1018
   type: GateStation
-  geometry_coordination:
-   -
-     - 115.58417548283971
-     - 39.42314006782017
   name: ZM2-坟庄河倒虹吸出口节制闸
   initial_state:
     outflow: 30.5577149661082
     water_level: 62.1048113265128
     water_level_back: 60.9099998474121
     inflow: 27.057717620015
-  parameters:
-    location: 35571
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 1
-      beta_h: 0.00257978
-      gamma_h: -0.00257978
-      delta_down: 0
-      eta_h: 0
-  cross_section_children:
-   -
-    id: 1050
-    type: CrossSection
-    name: ZM2-入口断面
-   -
-    id: 1051
-    type: CrossSection
-    name: QD-9#断面#001
   device_children:
    -
     id: 1052
     type: Gate
     name: ZM2-节制闸#1
-    devices:
-     -
-      device_metrics_code: GateOpening
-      device_id: HydroHardware.WaterGate_GATE003
     initial_state:
       outflow: 15.2788574830541
       water_level: 62.1048113265128
@@ -2234,40 +668,10 @@ objects:
     parameters:
       gate_width: 5.4
       max_opening: 5
-      bottom_elevation: 55.596
-      count_of_gates: 1
-      gate_flow_calculation_method:
-        type: 2
-        free_orifice_flow: 0
-        submerged_orifice_flow: 0
-        free_weir_flow: 0.89
-        submerged_weir_flow: 0
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 1
-        beta_tail: 1.31E-6
-        delta_down: 0
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 0
-        beta_control: 0
-        c_discharge: 14.82222785
    -
     id: 1053
     type: Gate
     name: ZM2-节制闸#2
-    devices:
-     -
-      device_metrics_code: GateOpening
-      device_id: HydroHardware.WaterGate_GATE004
     initial_state:
       outflow: 15.2788574830541
       water_level: 62.1048113265128
@@ -2277,99 +681,16 @@ objects:
     parameters:
       gate_width: 5.4
       max_opening: 5
-      bottom_elevation: 55.596
-      count_of_gates: 1
-      gate_flow_calculation_method:
-        type: 2
-        free_orifice_flow: 0
-        submerged_orifice_flow: 0
-        free_weir_flow: 0.89
-        submerged_weir_flow: 0
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 1
-        beta_tail: 1.31E-6
-        delta_down: 0
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 0
-        beta_control: 0
-        c_discharge: 14.82222785
  -
   id: 1019
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.58417548283971
-     - 39.42314006782017
-   -
-     - 115.58985276957455
-     - 39.42658560808283
-   -
-     - 115.60386811597098
-     - 39.4297561882695
-   -
-     - 115.60664071664102
-     - 39.42951229659133
-   -
-     - 115.6095047226739
-     - 39.427835547700155
-   -
-     - 115.6110890675743
-     - 39.42585393537423
-   -
-     - 115.61867563597988
-     - 39.42237849291576
-   -
-     - 115.6239466258805
-     - 39.421738279005005
-   -
-     - 115.63890648428657
-     - 39.420732229902896
-   -
-     - 115.6474375635395
-     - 39.41945180324433
-   -
-     - 115.65343978704468
-     - 39.4185981858596
-   -
-     - 115.65459757745941
-     - 39.418689644657434
-   -
-     - 115.65639519844039
-     - 39.41975666667909
-   -
-     - 115.6629458494735
-     - 39.424207672942856
   name: QD-9
   initial_state:
     average_water_level: 60.7252952226817
   parameters:
-    location: 35571
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1051
-    type: CrossSection
-    name: QD-9#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1055
-    type: CrossSection
-    name: QD-10#断面#001
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1020
   type: DisturbanceNode
@@ -2379,21 +700,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 43098
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.66305603604688
-     - 39.424318600228986
   device_children:
    -
     id: 1073
@@ -2404,80 +710,16 @@ objects:
       water_level: 0
       inflow: 0
       water_level_back: 0
-    parameters:
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
  -
   id: 1021
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.66315704707726
-     - 39.424304086212395
-   -
-     - 115.66478208858646
-     - 39.42535620980501
-   -
-     - 115.66988025452362
-     - 39.43093566205502
-   -
-     - 115.67166461497185
-     - 39.431987786863864
-   -
-     - 115.67886577558876
-     - 39.43428333267529
-   -
-     - 115.68033149815895
-     - 39.435048513801625
-   -
-     - 115.68198840151116
-     - 39.43798171115977
-   -
-     - 115.68431444124695
-     - 39.44260468487349
-   -
-     - 115.68405500099087
-     - 39.4442620642576
-   -
-     - 115.68360868167272
-     - 39.44785192997764
   name: QD-10
   initial_state:
     average_water_level: 60.59517998125
   parameters:
-    location: 43098
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1055
-    type: CrossSection
-    name: QD-10#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1057
-    type: CrossSection
-    name: QD-11#断面#001
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1022
   type: DisturbanceNode
@@ -2487,21 +729,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 46526
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.68361179128283
-     - 39.44800554478439
   device_children:
    -
     id: 1074
@@ -2512,86 +739,16 @@ objects:
       water_level: 0
       inflow: 0
       water_level_back: 0
-    parameters:
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
  -
   id: 1023
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.68356239826215
-     - 39.448001880360444
-   -
-     - 115.68258392762772
-     - 39.44966798979416
-   -
-     - 115.67806923419965
-     - 39.45265668214566
-   -
-     - 115.67695343459462
-     - 39.45449455614778
-   -
-     - 115.67695343459462
-     - 39.45626372465015
-   -
-     - 115.67842972282932
-     - 39.45859971360737
-   -
-     - 115.67961418659223
-     - 39.45918371101048
-   -
-     - 115.68267232772264
-     - 39.46115097401627
-   -
-     - 115.69160188129884
-     - 39.47525430207563
-   -
-     - 115.69649154991217
-     - 39.48217272725703
-   -
-     - 115.70019699985896
-     - 39.4830518638947
-   -
-     - 115.73397728480394
-     - 39.481204485164625
   name: QD-11
   initial_state:
     average_water_level: 60.5142415898763
   parameters:
-    location: 46526
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1057
-    type: CrossSection
-    name: QD-11#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1058
-    type: CrossSection
-    name: QD-11#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1024
   type: Pipe
@@ -2601,33 +758,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 54292
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.73398628342682
-     - 39.48117039572015
-   -
-     - 115.74210570143794
-     - 39.48101382497148
-  cross_section_children:
-   -
-    id: 1058
-    type: CrossSection
-    name: QD-11#断面#002
-   -
-    id: 1059
-    type: CrossSection
-    name: QD-12#断面#001
   device_children:
    -
     id: 1075
@@ -2639,64 +769,22 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 678
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.1
-      single_orifice_height: 5.1
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
+      single_orifice_height: 5.1
+      length: 678
+      single_orifice_width: 5.1
+      manning_n: 0.015
  -
   id: 1025
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.74232526024879
-     - 39.481015657576684
-   -
-     - 115.75702708648882
-     - 39.480889566986335
-   -
-     - 115.76698232074729
-     - 39.48395777883371
   name: QD-12
   initial_state:
     average_water_level: 60.4131184179166
   parameters:
-    location: 54970
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1059
-    type: CrossSection
-    name: QD-12#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1060
-    type: CrossSection
-    name: QD-12#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1026
   type: Pipe
@@ -2706,33 +794,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 57194
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.7673950285383
-     - 39.48410141147897
-   -
-     - 115.77472973170552
-     - 39.48650329259839
-  cross_section_children:
-   -
-    id: 1060
-    type: CrossSection
-    name: QD-12#断面#002
-   -
-    id: 1061
-    type: CrossSection
-    name: QD-13#断面#001
   device_children:
    -
     id: 1076
@@ -2744,30 +805,12 @@ objects:
       inflow: 0
       water_level_back: 0
     parameters:
-      length: 685
-      manning_n: 0.015
       orifice_count: 2
-      single_orifice_width: 5.1
-      single_orifice_height: 5.1
       loss_coeff: 1
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
+      single_orifice_height: 5.1
+      length: 685
+      single_orifice_width: 5.1
+      manning_n: 0.015
  -
   id: 1027
   type: DisturbanceNode
@@ -2777,21 +820,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 57879
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.77499644920177
-     - 39.48645325542329
   device_children:
    -
     id: 1077
@@ -2802,56 +830,16 @@ objects:
       water_level: 0
       inflow: 0
       water_level_back: 0
-    parameters:
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
  -
   id: 1028
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.77532984480027
-     - 39.48680353091973
-   -
-     - 115.78460602262518
-     - 39.490083613357385
   name: QD-13
   initial_state:
     average_water_level: 60.32208763625
   parameters:
-    location: 57879
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1061
-    type: CrossSection
-    name: QD-13#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1063
-    type: CrossSection
-    name: QD-14#断面#001
-    interpolate_cross_section_count: 0
-    boundary_type: 0
+    coefficient: 1.0
+    manning_n: 0.018
  -
   id: 1029
   type: DisturbanceNode
@@ -2861,21 +849,6 @@ objects:
     water_level: 0
     inflow: 0
     water_level_back: 0
-  parameters:
-    location: 58883
-    f1:
-      latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
-        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
-        \ + \\eta_{h} \\cdot 1"
-      alpha_h: 0
-      beta_h: 0
-      gamma_h: 0
-      delta_down: 1
-      eta_h: 0
-  geometry_coordination:
-   -
-     - 115.78473688812633
-     - 39.49024310419857
   device_children:
    -
     id: 1078
@@ -2886,54 +859,15 @@ objects:
       water_level: 0
       inflow: 0
       water_level_back: 0
-    parameters:
-      f2:
-        latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
-          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
-          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
-          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
-        alpha_tail: 0
-        beta_tail: 0
-        delta_down: 1
-        theta_down: 0
-        epsilon_db: 0
-        zeta_tail: 0
-      f3:
-        latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
-          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
-          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
-        alpha_inflow: 1
-        beta_control: -1
-        c_discharge: 0
  -
   id: 1030
   type: UnifiedCanal
-  geometry_coordination:
-   -
-     - 115.78480555293905
-     - 39.490247398558495
-   -
-     - 115.79178680062886
-     - 39.50698359113777
   name: QD-14
   initial_state:
     average_water_level: 60.2765722454167
   parameters:
-    location: 58883
-    manning_n: 0.018
-    coefficient: 1.0
     delay: 1
-  cross_section_children:
-   -
-    id: 1063
-    type: CrossSection
-    name: QD-14#断面#001
-    interpolate_cross_section_count: 5
-    boundary_type: 0
-   -
-    id: 1064
-    type: CrossSection
-    name: QD-14#断面#002
-    interpolate_cross_section_count: 0
-    boundary_type: 2
-    boundary_initial_state: -25.25767096
+    coefficient: 1.0
+    manning_n: 0.018
+
+
