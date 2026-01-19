@@ -33,7 +33,7 @@ components:
         server_uri: tcp://192.168.1.24:1883
       mqtt_topic: +/hydros/simulation/jobs/+/realtime/objects
     step_speed: 1.0
-    hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
+    hydro_dynamic_simulation_endpoint: 192.168.1.6:8000
     step_resolution: 60
     driven_by_coordinator: true
     hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/ontology_simulation/hydro_dyn_config.yaml
