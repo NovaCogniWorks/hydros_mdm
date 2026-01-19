@@ -71,7 +71,9 @@ cross_sections:
        -
          - 102.34680073606836
          - 29.226532640199952
+    boundary_initial_state: 334.0
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 0
     boundary_type: 2
     min_sectional_area: 250000
@@ -166,6 +168,7 @@ cross_sections:
          - 102.357112887
          - 29.24136466
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 875
     boundary_type: 0
  -
@@ -268,6 +271,7 @@ cross_sections:
          - 102.369303442
          - 29.244414274
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 2252.99
     boundary_type: 0
  -
@@ -466,6 +470,7 @@ cross_sections:
          - 102.38063888
          - 29.248705808
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 4049.44
     boundary_type: 0
  -
@@ -826,6 +831,7 @@ cross_sections:
          - 102.395128658
          - 29.245690557
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 5319.44
     boundary_type: 0
  -
@@ -1147,6 +1153,7 @@ cross_sections:
          - 102.409705418
          - 29.245213719
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 7275.78
     boundary_type: 0
  -
@@ -1885,6 +1892,7 @@ cross_sections:
          - 102.417118919
          - 29.251275743
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 8159.55
     boundary_type: 0
  -
@@ -2584,6 +2592,7 @@ cross_sections:
          - 102.417016762
          - 29.256615388
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 8997.42
     boundary_type: 0
  -
@@ -2965,6 +2974,7 @@ cross_sections:
          - 102.421320757
          - 29.257293438
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 9873.19
     boundary_type: 0
  -
@@ -3619,6 +3629,7 @@ cross_sections:
          - 102.432064167
          - 29.252292822
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 11059.4
     boundary_type: 0
  -
@@ -3952,6 +3963,7 @@ cross_sections:
          - 102.452338516
          - 29.258133485
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 13441.9
     boundary_type: 0
  -
@@ -4438,6 +4450,7 @@ cross_sections:
          - 102.458247494
          - 29.273591419
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 15765.3
     boundary_type: 0
  -
@@ -4945,6 +4958,7 @@ cross_sections:
          - 102.46942069
          - 29.273421551
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 16814.1
     boundary_type: 0
  -
@@ -5722,6 +5736,7 @@ cross_sections:
          - 102.480254249
          - 29.258643091
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 17900.8
     boundary_type: 0
  -
@@ -6652,6 +6667,7 @@ cross_sections:
          - 102.496092994
          - 29.266157961
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 19343.6
     boundary_type: 0
  -
@@ -7405,6 +7421,7 @@ cross_sections:
          - 102.503888529
          - 29.276887892
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 21080.8
     boundary_type: 0
  -
@@ -8248,6 +8265,7 @@ cross_sections:
          - 102.52528844
          - 29.281860298
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 22497.7
     boundary_type: 0
  -
@@ -8956,6 +8974,7 @@ cross_sections:
          - 102.553752127
          - 29.298347754
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 24207.9
     boundary_type: 0
  -
@@ -9850,6 +9869,7 @@ cross_sections:
          - 102.559193061
          - 29.324518301
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 25721.6
     boundary_type: 0
  -
@@ -11059,6 +11079,7 @@ cross_sections:
          - 102.578238371
          - 29.308030861
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 26901
     boundary_type: 0
  -
@@ -12019,6 +12040,7 @@ cross_sections:
          - 102.606883333
          - 29.320933546
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 27885.6
     boundary_type: 0
  -
@@ -13012,6 +13034,7 @@ cross_sections:
          - 102.616195491
          - 29.325644247
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 29573.4
     boundary_type: 0
  -
@@ -14254,6 +14277,7 @@ cross_sections:
          - 102.635972532
          - 29.31255899
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 30606.1
     boundary_type: 0
  -
@@ -15742,6 +15766,7 @@ cross_sections:
          - 102.659935487
          - 29.302614181
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 31772.1
     boundary_type: 0
  -
@@ -17089,6 +17114,7 @@ cross_sections:
          - 102.682328745
          - 29.31831649
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 33143.5
     boundary_type: 0
  -
@@ -18691,6 +18717,7 @@ cross_sections:
          - 102.700012801
          - 29.313605806
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 34630.9
     boundary_type: 0
  -
@@ -21331,6 +21358,7 @@ cross_sections:
          - 102.719266553
          - 29.303137599
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 36580.9
     boundary_type: 0
  -
@@ -23737,6 +23765,7 @@ cross_sections:
          - 102.728849966
          - 29.300791627
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 38450.4
     boundary_type: 0
  -
@@ -26167,6 +26196,7 @@ cross_sections:
          - 102.73655383
          - 29.301041012
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 39372.3
     boundary_type: 0
  -
@@ -28624,6 +28654,7 @@ cross_sections:
          - 102.744131247
          - 29.300571174
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 40285.9
     boundary_type: 0
  -
@@ -31327,6 +31358,7 @@ cross_sections:
          - 102.752648037
          - 29.306365856
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 41168.7
     boundary_type: 0
  -
@@ -33835,6 +33867,7 @@ cross_sections:
          - 102.757955292
          - 29.308480134
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 42258.8
     boundary_type: 0
  -
@@ -35455,6 +35488,7 @@ cross_sections:
          - 102.766002395
          - 29.30965473
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 43121.3
     boundary_type: 0
  -
@@ -36793,6 +36827,7 @@ cross_sections:
          - 102.776163107
          - 29.307853685
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 45105.4
     boundary_type: 0
  -
@@ -37900,6 +37935,7 @@ cross_sections:
          - 102.784914749
          - 29.306914004
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 46303.1
     boundary_type: 0
  -
@@ -39505,6 +39541,7 @@ cross_sections:
          - 102.790902093
          - 29.303119814
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 47789.6
     boundary_type: 0
  -
@@ -41029,6 +41066,7 @@ cross_sections:
          - 102.796641097
          - 29.300221546
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 49195.5
     boundary_type: 0
  -
@@ -41995,6 +42033,7 @@ cross_sections:
          - 102.804844764
          - 29.293330574
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 50281.8
     boundary_type: 0
  -
@@ -42472,6 +42511,7 @@ cross_sections:
          - 102.813359634
          - 29.28534724
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 53282.8
     boundary_type: 0
  -
@@ -42988,6 +43028,7 @@ cross_sections:
          - 102.812326074
          - 29.279709174
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 54095.5
     boundary_type: 0
  -
@@ -43474,6 +43515,7 @@ cross_sections:
          - 102.808004695
          - 29.274932479
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 55033
     boundary_type: 0
  -
@@ -43945,6 +43987,7 @@ cross_sections:
          - 102.805483787
          - 29.263343117
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 56048
     boundary_type: 0
  -
@@ -44539,6 +44582,7 @@ cross_sections:
          - 102.811339004
          - 29.251205615
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 57425.9
     boundary_type: 0
  -
@@ -45082,6 +45126,7 @@ cross_sections:
          - 102.820951744
          - 29.246742145
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 58954.9
     boundary_type: 0
  -
@@ -45640,6 +45685,7 @@ cross_sections:
          - 102.828515022
          - 29.245847563
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 59764.6
     boundary_type: 0
  -
@@ -46246,6 +46292,7 @@ cross_sections:
          - 102.830012369
          - 29.239774032
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 63468.8
     boundary_type: 0
  -
@@ -46786,6 +46833,7 @@ cross_sections:
          - 102.82928347
          - 29.233295594
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 65632.7
     boundary_type: 0
  -
@@ -47278,6 +47326,7 @@ cross_sections:
          - 102.829465302
          - 29.226715928
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 66511.7
     boundary_type: 0
  -
@@ -47887,6 +47936,7 @@ cross_sections:
          - 102.830456677
          - 29.220035039
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 67427.7
     boundary_type: 0
  -
@@ -48543,7 +48593,9 @@ cross_sections:
        -
          - 102.832257614
          - 29.21092474
+    boundary_initial_state: 534.67
     cross_section_type: Irregular
+    interpolate_cross_section_count: 0
     location: 68229.7
     boundary_type: 1
     min_sectional_area: 250000

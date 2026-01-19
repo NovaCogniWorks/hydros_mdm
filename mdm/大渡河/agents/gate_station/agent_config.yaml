@@ -7,6 +7,9 @@ release_at: 2025/12/20
 author:
   user_name: 黄军平
 description: 执行人工闸门开度指令或MPC下发的目标水位等电机操作指令
+waterway:
+  waterway_id: 60
+  waterway_name: 大渡河
 properties:
   hydro_environment_type: NORMAL
   hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
