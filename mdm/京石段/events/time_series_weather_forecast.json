@@ -1,0 +1,71 @@
+{
+  "hydro_event_type": "TIME_SERIES_DATA_UPDATED",
+  "hydro_event_id": "TS_DEFAULT_WEATHER_FORECAST_00000001",
+  "hydro_event_name": "天气预报预制模板",
+  "auto_schedule_at_step": -1,
+  "object_time_series": [
+    {
+      "time_series_name": "天气预报旁侧入流流量时间序列",
+      "object_id": 1012,
+      "object_type": "UnifiedCanal",
+      "object_name": "QD-6",
+      "metrics_code": "water_flow",
+      "time_series": [
+        {
+          "step": 600,
+          "value": 26.51391526
+        },
+        {
+          "step": 720,
+          "value": 28.81300714
+        },
+        {
+          "step": 840,
+          "value": 27.206448
+        },
+        {
+          "step": 960,
+          "value": 27.04495894
+        },
+        {
+          "step": 1080,
+          "value": 27.78208941
+        },
+        {
+          "step": 1200,
+          "value": 28.54880891
+        },
+        {
+          "step": 1320,
+          "value": 27.56
+        },
+        {
+          "step": 1440,
+          "value": 26.0583133
+        },
+        {
+          "step": 1560,
+          "value": 27.60811142
+        },
+        {
+          "step": 1680,
+          "value": 27.5377418
+        },
+        {
+          "step": 1800,
+          "value": 27.75938999
+        },
+        {
+          "step": 1920,
+          "value": 27.90066712
+        },
+        {
+          "step": 2040,
+          "value": 27.04867572
+        }
+      ]
+    }
+  ],
+  "priority": "HIGH",
+  "valid": true
+}

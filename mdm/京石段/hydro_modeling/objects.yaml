@@ -339,102 +339,851 @@ cross_sections:
   id: 1031
   type: CrossSection
   name: QD-1#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 62.992
+       -
+         - 0
+         - 57.492
+       -
+         - 10
+         - 57.492
+       -
+         - 10
+         - 62.992
+      left_bank_geometry_coordination:
+       -
+         - 115.39067441212269
+         - 39.20365984770055
+      right_bank_geometry_coordination:
+       -
+         - 115.3923695682201
+         - 39.204003170454456
+    bottom_elevation: 57.492
+    boundary_initial_state: 25.25767096
+    cross_section_type: trapezoidal
+    interpolate_cross_section_count: 5
+    location: 0
+    t_bottom_width: 10
+    t_side_slope_ratio: 0
+    boundary_type: 2
+    min_sectional_area: 500
  -
   id: 1032
   type: CrossSection
   name: QD-1#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 65.31
+       -
+         - 15.257500000000004
+         - 59.207
+       -
+         - 26.457500000000003
+         - 59.207
+       -
+         - 41.715
+         - 65.31
+      left_bank_geometry_coordination:
+       -
+         - 115.43587566791315
+         - 39.26749549940032
+      right_bank_geometry_coordination:
+       -
+         - 115.43748499332209
+         - 39.26740966871184
+    bottom_elevation: 59.207
+    interpolate_cross_section_count: 0
+    location: 10133
+    t_bottom_width: 11.2
+    t_side_slope_ratio: 2.5
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1033
   type: CrossSection
   name: QD-2#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 65.31
+       -
+         - 15.2575
+         - 59.207
+       -
+         - 26.4575
+         - 59.207
+       -
+         - 41.715
+         - 65.31
+      left_bank_geometry_coordination:
+       -
+         - 115.43626190601131
+         - 39.27231274679107
+      right_bank_geometry_coordination:
+       -
+         - 115.43787123142025
+         - 39.27218400075836
+    bottom_elevation: 59.207
+    interpolate_cross_section_count: 5
+    location: 10652
+    t_bottom_width: 11.2
+    t_side_slope_ratio: 2.5
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1035
   type: CrossSection
   name: QD-3#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.73
+       -
+         - 4.801600000000002
+         - 58.737
+       -
+         - 13.801600000000002
+         - 58.737
+       -
+         - 18.603200000000005
+         - 64.73
+      left_bank_geometry_coordination:
+       -
+         - 115.45516611514827
+         - 39.32642899587554
+      right_bank_geometry_coordination:
+       -
+         - 115.45658232150814
+         - 39.326493368891896
+    bottom_elevation: 58.737
+    interpolate_cross_section_count: 5
+    location: 17250
+    t_bottom_width: 9
+    t_side_slope_ratio: 0.8
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1037
   type: CrossSection
   name: QD-4#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.723
+       -
+         - 15.177499999999995
+         - 58.652
+       -
+         - 22.677499999999995
+         - 58.652
+       -
+         - 37.85499999999999
+         - 64.723
+      left_bank_geometry_coordination:
+       -
+         - 115.45898819875846
+         - 39.354108864647245
+      right_bank_geometry_coordination:
+       -
+         - 115.4603829474462
+         - 39.353615338188504
+    bottom_elevation: 58.652
+    interpolate_cross_section_count: 5
+    location: 20161
+    t_bottom_width: 7.5
+    t_side_slope_ratio: 2.5
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1038
   type: CrossSection
   name: QD-4#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.721
+       -
+         - 0
+         - 55.674
+       -
+         - 12.1
+         - 55.674
+       -
+         - 12.1
+         - 64.721
+      left_bank_geometry_coordination:
+       -
+         - 115.45973921728263
+         - 39.35522466359744
+      right_bank_geometry_coordination:
+       -
+         - 115.46089793157707
+         - 39.35479551015506
+    bottom_elevation: 55.674
+    interpolate_cross_section_count: 0
+    location: 20339
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1039
   type: CrossSection
   name: ZM1-入口断面
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.764
+       -
+         - 0
+         - 55.764
+       -
+         - 12.1
+         - 55.764
+       -
+         - 12.1
+         - 64.764
+      left_bank_geometry_coordination:
+       -
+         - 115.46069525447362
+         - 39.35789033051253
+      right_bank_geometry_coordination:
+       -
+         - 115.46224055800246
+         - 39.3573947102953
+    bottom_elevation: 55.764
+    location: 20800
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    min_sectional_area: 500
  -
   id: 1040
   type: CrossSection
   name: QD-5#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.764
+       -
+         - 0
+         - 55.764
+       -
+         - 12.1
+         - 55.764
+       -
+         - 12.1
+         - 64.764
+      left_bank_geometry_coordination:
+       -
+         - 115.46079064321646
+         - 39.358142907005636
+      right_bank_geometry_coordination:
+       -
+         - 115.46239996862539
+         - 39.35771375356325
+    bottom_elevation: 55.764
+    interpolate_cross_section_count: 5
+    location: 20811
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1043
   type: CrossSection
   name: QD-5#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.477
+       -
+         - 0
+         - 55.556
+       -
+         - 12.1
+         - 55.556
+       -
+         - 12.1
+         - 64.477
+      left_bank_geometry_coordination:
+       -
+         - 115.46333689368672
+         - 39.361150497426436
+      right_bank_geometry_coordination:
+       -
+         - 115.4645599809975
+         - 39.36052822493498
+    bottom_elevation: 55.556
+    interpolate_cross_section_count: 0
+    location: 21198
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1044
   type: CrossSection
   name: QD-6#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.589
+       -
+         - 0
+         - 56.241
+       -
+         - 12.1
+         - 56.241
+       -
+         - 12.1
+         - 64.589
+      left_bank_geometry_coordination:
+       -
+         - 115.46513933814472
+         - 39.362910026540206
+      right_bank_geometry_coordination:
+       -
+         - 115.46629805243916
+         - 39.362159008016036
+    bottom_elevation: 56.241
+    interpolate_cross_section_count: 5
+    location: 21450
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1045
   type: CrossSection
   name: QD-6#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.354
+       -
+         - 0
+         - 55.31
+       -
+         - 12.1
+         - 55.31
+       -
+         - 12.1
+         - 64.354
+      left_bank_geometry_coordination:
+       -
+         - 115.52048292984821
+         - 39.36761816231692
+      right_bank_geometry_coordination:
+       -
+         - 115.52050438752033
+         - 39.36615904061282
+    bottom_elevation: 55.31
+    interpolate_cross_section_count: 0
+    location: 26385
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1046
   type: CrossSection
   name: QD-7#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 64.282
+       -
+         - 0
+         - 55.892
+       -
+         - 12.1
+         - 55.892
+       -
+         - 12.1
+         - 64.282
+      left_bank_geometry_coordination:
+       -
+         - 115.52310076584675
+         - 39.36742504326785
+      right_bank_geometry_coordination:
+       -
+         - 115.52318659653523
+         - 39.36590154854739
+    bottom_elevation: 55.892
+    interpolate_cross_section_count: 5
+    location: 26576
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1047
   type: CrossSection
   name: QD-7#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 63.978
+       -
+         - 0
+         - 55
+       -
+         - 12.1
+         - 55
+       -
+         - 12.1
+         - 63.978
+      left_bank_geometry_coordination:
+       -
+         - 115.56264672398552
+         - 39.4077434776029
+      right_bank_geometry_coordination:
+       -
+         - 115.56361231923088
+         - 39.407378697176874
+    bottom_elevation: 55
+    interpolate_cross_section_count: 0
+    location: 33026
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1048
   type: CrossSection
   name: QD-8#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 63.882
+       -
+         - 0
+         - 55.5
+       -
+         - 12.1
+         - 55.5
+       -
+         - 12.1
+         - 63.882
+      left_bank_geometry_coordination:
+       -
+         - 115.56395851406656
+         - 39.410618467391934
+      right_bank_geometry_coordination:
+       -
+         - 115.56541763577066
+         - 39.410124940933194
+    bottom_elevation: 55.5
+    interpolate_cross_section_count: 5
+    location: 33323
+    t_bottom_width: 12.1
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1049
   type: CrossSection
   name: QD-8#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 63.791
+       -
+         - 0
+         - 55.065
+       -
+         - 11.9
+         - 55.065
+       -
+         - 11.9
+         - 63.791
+      left_bank_geometry_coordination:
+       -
+         - 115.58129631313884
+         - 39.42218415266415
+      right_bank_geometry_coordination:
+       -
+         - 115.58211170467936
+         - 39.421111269058194
+    bottom_elevation: 55.065
+    interpolate_cross_section_count: 0
+    location: 35299
+    t_bottom_width: 11.9
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1050
   type: CrossSection
   name: ZM2-入口断面
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 63.676
+       -
+         - 0
+         - 55.596
+       -
+         - 11.9
+         - 55.596
+       -
+         - 11.9
+         - 63.676
+      left_bank_geometry_coordination:
+       -
+         - 115.58344494982407
+         - 39.423468478643045
+      right_bank_geometry_coordination:
+       -
+         - 115.58424621788386
+         - 39.42243911236828
+    bottom_elevation: 55.596
+    location: 35560
+    t_bottom_width: 11.9
+    t_side_slope_ratio: 0
+    min_sectional_area: 500
  -
   id: 1051
   type: CrossSection
   name: QD-9#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 63.676
+       -
+         - 0
+         - 55.596
+       -
+         - 11.9
+         - 55.596
+       -
+         - 11.9
+         - 63.676
+      left_bank_geometry_coordination:
+       -
+         - 115.5833831045645
+         - 39.424166639607265
+      right_bank_geometry_coordination:
+       -
+         - 115.58469202256377
+         - 39.422407110493495
+    bottom_elevation: 55.596
+    interpolate_cross_section_count: 5
+    location: 35571
+    t_bottom_width: 11.9
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1055
   type: CrossSection
   name: QD-10#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 63.202
+       -
+         - 12
+         - 57.202
+       -
+         - 25
+         - 57.202
+       -
+         - 37
+         - 63.202
+      left_bank_geometry_coordination:
+       -
+         - 115.66249946705597
+         - 39.42463862901662
+      right_bank_geometry_coordination:
+       -
+         - 115.66329340092437
+         - 39.42356574541066
+    bottom_elevation: 57.202
+    interpolate_cross_section_count: 5
+    location: 43098
+    t_bottom_width: 13
+    t_side_slope_ratio: 2
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1057
   type: CrossSection
   name: QD-11#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 63.049
+       -
+         - 14.9725
+         - 57.06
+       -
+         - 23.4725
+         - 57.06
+       -
+         - 38.445
+         - 63.049
+      left_bank_geometry_coordination:
+       -
+         - 115.68292836244754
+         - 39.447916858600934
+      right_bank_geometry_coordination:
+       -
+         - 115.68402270372562
+         - 39.44802414696153
+    bottom_elevation: 57.06
+    interpolate_cross_section_count: 5
+    location: 46526
+    t_bottom_width: 11.4
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1058
   type: CrossSection
   name: QD-11#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 62.614
+       -
+         - 0
+         - 53.996
+       -
+         - 11.4
+         - 53.996
+       -
+         - 11.4
+         - 62.614
+      left_bank_geometry_coordination:
+       -
+         - 115.73402222643172
+         - 39.48174705079327
+      right_bank_geometry_coordination:
+       -
+         - 115.73406514177596
+         - 39.48035230210552
+    bottom_elevation: 53.996
+    interpolate_cross_section_count: 0
+    location: 54292
+    t_bottom_width: 11.4
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1059
   type: CrossSection
   name: QD-12#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 62.369
+       -
+         - 0
+         - 54.53
+       -
+         - 11.4
+         - 54.53
+       -
+         - 11.4
+         - 62.369
+      left_bank_geometry_coordination:
+       -
+         - 115.74224051485335
+         - 39.48161830476055
+      right_bank_geometry_coordination:
+       -
+         - 115.74226197252547
+         - 39.480309386761284
+    bottom_elevation: 54.53
+    interpolate_cross_section_count: 5
+    location: 54970
+    t_bottom_width: 11.4
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1060
   type: CrossSection
   name: QD-12#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 62.271
+       -
+         - 0
+         - 53.486
+       -
+         - 11.4
+         - 53.486
+       -
+         - 11.4
+         - 62.271
+      left_bank_geometry_coordination:
+       -
+         - 115.766571659632
+         - 39.484588646178665
+      right_bank_geometry_coordination:
+       -
+         - 115.76700081307439
+         - 39.48353722024483
+    bottom_elevation: 53.486
+    interpolate_cross_section_count: 0
+    location: 57194
+    t_bottom_width: 11.4
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1061
   type: CrossSection
   name: QD-13#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 62.879
+       -
+         - 0
+         - 56.619
+       -
+         - 11.4
+         - 56.619
+       -
+         - 11.4
+         - 62.879
+      left_bank_geometry_coordination:
+       -
+         - 115.77412476021794
+         - 39.48748543191475
+      right_bank_geometry_coordination:
+       -
+         - 115.77476849038152
+         - 39.486047767882766
+    bottom_elevation: 56.619
+    interpolate_cross_section_count: 5
+    location: 57879
+    t_bottom_width: 11.4
+    t_side_slope_ratio: 0
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1063
   type: CrossSection
   name: QD-14#断面#001
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 62.369
+       -
+         - 14.477499999999992
+         - 56.578
+       -
+         - 25.477499999999992
+         - 56.578
+       -
+         - 39.954999999999984
+         - 62.369
+      left_bank_geometry_coordination:
+       -
+         - 115.78542720777038
+         - 39.491666023256094
+      right_bank_geometry_coordination:
+       -
+         - 115.78604948026184
+         - 39.49106520843676
+    bottom_elevation: 56.578
+    interpolate_cross_section_count: 5
+    location: 58883
+    t_bottom_width: 11
+    t_side_slope_ratio: 2.5
+    boundary_type: 0
+    min_sectional_area: 500
  -
   id: 1064
   type: CrossSection
   name: QD-14#断面#002
+  parameters:
+    cross_section_geometry:
+      data_points:
+       -
+         - 0
+         - 62.271
+       -
+         - 0
+         - 55.974
+       -
+         - 12.7
+         - 55.974
+       -
+         - 12.7
+         - 62.271
+      left_bank_geometry_coordination:
+       -
+         - 115.79135584456995
+         - 39.5075570250372
+      right_bank_geometry_coordination:
+       -
+         - 115.7926433048971
+         - 39.50704204090634
+    bottom_elevation: 55.974
+    boundary_initial_state: -25.25767096
+    interpolate_cross_section_count: 0
+    location: 60828
+    t_bottom_width: 12.7
+    t_side_slope_ratio: 0
+    boundary_type: 2
+    min_sectional_area: 500
 objects:
  -
   id: 1001
@@ -477,6 +1226,8 @@ objects:
    -
      - 115.43661856669796
      - 39.267358859115234
+  initial_state:
+    average_water_level: 63.0348223033652
   cross_section_children:
    -
     id: 1031
@@ -486,10 +1237,18 @@ objects:
     id: 1032
     type: CrossSection
     name: QD-1#断面#002
+  parameters:
+    location: 0
+    manning_n: 0.018
  -
   id: 1002
   type: Pipe
   name: DHX1-中易水渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.43661856669796
@@ -511,6 +1270,15 @@ objects:
     id: 1065
     type: Pipe_child
     name: DHX1-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 10133
  -
   id: 1003
   type: UnifiedCanal
@@ -543,6 +1311,8 @@ objects:
      - 115.45585086046658
      - 39.325627947317756
   name: QD-2
+  initial_state:
+    average_water_level: 62.907563085
   cross_section_children:
    -
     id: 1033
@@ -552,10 +1322,18 @@ objects:
     id: 1035
     type: CrossSection
     name: QD-3#断面#001
+  parameters:
+    location: 10652
+    manning_n: 0.018
  -
   id: 1004
   type: DisturbanceNode
   name: FSK1-荆柯山分水口
+  initial_state:
+    outflow: 0.22
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.45582476287447
@@ -565,6 +1343,13 @@ objects:
     id: 1066
     type: DisturbanceNode_child
     name: FSK1-1
+    initial_state:
+      outflow: 0.22
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+  parameters:
+    location: 17250
  -
   id: 1005
   type: UnifiedCanal
@@ -582,6 +1367,8 @@ objects:
      - 115.45901140845267
      - 39.352972447669245
   name: QD-3
+  initial_state:
+    average_water_level: 62.82780435
   cross_section_children:
    -
     id: 1035
@@ -591,10 +1378,18 @@ objects:
     id: 1037
     type: CrossSection
     name: QD-4#断面#001
+  parameters:
+    location: 17250
+    manning_n: 0.018
  -
   id: 1006
   type: DisturbanceNode
   name: FSK2-北易水退水闸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.45908007326538
@@ -604,6 +1399,13 @@ objects:
     id: 1067
     type: DisturbanceNode_child
     name: FSK2-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+  parameters:
+    location: 20161
  -
   id: 1007
   type: UnifiedCanal
@@ -615,6 +1417,8 @@ objects:
      - 115.45966372220896
      - 39.354045972781876
   name: QD-4
+  initial_state:
+    average_water_level: 62.79996535
   cross_section_children:
    -
     id: 1037
@@ -624,10 +1428,18 @@ objects:
     id: 1038
     type: CrossSection
     name: QD-4#断面#002
+  parameters:
+    location: 20161
+    manning_n: 0.018
  -
   id: 1008
   type: Pipe
   name: DHX2-北易水渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.45968247801889
@@ -649,6 +1461,15 @@ objects:
     id: 1068
     type: Pipe_child
     name: DHX2-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 10133
  -
   id: 1009
   type: GateStation
@@ -657,6 +1478,11 @@ objects:
      - 115.4616576774201
      - 39.35809389771608
   name: ZM1-北易水倒虹吸出口节制闸
+  initial_state:
+    outflow: 31.4518086415417
+    water_level: 63.0240575682442
+    inflow: 30.42490457138925
+    water_level_back: 62.3945286588849
   cross_section_children:
    -
     id: 1039
@@ -671,14 +1497,40 @@ objects:
     id: 1041
     type: Gate
     name: ZM1-节制闸#1
+    initial_state:
+      outflow: 15.72590432077085
+      water_level: 63.0240575682442
+      inflow: 30.42490457138925
+      opening: 0.775
+      water_level_back: 62.3945286588849
     parameters:
-      max_opening: 5
+      gate_flow_calculation_method:
+        type: 1
+        free_orifice_flow: 0
+        submerged_orifice_flow: 0
+        free_weir_flow: 0.89
+        submerged_weir_flow: 0
+      bottom_elevation: 55.764
    -
     id: 1042
     type: Gate
     name: ZM1-节制闸#2
+    initial_state:
+      outflow: 15.72590432077085
+      water_level: 63.0240575682442
+      inflow: 30.42490457138925
+      opening: 0.775
+      water_level_back: 62.3945286588849
     parameters:
-      max_opening: 5
+      gate_flow_calculation_method:
+        type: 2
+        free_orifice_flow: 0
+        submerged_orifice_flow: 0
+        free_weir_flow: 0.89
+        submerged_weir_flow: 0
+      bottom_elevation: 55.764
+  parameters:
+    location: 20811
  -
   id: 1010
   type: UnifiedCanal
@@ -690,6 +1542,8 @@ objects:
      - 115.46384522390547
      - 39.36076798339033
   name: QD-5
+  initial_state:
+    average_water_level: 62.1540568839285
   cross_section_children:
    -
     id: 1040
@@ -699,10 +1553,18 @@ objects:
     id: 1043
     type: CrossSection
     name: QD-5#断面#002
+  parameters:
+    location: 20811
+    manning_n: 0.018
  -
   id: 1011
   type: Pipe
   name: DHX3-厂城渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.46385735494505
@@ -724,6 +1586,15 @@ objects:
     id: 1069
     type: Pipe_child
     name: DHX3-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 21198
  -
   id: 1012
   type: UnifiedCanal
@@ -750,6 +1621,8 @@ objects:
      - 115.5204255295199
      - 39.366917774578745
   name: QD-6
+  initial_state:
+    average_water_level: 62.1097009392021
   cross_section_children:
    -
     id: 1044
@@ -759,10 +1632,18 @@ objects:
     id: 1045
     type: CrossSection
     name: QD-6#断面#002
+  parameters:
+    location: 21450
+    manning_n: 0.018
  -
   id: 1013
   type: Pipe
   name: DHX4-七里庄沟渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.5204444788178
@@ -784,6 +1665,15 @@ objects:
     id: 1070
     type: Pipe_child
     name: DHX4-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 26385
  -
   id: 1014
   type: UnifiedCanal
@@ -807,6 +1697,8 @@ objects:
      - 115.56312757517725
      - 39.40758433056562
   name: QD-7
+  initial_state:
+    average_water_level: 62.019948581608
   cross_section_children:
    -
     id: 1046
@@ -816,10 +1708,18 @@ objects:
     id: 1047
     type: CrossSection
     name: QD-7#断面#002
+  parameters:
+    location: 26576
+    manning_n: 0.018
  -
   id: 1015
   type: Pipe
   name: DHX5-马头沟渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.56319745102967
@@ -841,6 +1741,15 @@ objects:
     id: 1071
     type: Pipe_child
     name: DHX5-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 33026
  -
   id: 1016
   type: UnifiedCanal
@@ -855,6 +1764,8 @@ objects:
      - 115.5817917770435
      - 39.42167010237372
   name: QD-8
+  initial_state:
+    average_water_level: 61.9570745782143
   cross_section_children:
    -
     id: 1048
@@ -864,10 +1775,18 @@ objects:
     id: 1049
     type: CrossSection
     name: QD-8#断面#002
+  parameters:
+    location: 33323
+    manning_n: 0.018
  -
   id: 1017
   type: Pipe
   name: DHX6-坟庄河渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.58180655531388
@@ -889,6 +1808,15 @@ objects:
     id: 1072
     type: Pipe_child
     name: DHX6-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 35299
  -
   id: 1018
   type: GateStation
@@ -897,6 +1825,11 @@ objects:
      - 115.58417548283971
      - 39.42314006782017
   name: ZM2-坟庄河倒虹吸出口节制闸
+  initial_state:
+    outflow: 30.5577149661082
+    water_level: 62.1048113265128
+    water_level_back: 60.9099998474121
+    inflow: 27.057717620015
   cross_section_children:
    -
     id: 1050
@@ -911,14 +1844,40 @@ objects:
     id: 1052
     type: Gate
     name: ZM2-节制闸#1
+    initial_state:
+      outflow: 15.2788574830541
+      water_level: 62.1048113265128
+      opening: 0.54
+      water_level_back: 60.9099998474121
+      inflow: 27.057717620015
     parameters:
-      max_opening: 5
+      gate_flow_calculation_method:
+        type: 2
+        free_orifice_flow: 0
+        submerged_orifice_flow: 0
+        free_weir_flow: 0.89
+        submerged_weir_flow: 0
+      bottom_elevation: 55.596
    -
     id: 1053
     type: Gate
     name: ZM2-节制闸#2
+    initial_state:
+      outflow: 15.2788574830541
+      water_level: 62.1048113265128
+      opening: 0.54
+      water_level_back: 60.9099998474121
+      inflow: 27.057717620015
     parameters:
-      max_opening: 5
+      gate_flow_calculation_method:
+        type: 2
+        free_orifice_flow: 0
+        submerged_orifice_flow: 0
+        free_weir_flow: 0.89
+        submerged_weir_flow: 0
+      bottom_elevation: 55.596
+  parameters:
+    location: 35571
  -
   id: 1019
   type: UnifiedCanal
@@ -966,6 +1925,8 @@ objects:
      - 115.6629458494735
      - 39.424207672942856
   name: QD-9
+  initial_state:
+    average_water_level: 60.7252952226817
   cross_section_children:
    -
     id: 1051
@@ -975,10 +1936,18 @@ objects:
     id: 1055
     type: CrossSection
     name: QD-10#断面#001
+  parameters:
+    location: 35571
+    manning_n: 0.018
  -
   id: 1020
   type: DisturbanceNode
   name: FSK3-下车亭分水口
+  initial_state:
+    outflow: 0.63
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.66305603604688
@@ -988,6 +1957,13 @@ objects:
     id: 1073
     type: DisturbanceNode_child
     name: FSK3-1
+    initial_state:
+      outflow: 0.63
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+  parameters:
+    location: 43098
  -
   id: 1021
   type: UnifiedCanal
@@ -1023,6 +1999,8 @@ objects:
      - 115.68360868167272
      - 39.44785192997764
   name: QD-10
+  initial_state:
+    average_water_level: 60.59517998125
   cross_section_children:
    -
     id: 1055
@@ -1032,10 +2010,18 @@ objects:
     id: 1057
     type: CrossSection
     name: QD-11#断面#001
+  parameters:
+    location: 43098
+    manning_n: 0.018
  -
   id: 1022
   type: DisturbanceNode
   name: FSK4-水北沟退水闸
+  initial_state:
+    outflow: 0.63
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.68361179128283
@@ -1045,6 +2031,13 @@ objects:
     id: 1074
     type: DisturbanceNode_child
     name: FSK4-1
+    initial_state:
+      outflow: 0.63
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+  parameters:
+    location: 46526
  -
   id: 1023
   type: UnifiedCanal
@@ -1086,6 +2079,8 @@ objects:
      - 115.73397728480394
      - 39.481204485164625
   name: QD-11
+  initial_state:
+    average_water_level: 60.5142415898763
   cross_section_children:
    -
     id: 1057
@@ -1095,10 +2090,18 @@ objects:
     id: 1058
     type: CrossSection
     name: QD-11#断面#002
+  parameters:
+    location: 46526
+    manning_n: 0.018
  -
   id: 1024
   type: Pipe
   name: DHX7-南拒马河渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.73398628342682
@@ -1120,6 +2123,15 @@ objects:
     id: 1075
     type: Pipe_child
     name: DHX7-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 54292
  -
   id: 1025
   type: UnifiedCanal
@@ -1134,6 +2146,8 @@ objects:
      - 115.76698232074729
      - 39.48395777883371
   name: QD-12
+  initial_state:
+    average_water_level: 60.4131184179166
   cross_section_children:
    -
     id: 1059
@@ -1143,10 +2157,18 @@ objects:
     id: 1060
     type: CrossSection
     name: QD-12#断面#002
+  parameters:
+    location: 54970
+    manning_n: 0.018
  -
   id: 1026
   type: Pipe
   name: DHX8-北拒马河南支渠道倒虹吸
+  initial_state:
+    outflow: 0
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.7673950285383
@@ -1168,10 +2190,24 @@ objects:
     id: 1076
     type: Pipe_child
     name: DHX8-1
+    initial_state:
+      outflow: 0
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+    parameters:
+      manning_n: 0.015
+  parameters:
+    location: 57194
  -
   id: 1027
   type: DisturbanceNode
   name: FSK5-三岔沟分水口
+  initial_state:
+    outflow: 1.34
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.77499644920177
@@ -1181,6 +2217,13 @@ objects:
     id: 1077
     type: DisturbanceNode_child
     name: FSK5-1
+    initial_state:
+      outflow: 1.34
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+  parameters:
+    location: 57879
  -
   id: 1028
   type: UnifiedCanal
@@ -1192,6 +2235,8 @@ objects:
      - 115.78460602262518
      - 39.490083613357385
   name: QD-13
+  initial_state:
+    average_water_level: 60.32208763625
   cross_section_children:
    -
     id: 1061
@@ -1201,10 +2246,18 @@ objects:
     id: 1063
     type: CrossSection
     name: QD-14#断面#001
+  parameters:
+    location: 57879
+    manning_n: 0.018
  -
   id: 1029
   type: DisturbanceNode
   name: FSK6-北拒马退水闸
+  initial_state:
+    outflow: 0.5
+    water_level: 0
+    inflow: 0
+    water_level_back: 0
   geometry_coordination:
    -
      - 115.78473688812633
@@ -1214,6 +2267,13 @@ objects:
     id: 1078
     type: DisturbanceNode_child
     name: FSK6-1
+    initial_state:
+      outflow: 0.5
+      water_level: 0
+      inflow: 0
+      water_level_back: 0
+  parameters:
+    location: 58883
  -
   id: 1030
   type: UnifiedCanal
@@ -1225,6 +2285,8 @@ objects:
      - 115.79178680062886
      - 39.50698359113777
   name: QD-14
+  initial_state:
+    average_water_level: 60.2765722454167
   cross_section_children:
    -
     id: 1063
@@ -1234,3 +2296,8 @@ objects:
     id: 1064
     type: CrossSection
     name: QD-14#断面#002
+  parameters:
+    location: 58883
+    manning_n: 0.018
+
+

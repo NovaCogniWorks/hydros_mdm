@@ -1,108 +1,171 @@
-大渡河:
-  total_time_series:
-  - series_name: 上游边界-流量时间序列
-    id: 100101
-    time_series:
-      - - 0
-        - 334
-      - - 7200
-        - 324
-      - - 14400
-        - 316
-      - - 21600
-        - 316
-      - - 28800
-        - 291
-      - - 36000
-        - 205
-      - - 43200
-        - 165
-      - - 50400
-        - 164
-      - - 57600
-        - 164
-      - - 64800
-        - 164
-      - - 72000
-        - 164
-      - - 79200
-        - 201
-      - - 86400
-        - 348
-      - - 93600
-        - 359
-      - - 100800
-        - 356
-      - - 108000
-        - 368
-      - - 115200
-        - 336
-      - - 122400
-        - 323
-      - - 129600
-        - 319
-      - - 136800
-        - 321
-      - - 144000
-        - 330
-      - - 151200
-        - 354
-      - - 158400
-        - 352
-      - - 165600
-        - 355
-      - - 172800
-        - 339
-  - series_name: 下游边界-水位时间序列
-    id: 100150
-    time_series:
-      - - 0
-        - 534.67
-      - - 7200
-        - 533.12
-      - - 14400
-        - 533.08
-      - - 21600
-        - 533.08
-      - - 28800
-        - 533.06
-      - - 36000
-        - 533.07
-      - - 43200
-        - 533.06
-      - - 50400
-        - 533.06
-      - - 57600
-        - 533.06
-      - - 64800
-        - 533.06
-      - - 72000
-        - 533.08
-      - - 79200
-        - 533.07
-      - - 86400
-        - 533.06
-      - - 93600
-        - 533.82
-      - - 100800
-        - 534.22
-      - - 108000
-        - 533.27
-      - - 115200
-        - 533.42
-      - - 122400
-        - 533.45
-      - - 129600
-        - 533.2
-      - - 136800
-        - 533.26
-      - - 144000
-        - 534.26
-      - - 151200
-        - 534.61
-      - - 158400
-        - 534.85
-      - - 165600
-        - 534.86
-      - - 172800
-        - 534.26
+hydro_event_type: TIME_SERIES_DATA_UPDATED
+hydro_event_id: AAAAAAAA
+hydro_event_name: 边界时间序列
+auto_schedule_at_step: -1
+object_time_series:
+ -
+  time_series_name: 上游边界-流量时间序列
+  object_id: 100101
+  object_type: CrossSection
+  object_name: DM1
+  metrics_code: water_flow
+  time_series:
+   -
+    step: 0
+    value: 334.0
+   -
+    step: 120
+    value: 324.0
+   -
+    step: 240
+    value: 316.0
+   -
+    step: 360
+    value: 316.0
+   -
+    step: 480
+    value: 291.0
+   -
+    step: 600
+    value: 205.0
+   -
+    step: 720
+    value: 165.0
+   -
+    step: 840
+    value: 164.0
+   -
+    step: 960
+    value: 164.0
+   -
+    step: 1080
+    value: 164.0
+   -
+    step: 1200
+    value: 164.0
+   -
+    step: 1320
+    value: 201.0
+   -
+    step: 1440
+    value: 348.0
+   -
+    step: 1560
+    value: 359.0
+   -
+    step: 1680
+    value: 356.0
+   -
+    step: 1800
+    value: 368.0
+   -
+    step: 1920
+    value: 336.0
+   -
+    step: 2040
+    value: 323.0
+   -
+    step: 2160
+    value: 319.0
+   -
+    step: 2280
+    value: 321.0
+   -
+    step: 2400
+    value: 330.0
+   -
+    step: 2520
+    value: 354.0
+   -
+    step: 2640
+    value: 352.0
+   -
+    step: 2760
+    value: 355.0
+   -
+    step: 2880
+    value: 339.0
+ -
+  time_series_name: 下游边界-水位时间序列
+  object_id: 100150
+  object_type: CrossSection
+  object_name: SP71
+  metrics_code: water_depth
+  time_series:
+   -
+    step: 0
+    value: 534.67
+   -
+    step: 120
+    value: 533.12
+   -
+    step: 240
+    value: 533.08
+   -
+    step: 360
+    value: 533.08
+   -
+    step: 480
+    value: 533.06
+   -
+    step: 600
+    value: 533.07
+   -
+    step: 720
+    value: 533.06
+   -
+    step: 840
+    value: 533.06
+   -
+    step: 960
+    value: 533.06
+   -
+    step: 1080
+    value: 533.06
+   -
+    step: 1200
+    value: 533.08
+   -
+    step: 1320
+    value: 533.07
+   -
+    step: 1440
+    value: 533.06
+   -
+    step: 1560
+    value: 533.82
+   -
+    step: 1680
+    value: 534.22
+   -
+    step: 1800
+    value: 533.27
+   -
+    step: 1920
+    value: 533.42
+   -
+    step: 2040
+    value: 533.45
+   -
+    step: 2160
+    value: 533.2
+   -
+    step: 2280
+    value: 533.26
+   -
+    step: 2400
+    value: 534.26
+   -
+    step: 2520
+    value: 534.61
+   -
+    step: 2640
+    value: 534.85
+   -
+    step: 2760
+    value: 534.86
+   -
+    step: 2880
+    value: 534.26
+priority: HIGH
+valid: true

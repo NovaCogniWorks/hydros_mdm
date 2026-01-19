@@ -1,0 +1,211 @@
+{
+  "auto_schedule_at_step": -1,
+  "hydro_event_id": "TS_REQ_2001_202601141607",
+  "hydro_event_name": "工业园B需水需求预制",
+  "hydro_event_type": "TIME_SERIES_DATA_UPDATED",
+  "object_time_series": [
+    {
+      "metrics_code": "water_flow",
+      "object_id": 2001,
+      "object_name": "工业园B",
+      "object_type": "DisturbanceNode",
+      "time_series": [
+        {
+          "step": 0,
+          "value": 570.0
+        },
+        {
+          "step": 60,
+          "value": 570.0
+        },
+        {
+          "step": 120,
+          "value": 570.0
+        },
+        {
+          "step": 180,
+          "value": 570.0
+        },
+        {
+          "step": 240,
+          "value": 570.0
+        },
+        {
+          "step": 300,
+          "value": 570.0
+        },
+        {
+          "step": 360,
+          "value": 570.0
+        },
+        {
+          "step": 420,
+          "value": 570.0
+        },
+        {
+          "step": 480,
+          "value": 1200.0
+        },
+        {
+          "step": 540,
+          "value": 1200.0
+        },
+        {
+          "step": 600,
+          "value": 1200.0
+        },
+        {
+          "step": 660,
+          "value": 1200.0
+        },
+        {
+          "step": 720,
+          "value": 750.0
+        },
+        {
+          "step": 780,
+          "value": 1200.0
+        },
+        {
+          "step": 840,
+          "value": 1200.0
+        },
+        {
+          "step": 900,
+          "value": 1200.0
+        },
+        {
+          "step": 960,
+          "value": 1200.0
+        },
+        {
+          "step": 1020,
+          "value": 570.0
+        },
+        {
+          "step": 1080,
+          "value": 570.0
+        },
+        {
+          "step": 1140,
+          "value": 570.0
+        },
+        {
+          "step": 1200,
+          "value": 570.0
+        },
+        {
+          "step": 1260,
+          "value": 570.0
+        },
+        {
+          "step": 1320,
+          "value": 570.0
+        },
+        {
+          "step": 1380,
+          "value": 570.0
+        },
+        {
+          "step": 1440,
+          "value": 570.0
+        },
+        {
+          "step": 1500,
+          "value": 570.0
+        },
+        {
+          "step": 1560,
+          "value": 570.0
+        },
+        {
+          "step": 1620,
+          "value": 570.0
+        },
+        {
+          "step": 1680,
+          "value": 570.0
+        },
+        {
+          "step": 1740,
+          "value": 570.0
+        },
+        {
+          "step": 1800,
+          "value": 570.0
+        },
+        {
+          "step": 1860,
+          "value": 570.0
+        },
+        {
+          "step": 1920,
+          "value": 1200.0
+        },
+        {
+          "step": 1980,
+          "value": 1200.0
+        },
+        {
+          "step": 2040,
+          "value": 1200.0
+        },
+        {
+          "step": 2100,
+          "value": 1200.0
+        },
+        {
+          "step": 2160,
+          "value": 750.0
+        },
+        {
+          "step": 2220,
+          "value": 1200.0
+        },
+        {
+          "step": 2280,
+          "value": 1200.0
+        },
+        {
+          "step": 2340,
+          "value": 1200.0
+        },
+        {
+          "step": 2400,
+          "value": 1200.0
+        },
+        {
+          "step": 2460,
+          "value": 570.0
+        },
+        {
+          "step": 2520,
+          "value": 570.0
+        },
+        {
+          "step": 2580,
+          "value": 570.0
+        },
+        {
+          "step": 2640,
+          "value": 570.0
+        },
+        {
+          "step": 2700,
+          "value": 570.0
+        },
+        {
+          "step": 2760,
+          "value": 570.0
+        },
+        {
+          "step": 2820,
+          "value": 570.0
+        }
+      ],
+      "time_series_name": "需水流量时间序列"
+    }
+  ],
+  "priority": "HIGH",
+  "valid": true
+}

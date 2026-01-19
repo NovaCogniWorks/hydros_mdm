@@ -1,0 +1,13 @@
+agent_code: TWINS_SIMULATION_AGENT
+agent_type: TWINS_SIMULATION_AGENT
+agent_name: 孪生智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/twins_simulation/agent_config.yaml
+version: v0.0.1
+release_at: 2026/01/01
+author:
+  user_name: 曹国军
+description: 孪生仿真，基于IDZ模型进行数字孪生
+properties:
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_central
+components: []

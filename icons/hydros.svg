@@ -1,0 +1,156 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- 渐变定义 -->
+        <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00B4DB;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#0083B0;stop-opacity:1"/>
+        </linearGradient>
+
+        <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+        </linearGradient>
+
+        <radialGradient id="glowEffect" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3"/>
+            <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+        </radialGradient>
+
+        <!-- 滤镜效果 -->
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+        </filter>
+    </defs>
+
+    <!-- 背景圆形 -->
+    <circle cx="100" cy="100" r="95" fill="url(#waterGradient)" filter="url(#shadow)"/>
+
+    <!-- 水波纹效果 -->
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3">
+        <animate attributeName="r" values="70;85;70" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="100" cy="100" r="65" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3">
+        <animate attributeName="r" values="55;70;55" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- 中央水滴形状 -->
+    <path d="M100 50 C120 70, 120 90, 100 110 C80 90, 80 70, 100 50 Z" fill="url(#techGradient)" opacity="0.9"/>
+
+    <!-- 多智能体网络系统 -->
+    <g>
+        <!-- 中央协调智能体 -->
+        <circle cx="100" cy="80" r="4" fill="#ffffff" opacity="0.9">
+            <animate attributeName="r" values="4;5;4" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="100" y="85" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#003d5c"
+              font-weight="bold">AI
+        </text>
+
+        <!-- 周围分布式智能体 -->
+        <g fill="#ffffff" opacity="0.8">
+            <!-- 智能体1 - 水位监测 -->
+            <circle cx="75" cy="65" r="3"/>
+            <text x="75" y="69" font-family="Arial, sans-serif" font-size="4" text-anchor="middle" fill="#003d5c">H₂O
+            </text>
+
+            <!-- 智能体2 - 流量控制 -->
+            <circle cx="125" cy="65" r="3"/>
+            <text x="125" y="69" font-family="Arial, sans-serif" font-size="4" text-anchor="middle" fill="#003d5c">Q
+            </text>
+
+            <!-- 智能体3 - 水质检测 -->
+            <circle cx="70" cy="100" r="3"/>
+            <text x="70" y="104" font-family="Arial, sans-serif" font-size="4" text-anchor="middle" fill="#003d5c">pH
+            </text>
+
+            <!-- 智能体4 - 压力监控 -->
+            <circle cx="130" cy="100" r="3"/>
+            <text x="130" y="104" font-family="Arial, sans-serif" font-size="4" text-anchor="middle" fill="#003d5c">P
+            </text>
+
+            <!-- 智能体5 - 预警系统 -->
+            <circle cx="100" cy="115" r="3"/>
+            <text x="100" y="119" font-family="Arial, sans-serif" font-size="4" text-anchor="middle" fill="#003d5c">⚠
+            </text>
+
+            <!-- 智能体6 - 调度优化 -->
+            <circle cx="85" cy="55" r="2.5"/>
+            <text x="85" y="58" font-family="Arial, sans-serif" font-size="3" text-anchor="middle" fill="#003d5c">⚙
+            </text>
+
+            <!-- 智能体7 - 能耗管理 -->
+            <circle cx="115" cy="55" r="2.5"/>
+            <text x="115" y="58" font-family="Arial, sans-serif" font-size="3" text-anchor="middle" fill="#003d5c">⚡
+            </text>
+        </g>
+
+        <!-- 智能体间通信连接 -->
+        <g stroke="#ffffff" stroke-width="1" opacity="0.4">
+            <!-- 中央协调连接 -->
+            <line x1="100" y1="80" x2="75" y2="65"/>
+            <line x1="100" y1="80" x2="125" y2="65"/>
+            <line x1="100" y1="80" x2="70" y2="100"/>
+            <line x1="100" y1="80" x2="130" y2="100"/>
+            <line x1="100" y1="80" x2="100" y2="115"/>
+            <line x1="100" y1="80" x2="85" y2="55"/>
+            <line x1="100" y1="80" x2="115" y2="55"/>
+
+            <!-- 智能体间协作连接 -->
+            <line x1="75" y1="65" x2="85" y2="55" opacity="0.3"/>
+            <line x1="125" y1="65" x2="115" y2="55" opacity="0.3"/>
+            <line x1="70" y1="100" x2="100" y2="115" opacity="0.3"/>
+            <line x1="130" y1="100" x2="100" y2="115" opacity="0.3"/>
+            <line x1="75" y1="65" x2="70" y2="100" opacity="0.3"/>
+            <line x1="125" y1="65" x2="130" y2="100" opacity="0.3"/>
+        </g>
+
+        <!-- 数据包传输动画 -->
+        <g>
+            <circle r="1" fill="#00ff88" opacity="0.8">
+                <animateMotion dur="3s" repeatCount="indefinite">
+                    <path d="M100,80 L75,65 L70,100 L100,115 L130,100 L125,65 L100,80"/>
+                </animateMotion>
+            </circle>
+
+            <circle r="1" fill="#ff6b6b" opacity="0.8">
+                <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.5s">
+                    <path d="M100,80 L85,55 L115,55 L125,65 L100,80"/>
+                </animateMotion>
+            </circle>
+        </g>
+    </g>
+
+    <!-- 数据流动效果 -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6">
+        <path d="M70 120 Q100 130 130 120">
+            <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M75 135 Q100 145 125 135">
+            <animate attributeName="stroke-dasharray" values="0,100;15,85;0,100" dur="2.2s" repeatCount="indefinite"/>
+        </path>
+    </g>
+
+    <!-- 外围智能感应环 -->
+    <circle cx="100" cy="100" r="85" fill="none" stroke="url(#techGradient)" stroke-width="2" opacity="0.4"
+            stroke-dasharray="5,5">
+        <animateTransform attributeName="transform" type="rotate" values="0 100 100;360 100 100" dur="20s"
+                          repeatCount="indefinite"/>
+    </circle>
+
+    <!-- 高光效果 -->
+    <ellipse cx="85" cy="75" rx="15" ry="8" fill="url(#glowEffect)" transform="rotate(-30 85 75)"/>
+
+    <!-- 底部文字 -->
+    <text x="100" y="160" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle"
+          fill="#ffffff" opacity="0.9">HYDROS
+    </text>
+    <text x="100" y="173" font-family="Arial, sans-serif" font-size="7" text-anchor="middle" fill="#ffffff"
+          opacity="0.7">水利智能系统
+    </text>
+    <text x="100" y="185" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#ffffff"
+          opacity="0.6">MultiAgent System
+    </text>
+</svg>
