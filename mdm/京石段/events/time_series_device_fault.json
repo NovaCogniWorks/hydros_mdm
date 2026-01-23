@@ -1,16 +1,208 @@
 {
-  "hydro_event_type" : "TIME_SERIES_DATA_UPDATED",
-  "hydro_event_id" : "TS_DEFAULT_DEVICE_FAULT_001",
-  "hydro_event_name" : "尾边界节点出流为0,模拟泵站故障",
-  "auto_schedule_at_step" : 10,
-  "hydro_event_source_type" : "DEVICE_FAULT",
-  "hydro_event_source" : "模拟的故障",
-  "object_time_series" : [ {
-    "object_id" : 1064,
-    "object_type" : "CrossSection",
-    "object_name" : "QD-14#断面#002",
-    "metrics_code" : "water_flow"
-  } ],
-  "priority" : "HIGH",
-  "valid" : true
+  "hydro_event_type": "TIME_SERIES_DATA_UPDATED",
+  "hydro_event_id": "TS_DEFAULT_DEVICE_FAULT_001",
+  "hydro_event_name": "尾边界节点出流为0,模拟泵站故障",
+  "auto_schedule_at_step": 10,
+  "hydro_event_source_type": "DEVICE_FAULT",
+  "hydro_event_source": "模拟的故障",
+  "object_time_series": [
+    {
+      "object_id": 1064,
+      "object_type": "CrossSection",
+      "object_name": "QD-14#断面#002",
+      "metrics_code": "water_flow",
+      "time_series": [
+        {
+          "step": 60,
+          "value": 0.0
+        },
+        {
+          "step": 120,
+          "value": 0.0
+        },
+        {
+          "step": 180,
+          "value": 0.0
+        },
+        {
+          "step": 240,
+          "value": 0.0
+        },
+        {
+          "step": 300,
+          "value": 0.0
+        },
+        {
+          "step": 360,
+          "value": 0.0
+        },
+        {
+          "step": 420,
+          "value": 0.0
+        },
+        {
+          "step": 480,
+          "value": 0.0
+        },
+        {
+          "step": 540,
+          "value": 0.0
+        },
+        {
+          "step": 600,
+          "value": 0.0
+        },
+        {
+          "step": 660,
+          "value": 0.0
+        },
+        {
+          "step": 720,
+          "value": 0.0
+        },
+        {
+          "step": 780,
+          "value": 0.0
+        },
+        {
+          "step": 840,
+          "value": 0.0
+        },
+        {
+          "step": 900,
+          "value": 0.0
+        },
+        {
+          "step": 960,
+          "value": 0.0
+        },
+        {
+          "step": 1020,
+          "value": 0.0
+        },
+        {
+          "step": 1080,
+          "value": 0.0
+        },
+        {
+          "step": 1140,
+          "value": 0.0
+        },
+        {
+          "step": 1200,
+          "value": 0.0
+        },
+        {
+          "step": 1260,
+          "value": 0.0
+        },
+        {
+          "step": 1320,
+          "value": 0.0
+        },
+        {
+          "step": 1380,
+          "value": 0.0
+        },
+        {
+          "step": 1440,
+          "value": 0.0
+        },
+        {
+          "step": 1500,
+          "value": 0.0
+        },
+        {
+          "step": 1560,
+          "value": 0.0
+        },
+        {
+          "step": 1620,
+          "value": 0.0
+        },
+        {
+          "step": 1680,
+          "value": 0.0
+        },
+        {
+          "step": 1740,
+          "value": 0.0
+        },
+        {
+          "step": 1800,
+          "value": 0.0
+        },
+        {
+          "step": 1860,
+          "value": 0.0
+        },
+        {
+          "step": 1920,
+          "value": 0.0
+        },
+        {
+          "step": 1980,
+          "value": 0.0
+        },
+        {
+          "step": 2040,
+          "value": 0.0
+        },
+        {
+          "step": 2100,
+          "value": 0.0
+        },
+        {
+          "step": 2160,
+          "value": 750.0
+        },
+        {
+          "step": 2220,
+          "value": 0.0
+        },
+        {
+          "step": 2280,
+          "value": 0.0
+        },
+        {
+          "step": 2340,
+          "value": 0.0
+        },
+        {
+          "step": 2400,
+          "value": 0.0
+        },
+        {
+          "step": 2460,
+          "value": 0.0
+        },
+        {
+          "step": 2520,
+          "value": 0.0
+        },
+        {
+          "step": 2580,
+          "value": 0.0
+        },
+        {
+          "step": 2640,
+          "value": 0.0
+        },
+        {
+          "step": 2700,
+          "value": 0.0
+        },
+        {
+          "step": 2760,
+          "value": 0.0
+        },
+        {
+          "step": 2820,
+          "value": 0.0
+        }
+      ]
+    }
+  ],
+  "priority": "HIGH",
+  "valid": true
 }
