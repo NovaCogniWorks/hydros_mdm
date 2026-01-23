@@ -6,8 +6,8 @@
   "object_time_series": [
     {
       "metrics_code": "water_flow",
-      "object_id": 1001,
-      "object_name": "居民区A",
+      "object_id": 1020,
+      "object_name": "FSK3-下车亭分水口",
       "object_type": "DisturbanceNode",
       "time_series": [
         {

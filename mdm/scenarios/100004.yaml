@@ -32,7 +32,7 @@ agents:
   agent_name: 天气预报智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
  -
-  agent_code: CENTRAL_SCHEDULING_AGENT
+  agent_code: CENTRAL_SCHEDULING_AGENT_WJH
   agent_type: CENTRAL_SCHEDULING_AGENT
   agent_name: 中央调度智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
