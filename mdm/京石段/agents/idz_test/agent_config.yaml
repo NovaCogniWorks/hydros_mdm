@@ -1,0 +1,45 @@
+agent_code: TWINS_SIMULATION_AGENT
+agent_type: TWINS_SIMULATION_AGENT
+agent_name: 孪生智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/twins_simulation/agent_config.yaml
+version: v0.0.1
+release_at: 2026/01/01
+author:
+  user_name: 曹国军
+description: 孪生仿真，基于IDZ模型进行数字孪生
+waterway:
+  waterway_id: 50
+  waterway_name: 京石段
+properties:
+  biz_start_time: 2025/01/01 00:00:00
+  step_resolution: 60
+  total_steps: 4320
+  hydro_environment_type: NORMAL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+hydro_node_id: default_central
+components:
+ -
+  component_id: HAC000000012
+  component_name: IDZ孪生仿真
+  version: v0.1.2
+  release_at: 2025/12/12
+  author:
+    user_name: 黄志峰
+  description: 积分延迟零模型，简化水力学模型，常用于数字孪生系统中以实现快速仿真和实时控制
+  enabled: true
+  properties:
+    idz_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/twins_simulation/idz_config.yml
+    biz_start_time: 2025/01/01 00:00:00
+    output_config:
+      output_mode: MQTT
+      mqtt_broker:
+        mqtt_host: 192.168.1.24
+        mqtt_port: 1883
+        server_uri: tcp://192.168.1.24:1883
+      mqtt_topic: +/hydros/simulation/jobs/+/twins/objects
+    hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
+    step_resolution: 60
+    driven_by_coordinator: true
+    calculation_resolution: 60
+    total_steps: 4320
+    time_series_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/time_series/time_series.yaml
