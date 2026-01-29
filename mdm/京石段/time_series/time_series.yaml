@@ -84,9 +84,9 @@ object_time_series:
       - step: 4320
         value: 28.17445816
   - time_series_name: 下流边界-流量时间序列
-    object_id: 1065
-    object_type: Pipe_child
-    object_name: DHX1-1
+    object_id: 1064
+    object_type: CrossSection
+    object_name: QD-14#断面#002
     metrics_code: water_flow
     time_series:
       - step: 0
