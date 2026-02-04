@@ -10,7 +10,7 @@ agents:
     agent_type: TWINS_SIMULATION_AGENT
     agent_name: IDZ测试Agent
     agent_configuration_url: >-
-      http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+      http://47.97.1.45:9000/hydros/mdm/京石段/agents/idz_test/agent_config.yaml
 auto_hydro_events:
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
