@@ -1,4 +1,4 @@
-agent_code: TWINS_SIMULATION_AGENT
+agent_code: TWINS_SIMULATION_AGENT_demo001
 agent_type: TWINS_SIMULATION_AGENT
 agent_name: 孪生智能体
 agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/twins_simulation/agent_config.yaml
