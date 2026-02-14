@@ -22,10 +22,6 @@ agents:
   agent_name: 天气预报智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/weather_forecast/agent_config.yaml
 auto_schedule_event_enabled: false
-mqtt_broker:
-  mqtt_host: 192.168.1.24
-  mqtt_port: 1883
-  server_uri: tcp://192.168.1.24:1883
 total_steps: 4320
 step_resolution: 60
 biz_start_time: 2025/01/01 00:00:00

@@ -6,60 +6,46 @@ waterway:
   waterway_name: 京石段
 hydro_environment_type: SIL
 agents:
- -
-  agent_code: ONTOLOGY_SIMULATION_AGENT
-  agent_type: ONTOLOGY_SIMULATION_AGENT
-  agent_name: 本体仿真智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config_SIL.yaml
- -
-  agent_code: CHANNEL_AGENT
-  agent_type: CHANNEL_AGENT
-  agent_name: 渠池智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config_SIL.yaml
- -
-  agent_code: GATE_STATION_AGENT
-  agent_type: GATE_STATION_AGENT
-  agent_name: 闸站智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config_SIL.yaml
- -
-  agent_code: WATER_USE_AGENT
-  agent_type: WATER_USE_AGENT
-  agent_name: 用水计划智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
- -
-  agent_code: WEATHER_FORECAST_AGENT
-  agent_type: WEATHER_FORECAST_AGENT
-  agent_name: 天气预报智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
- -
-  agent_code: CENTRAL_SCHEDULING_AGENT
-  agent_type: CENTRAL_SCHEDULING_AGENT
-  agent_name: 中央调度智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
+  - agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config_SIL.yaml
+  - agent_code: CHANNEL_AGENT
+    agent_type: CHANNEL_AGENT
+    agent_name: 渠池智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config_SIL.yaml
+  - agent_code: GATE_STATION_AGENT
+    agent_type: GATE_STATION_AGENT
+    agent_name: 闸站智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config_SIL.yaml
+  - agent_code: WATER_USE_AGENT
+    agent_type: WATER_USE_AGENT
+    agent_name: 用水计划智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/water_use/agent_config.yaml
+  - agent_code: WEATHER_FORECAST_AGENT
+    agent_type: WEATHER_FORECAST_AGENT
+    agent_name: 天气预报智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
+  - agent_code: CENTRAL_SCHEDULING_AGENT
+    agent_type: CENTRAL_SCHEDULING_AGENT
+    agent_name: 中央调度智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/agent_config.yaml
 auto_schedule_event_enabled: false
-mqtt_broker:
-  mqtt_host: 192.168.1.24
-  mqtt_port: 1883
-  server_uri: tcp://192.168.1.24:1883
 total_steps: 4320
 step_resolution: 60
 biz_start_time: 2025/01/01 00:00:00
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 biz_scene_configuration_url: http://192.168.1.25:8081/hydros/api/1.0/scenarios/configuration?hydro_biz_scenario_id=100003&format=json
 default_rendering_objects:
- -
-  object_id: 1041
-  object_type: Gate
-  object_name: ZM1-节制闸#1
- -
-  object_id: 1053
-  object_type: Gate
-  object_name: ZM2-节制闸#2
- -
-  object_id: 1040
-  object_type: CrossSection
-  object_name: QD-5#断面#001
- -
-  object_id: 1052
-  object_type: Gate
-  object_name: ZM2-节制闸#1
+  - object_id: 1041
+    object_type: Gate
+    object_name: ZM1-节制闸#1
+  - object_id: 1053
+    object_type: Gate
+    object_name: ZM2-节制闸#2
+  - object_id: 1040
+    object_type: CrossSection
+    object_name: QD-5#断面#001
+  - object_id: 1052
+    object_type: Gate
+    object_name: ZM2-节制闸#1
