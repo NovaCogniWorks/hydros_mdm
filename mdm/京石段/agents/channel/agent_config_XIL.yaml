@@ -150,11 +150,11 @@ device_mapping:
     points:
      -
       controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR001
+      device_id: HIL|Hydros.WaterLevelSensor.SENSOR001
       metrics_code: water_level
      -
       controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR001
+      device_id: HIL|Hydros.WaterFlowSensor.SENSOR001
       metrics_code: water_flow
    -
     object_id: 1040
@@ -163,11 +163,11 @@ device_mapping:
     points:
      -
       controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR002
+      device_id: HIL|Hydros.WaterLevelSensor.SENSOR002
       metrics_code: water_level
      -
       controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR002
+      device_id: HIL|Hydros.WaterFlowSensor.SENSOR002
       metrics_code: water_flow
    -
     object_id: 1041
@@ -176,7 +176,7 @@ device_mapping:
     points:
      -
       controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.Gate.GATE001
+      device_id: HIL|Hydros.Gate.GATE001
       metrics_code: gate_opening
    -
     object_id: 1042
@@ -185,7 +185,7 @@ device_mapping:
     points:
      -
       controller_id: SOFTWARE_PLC_001
-      device_id: 变量表|Hydros.Gate.GATE002
+      device_id: HIL|Hydros.Gate.GATE002
       metrics_code: gate_opening
    -
     object_id: 1050
@@ -194,11 +194,11 @@ device_mapping:
     points:
      -
       controller_id: HARDWARE_PLC_002
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR003
+      device_id: HIL|Hydros.WaterLevelSensor.SENSOR003
       metrics_code: water_level
      -
       controller_id: HARDWARE_PLC_002
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR003
+      device_id: HIL|Hydros.WaterFlowSensor.SENSOR003
       metrics_code: water_flow
    -
     object_id: 1051
@@ -207,11 +207,11 @@ device_mapping:
     points:
      -
       controller_id: HARDWARE_PLC_002
-      device_id: 变量表|Hydros.WaterLevelSensor.SENSOR004
+      device_id: HIL|Hydros.WaterLevelSensor.SENSOR004
       metrics_code: water_level
      -
       controller_id: HARDWARE_PLC_002
-      device_id: 变量表|Hydros.WaterFlowSensor.SENSOR004
+      device_id: HIL|Hydros.WaterFlowSensor.SENSOR004
       metrics_code: water_flow
    -
     object_id: 1052
@@ -220,7 +220,7 @@ device_mapping:
     points:
      -
       controller_id: HARDWARE_PLC_002
-      device_id: 变量表|Hydros.Gate.GATE003
+      device_id: HIL|Hydros.Gate.GATE003
       metrics_code: gate_opening
    -
     object_id: 1053
@@ -229,5 +229,5 @@ device_mapping:
     points:
      -
       controller_id: HARDWARE_PLC_002
-      device_id: 变量表|Hydros.Gate.GATE004
+      device_id: HIL|Hydros.Gate.GATE004
       metrics_code: gate_opening
