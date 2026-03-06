@@ -7,7 +7,7 @@ release_at: 2026/01/01
 author:
   user_name: 曹国军/黄志峰
 description: 孪生仿真，积分延迟零模型，简化水力学模型，常用于数字孪生系统中以实现快速仿真和实时控制
-hydro_node_id: local
+hydro_node_id: default_edge
 waterway:
   waterway_id: 50
   waterway_name: 京石段
