@@ -43,7 +43,7 @@ components:
     total_steps: 4320
     time_series_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/time_series/time_series.yaml
     simulation_mode: hydro1d_wxq
-    steady: "{\"skip_steady_state_calculation\":true,\"nstep_max\":10000,\"n_step_max\"\
+    steady: "{\"skip_steady_state_calculation\":false,\"nstep_max\":10000,\"n_step_max\"\
       :10000,\"threshold_z\":1.0E-8}"
     solver: FDM
  -
