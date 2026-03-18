@@ -18,3 +18,4 @@ properties:
   hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
   mpc_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/mpc_config.yaml
   target_and_constrain_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/constrains_targets.yaml
+  time_series_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/events/time_series_power_planning.json
