@@ -1,0 +1,20 @@
+agent_code: CENTRAL_SCHEDULING_AGENT_POWER_MIND
+agent_type: CENTRAL_SCHEDULING_AGENT
+agent_name: 中央调度智能体-水电站
+version: v0.0.1
+release_at: 2026/03/03
+author:
+  user_name: 高炳享/张雷
+description: 基于MPC等规划调度控制算法，实现水电站的发电协同与水量平衡调度，基于实时来水与负荷变化，精准计算出力并优化水量分配，实现高效发电决策
+waterway:
+  waterway_id: 60
+  waterway_name: 大渡河
+hydro_node_id: default_central
+properties:
+  biz_start_time: 2026/03/11 00:00:00
+  roll_steps: 10
+  total_steps: 4320
+  hydro_environment_type: NORMAL
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
+  mpc_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/mpc_config.yaml
+  target_and_constrain_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/constrains_targets.yaml
