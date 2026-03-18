@@ -1,0 +1,49 @@
+biz_scenario:
+  biz_scenario_id: 100009
+  biz_scenario_name: 京石段-SDK-梯级泵站调水测试
+waterway:
+  waterway_id: 50
+  waterway_name: 京石段
+hydro_environment_type: NORMAL
+agents:
+  - agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  - agent_code: CHANNEL_AGENT
+    agent_type: CHANNEL_AGENT
+    agent_name: 渠池智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+  - agent_code: OUTFLOW_PLAN_AGENT
+    agent_type: OUTFLOW_PLAN_AGENT
+    agent_name: 出流计划智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/outflow_plan/agent_config.yaml
+auto_hydro_events:
+  - hydro_event_type: OUTFLOW_TIME_SERIES
+    hydro_event_id: OutflowTimeSeriesHydroEvent-001
+    hydro_event_name: 出流时间序列事件
+    auto_schedule_at_step: 5
+    hydro_event_source_type: OUTFLOW_TIME_SERIES
+    hydro_event_description: 系统预制的出流计划事件
+    start_step: 10
+    end_step: 30
+    value: 120
+    priority: HIGH
+auto_schedule_event_enabled: false
+total_steps: 4320
+step_resolution: 60
+biz_start_time: 2025/01/01 00:00:00
+hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+default_rendering_objects:
+  - object_id: 1041
+    object_type: Gate
+    object_name: ZM1-节制闸#1
+  - object_id: 1053
+    object_type: Gate
+    object_name: ZM2-节制闸#2
+  - object_id: 1040
+    object_type: CrossSection
+    object_name: QD-5#断面#001
+  - object_id: 1052
+    object_type: Gate
+    object_name: ZM2-节制闸#1

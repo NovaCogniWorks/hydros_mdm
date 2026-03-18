@@ -1,0 +1,246 @@
+control_targets:
+  - node_id: 2116
+    target_water_level: 820
+    min_water_level: 819
+    max_water_level: 850
+    min_flow: 0
+    max_flow: 6000
+  - node_id: 2118
+    target_water_level: 658
+    min_water_level: 655
+    max_water_level: 660
+    min_flow: 0
+    max_flow: 3600
+  - node_id: 2120
+    target_water_level: 619
+    min_water_level: 618
+    max_water_level: 624
+    min_flow: 0
+    max_flow: 3600
+  - node_id: 2122
+    target_water_level: 552
+    min_water_level: 550
+    max_water_level: 554
+    min_flow: 0
+    max_flow: 6530  
+
+control_domains:
+  - device_id: 2310 #瀑布沟
+    node_id: 2116
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2311
+    node_id: 2116
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2312
+    node_id: 2116
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2313
+    node_id: 2116
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2314
+    node_id: 2116
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2315
+    node_id: 2116
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2315
+    node_id: 2116
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2411
+    node_id: 2116
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2412
+    node_id: 2116
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+
+  - device_id: 2316 #深溪沟
+    node_id: 2118
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2317
+    node_id: 2118
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2318
+    node_id: 2118
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2319
+    node_id: 2118
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2413
+    node_id: 2118
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2414
+    node_id: 2118
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2415
+    node_id: 2118
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+
+  - device_id: 2320 #枕头坝
+    node_id: 2120
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2321
+    node_id: 2120
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2322
+    node_id: 2120
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2323
+    node_id: 2120
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2416 
+    node_id: 2120
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2417
+    node_id: 2120
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2418
+    node_id: 2120
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2419
+    node_id: 2120
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2420
+    node_id: 2120
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+
+  - device_id: 2324 #沙坪
+    node_id: 2122
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2325
+    node_id: 2122
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2326
+    node_id: 2122
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2327
+    node_id: 2122
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2328
+    node_id: 2122
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2329
+    node_id: 2122
+    type: Turbine
+    min_value: 0
+    max_value: 3600
+    max_opening_increase: 0
+  - device_id: 2421
+    node_id: 2122
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2422
+    node_id: 2122
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2423
+    node_id: 2122
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2424
+    node_id: 2122
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
+  - device_id: 2425
+    node_id: 2122
+    type: Gate
+    min_value: 0
+    max_value: 5
+    max_opening_increase: 0
