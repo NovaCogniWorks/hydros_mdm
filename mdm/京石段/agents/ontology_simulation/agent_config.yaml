@@ -12,7 +12,7 @@ waterway:
   waterway_name: 京石段
 properties:
   biz_start_time: 2025/01/01 00:00:00
-  step_resolution: 7200
+  step_resolution: 120
   total_steps: 2160
   hydro_environment_type: NORMAL
   hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
@@ -32,7 +32,7 @@ components:
         mqtt_topic: +/hydros/simulation/jobs/+/realtime/objects
       step_speed: 1.0
       hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
-      step_resolution: 7200
+      step_resolution: 120
       driven_by_coordinator: true
       hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/hydro_dyn_config.yaml
       biz_start_time: 2025/01/01 00:00:00
