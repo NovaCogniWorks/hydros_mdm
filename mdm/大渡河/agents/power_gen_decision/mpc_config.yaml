@@ -1,0 +1,1063 @@
+connections:
+  -
+    from:
+      type: UnifiedCanal
+      name: sm-pbg
+      id: 2115
+      from_port: outlet
+    to:
+      type: Station
+      name: 瀑布沟
+      id: 2116
+      to_port: inlet
+  -
+    from:
+      type: Station
+      name: 瀑布沟
+      id: 2116
+      from_port: outlet
+    to:
+      type: UnifiedCanal
+      name: pbg-sxg
+      id: 2117
+      to_port: inlet
+  -
+    from:
+      type: UnifiedCanal
+      name: pbg-sxg
+      id: 2117
+      from_port: outlet
+    to:
+      type: Station
+      name: 深溪沟
+      id: 2118
+      to_port: inlet
+  -
+    from:
+      type: Station
+      name: 深溪沟
+      id: 2118
+      from_port: outlet
+    to:
+      type: UnifiedCanal
+      name: sxg-ztb
+      id: 2119
+      to_port: inlet
+  -
+    from:
+      type: UnifiedCanal
+      name: sxg-ztb
+      id: 2119
+      from_port: outlet
+    to:
+      type: Station
+      name: 枕头坝
+      id: 2120
+      to_port: inlet
+  -
+    from:
+      type: Station
+      name: 枕头坝
+      id: 2120
+      from_port: outlet
+    to:
+      type: UnifiedCanal
+      name: ztb-sp
+      id: 2121
+      to_port: inlet
+  -
+    from:
+      type: UnifiedCanal
+      name: ztb-sp
+      id: 2121
+      from_port: outlet
+    to:
+      type: Station
+      name: 沙坪
+      id: 2122
+      to_port: inlet
+objects:
+  -
+    id: 2115
+    type: UnifiedCanal
+    name: sm-pbg
+    cross_section_children:
+      -
+        id: 2210
+        type: CrossSection
+        name: SP70#断面#001
+      -
+        id: 2211
+        type: CrossSection
+        name: SP71#断面#002
+  -
+    id: 2116
+    type: Station
+    name: 瀑布沟
+    cross_section_children:
+      -
+        id: 2211
+        type: CrossSection
+        name: SP71#断面#002
+      -
+        id: 2212
+        type: CrossSection
+        name: PS1#断面#001
+    device_children:
+      -
+        id: 2310
+        type: Turbine
+        name: 瀑布沟水轮机#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2311
+        type: Turbine
+        name: 瀑布沟水轮机#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2312
+        type: Turbine
+        name: 瀑布沟水轮机#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2313
+        type: Turbine
+        name: 瀑布沟水轮机#4
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2314
+        type: Turbine
+        name: 瀑布沟水轮机#5
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2315
+        type: Turbine
+        name: 瀑布沟水轮机#6
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2410
+        type: Gate
+        name: 瀑布闸#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+          gate_width: 12.0
+          max_opening: 10.0
+          bottom_elevation: 833.0
+      -
+        id: 2411
+        type: Gate
+        name: 瀑布闸#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+          gate_width: 12.0
+          max_opening: 10.0
+          bottom_elevation: 856.0
+      -
+        id: 2412
+        type: Gate
+        name: 瀑布闸#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+          gate_width: 12.0
+          max_opening: 10.0
+          bottom_elevation: 856.0
+    parameters:
+      f1:
+        latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
+        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
+        \ + \\eta_{h} \\cdot 1"
+        alpha_h: 0
+        beta_h: 0
+        gamma_h: 0
+        delta_down: 1
+        eta_h: 0
+
+  -
+    id: 2117
+    type: UnifiedCanal
+    name: pbg-sxg
+    cross_section_children:
+      -
+        id: 2212
+        type: CrossSection
+        name: PS1#断面#001
+      -
+        id: 2213
+        type: CrossSection
+        name: PS24#断面#002
+  -
+    id: 2118
+    type: Station
+    name: 深溪沟
+    cross_section_children:
+      -
+        id: 2213
+        type: CrossSection
+        name: PS24#断面#002
+      -
+        id: 2214
+        type: CrossSection
+        name: SZ1#断面#001
+    device_children:
+      -
+        id: 2316
+        type: Turbine
+        name: 深溪沟水轮机#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2317
+        type: Turbine
+        name: 深溪沟水轮机#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2318
+        type: Turbine
+        name: 深溪沟水轮机#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2319
+        type: Turbine
+        name: 深溪沟水轮机#4
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2413
+        type: Gate
+        name: 深溪闸#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2414
+        type: Gate
+        name: 深溪闸#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2415
+        type: Gate
+        name: 深溪闸#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+    parameters:
+      f1:
+        latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
+        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
+        \ + \\eta_{h} \\cdot 1"
+        alpha_h: 0
+        beta_h: 0
+        gamma_h: 0
+        delta_down: 1
+        eta_h: 0
+
+  -
+    id: 2119
+    type: UnifiedCanal
+    name: sxg-ztb
+    cross_section_children:
+      -
+        id: 2214
+        type: CrossSection
+        name: SZ1#断面#001
+      -
+        id: 2215
+        type: CrossSection
+        name: SZ18#断面#002
+  -
+    id: 2120
+    type: Station
+    name: 枕头坝
+    cross_section_children:
+      -
+        id: 2215
+        type: CrossSection
+        name: SZ18#断面#002
+      -
+        id: 2216
+        type: CrossSection
+        name: ZS1#断面#001
+    device_children:
+      -
+        id: 2320
+        type: Turbine
+        name: 枕头坝水轮机#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2321
+        type: Turbine
+        name: 枕头坝水轮机#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2322
+        type: Turbine
+        name: 枕头坝水轮机#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2323
+        type: Turbine
+        name: 枕头坝水轮机#4
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2416
+        type: Gate
+        name: 枕头闸#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2417
+        type: Gate
+        name: 枕头闸#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2418
+        type: Gate
+        name: 枕头闸#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2419
+        type: Gate
+        name: 枕头闸#4
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2420
+        type: Gate
+        name: 枕头闸#5
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+    parameters:
+      f1:
+        latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
+        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
+        \ + \\eta_{h} \\cdot 1"
+        alpha_h: 0
+        beta_h: 0
+        gamma_h: 0
+        delta_down: 1
+        eta_h: 0
+
+  -
+    id: 2121
+    type: UnifiedCanal
+    name: ztb-sp
+    cross_section_children:
+      -
+        id: 2216
+        type: CrossSection
+        name: ZS1#断面#001
+      -
+        id: 2217
+        type: CrossSection
+        name: ZS30#断面#002
+  -
+    id: 2122
+    type: Station
+    name: 沙坪
+    cross_section_children:
+      -
+        id: 2218
+        type: CrossSection
+        name: ZS30#断面#002
+    device_children:
+      -
+        id: 2324
+        type: Turbine
+        name: 沙坪坝水轮机#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2325
+        type: Turbine
+        name: 沙坪坝水轮机#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2326
+        type: Turbine
+        name: 沙坪坝水轮机#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2327
+        type: Turbine
+        name: 沙坪坝水轮机#4
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2328
+        type: Turbine
+        name: 沙坪坝水轮机#5
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2329
+        type: Turbine
+        name: 沙坪坝水轮机#6
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2421
+        type: Gate
+        name: 沙坪闸#1
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2422
+        type: Gate
+        name: 沙坪闸#2
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2423
+        type: Gate
+        name: 沙坪闸#3
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2424
+        type: Gate
+        name: 沙坪闸#4
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+      -
+        id: 2425
+        type: Gate
+        name: 沙坪闸#5
+        parameters:
+          f2:
+            latex: "\\hat{h}_{i,t+1} = \\alpha_{tail} \\cdot \\hat{h}_{i,t} + \\beta_{tail}\
+          \ \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot h_{i+1,t} + \\\
+          theta_{down} \\cdot q_{i+1,t}^{\\mathrm{tot}} + \\epsilon_{db} \\cdot q_{db,i,t}^{\\\
+          mathrm{tot}} + \\zeta_{tail} \\cdot 1"
+            alpha_tail: 0
+            beta_tail: 0
+            delta_down: 1
+            theta_down: 0
+            epsilon_db: 0
+            zeta_tail: 0
+          f3:
+            latex: "q_{i,t+1} = \\alpha_{inflow} \\cdot I_{i,t+1} + \\beta_{control} \\\
+          cdot e_{i,t} + c_{discharge} \\cdot n_{i,t} \\cdot e_{i,t} \\cdot \\sqrt{\\\
+          max(0,\\, h_{i,t} - \\hat{h}_{i,t})}"
+            alpha_inflow: 1
+            beta_control: 0
+            c_discharge: 0
+    parameters:
+      f1:
+        latex: "h_{i,t+1} = \\alpha_{h} \\cdot h_{i,t} + \\beta_{h} \\cdot I_{i,t} +\
+        \ \\gamma_{h} \\cdot q_{i,t}^{\\mathrm{tot}} + \\delta_{down} \\cdot \\hat{h}_{i-1,t}\
+        \ + \\eta_{h} \\cdot 1"
+        alpha_h: 0
+        beta_h: 0
+        gamma_h: 0
+        delta_down: 1
+        eta_h: 0
