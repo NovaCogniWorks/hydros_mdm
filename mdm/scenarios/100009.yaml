@@ -17,7 +17,11 @@ agents:
   - agent_code: OUTFLOW_PLAN_AGENT
     agent_type: OUTFLOW_PLAN_AGENT
     agent_name: 出流计划智能体
-    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/outflow_plan/agent_config.yaml
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/东线-徐洪河/agents/outflow_plan/agent_config.yaml
+  - agent_code: CENTRAL_SCHEDULING_AGENT_001
+    agent_type: CENTRAL_SCHEDULING_AGENT
+    agent_name: 中央调度智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/东线-徐洪河/agents/central_scheduling/agent_config.yaml
 auto_hydro_events:
   - hydro_event_type: OUTFLOW_TIME_SERIES
     hydro_event_id: OutflowTimeSeriesHydroEvent-001
