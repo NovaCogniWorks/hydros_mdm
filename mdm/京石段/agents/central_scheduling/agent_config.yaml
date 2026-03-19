@@ -20,7 +20,7 @@ components:
   description: 基于遗传算法的水网规划调度MPC算法
   enabled: true
   properties:
-    roll_steps: 10
+    roll_steps: 70
     auto_execute_decision: true
     mpc_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/mpc_config.yaml
     target_and_constrain_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/central_scheduling/constrains_targets.yaml
