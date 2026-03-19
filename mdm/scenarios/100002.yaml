@@ -37,7 +37,8 @@ auto_hydro_events:
     auto_schedule_at_step: 10
     hydro_event_source_type: WEATHER_FOR_CAST
     hydro_event_description: 系统预制的暴雨事件
-    dem_data_file_url: http://testmockdata
+    time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_weather_forecast.json
+    direct_load_time_series: true
     priority: MEDIUM
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
