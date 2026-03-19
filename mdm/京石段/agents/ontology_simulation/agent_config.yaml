@@ -13,7 +13,7 @@ waterway:
 properties:
   biz_start_time: 2017/12/27 00:00:00
   step_resolution: 120
-  total_steps: 2160
+  total_steps: 1080
   hydro_environment_type: NORMAL
   hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 hydro_node_id: default_edge
