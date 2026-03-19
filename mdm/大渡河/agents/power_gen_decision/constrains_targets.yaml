@@ -1,24 +1,20 @@
 control_targets:
   - node_id: 2116
-    target_water_level: 820
     min_water_level: 819
     max_water_level: 850
     min_flow: 0
     max_flow: 6000
   - node_id: 2118
-    target_water_level: 658
     min_water_level: 655
     max_water_level: 660
     min_flow: 0
     max_flow: 3600
   - node_id: 2120
-    target_water_level: 619
     min_water_level: 618
     max_water_level: 624
     min_flow: 0
     max_flow: 3600
   - node_id: 2122
-    target_water_level: 552
     min_water_level: 550
     max_water_level: 554
     min_flow: 0
