@@ -1,7 +1,7 @@
 agent_code: OUTFLOW_PLAN_AGENT
 agent_type: OUTFLOW_PLAN_AGENT
 agent_name: 出流计划智能体
-agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/outflow_plan/agent_config.yaml
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/东线-徐洪河/agents/outflow_plan/agent_config.yaml
 version: v0.0.1
 release_at: 2026/01/01
 author:
