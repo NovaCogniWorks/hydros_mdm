@@ -11,7 +11,7 @@ waterway:
   waterway_id: 50
   waterway_name: 京石段
 properties:
-  biz_start_time: 2025/01/01 00:00:00
+  biz_start_time: 2017/12/27 00:00:00
   step_resolution: 120
   total_steps: 2160
   hydro_environment_type: NORMAL
@@ -35,7 +35,7 @@ components:
       step_resolution: 7200
       driven_by_coordinator: true
       hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/hydro_dyn_config.yaml
-      biz_start_time: 2025/01/01 00:00:00
+      biz_start_time: 2017/12/27 00:00:00
       global_data: '{"channels":{"water_flow":0.0,"water_level":0.0}}'
       calculation_resolution: 120
       total_steps: 2160
