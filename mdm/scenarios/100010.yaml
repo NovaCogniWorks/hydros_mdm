@@ -1,5 +1,5 @@
 biz_scenario:
-  biz_scenario_id: 100009
+  biz_scenario_id: 100010
   biz_scenario_name: 大渡河-梯级电站发电协同与水量平衡综合调度演示场景
 waterway:
   waterway_id: 60
@@ -17,8 +17,8 @@ agents:
   agent_name: 渠池智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/channel/agent_config.yaml
  -
-  agent_code: POWER_MIND_AGENT
-  agent_type: POWER_MIND_AGENT
+  agent_code: OUTFLOW_PLAN_AGENT_001
+  agent_type: OUTFLOW_PLAN_AGENT
   agent_name: 电站出力规划智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/agent_config.yaml
  -
@@ -37,7 +37,7 @@ default_rendering_objects:
     object_name: 瀑布沟水轮机#1
   - object_id: 2311
     object_type: Turbine
-    object_name:瀑布沟水轮机#2
+    object_name: 瀑布沟水轮机#2
   - object_id: 2410
     object_type: Gate
     object_name: 瀑布闸#1
