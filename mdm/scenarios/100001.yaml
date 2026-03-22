@@ -54,9 +54,6 @@ auto_hydro_events:
     dem_data_file_url: http://testmockdata
     priority: MEDIUM
 auto_schedule_event_enabled: false
-total_steps: 1200
-step_resolution: 60
-biz_start_time: 2025/01/01 00:00:00
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 sim_agent_properties:
   total_steps: 1200
