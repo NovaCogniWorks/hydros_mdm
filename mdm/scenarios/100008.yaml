@@ -57,9 +57,6 @@ auto_hydro_events:
     auto_hydro_event_enable: false
     hydro_environment_type: NORMAL
 auto_schedule_event_enabled: false
-total_steps: 4320
-step_resolution: 60
-biz_start_time: '2025/01/01 00:00:00'
 hydros_objects_modeling_url: 'http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml'
 biz_scene_configuration_url: 'http://47.97.1.45:9000/hydros/mdm/scenarios/100008.yaml'
 sim_agent_properties:
