@@ -1176,13 +1176,13 @@ cross_sections:
        -
          - 115.7926433048971
          - 39.50704204090634
-    boundary_initial_state: -25.25767096
+    boundary_initial_state: 60.25381455
     bottom_elevation: 55.974
     interpolate_cross_section_count: 0
     t_bottom_width: 12.7
     location: 60828
     t_side_slope_ratio: 0
-    boundary_type: 2
+    boundary_type: 1
     min_sectional_area: 500
 objects:
  -
