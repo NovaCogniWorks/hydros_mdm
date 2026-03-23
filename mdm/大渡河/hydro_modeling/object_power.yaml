@@ -1,0 +1,611 @@
+connections:
+  -
+    from:
+      type: UnifiedCanal
+      name: sm-pbg
+      id: 2115
+      from_port: outlet
+    to:
+      type: Station
+      name: 瀑布沟
+      id: 2116
+      to_port: inlet
+  -
+    from:
+      type: Station
+      name: 瀑布沟
+      id: 2116
+      from_port: outlet
+    to:
+      type: UnifiedCanal
+      name: pbg-sxg
+      id: 2117
+      to_port: inlet
+  -
+    from:
+      type: UnifiedCanal
+      name: pbg-sxg
+      id: 2117
+      from_port: outlet
+    to:
+      type: Station
+      name: 深溪沟
+      id: 2118
+      to_port: inlet
+  -
+    from:
+      type: Station
+      name: 深溪沟
+      id: 2118
+      from_port: outlet
+    to:
+      type: UnifiedCanal
+      name: sxg-ztb
+      id: 2119
+      to_port: inlet
+  -
+    from:
+      type: UnifiedCanal
+      name: sxg-ztb
+      id: 2119
+      from_port: outlet
+    to:
+      type: Station
+      name: 枕头坝
+      id: 2120
+      to_port: inlet
+  -
+    from:
+      type: Station
+      name: 枕头坝
+      id: 2120
+      from_port: outlet
+    to:
+      type: UnifiedCanal
+      name: ztb-sp
+      id: 2121
+      to_port: inlet
+  -
+    from:
+      type: UnifiedCanal
+      name: ztb-sp
+      id: 2121
+      from_port: outlet
+    to:
+      type: Station
+      name: 沙坪
+      id: 2122
+      to_port: inlet
+cross_sections:
+  - id: 2210
+    type: CrossSection
+    name: SP70#断面#001
+    parameters:
+      cross_section_geometry:
+        data_points:
+          -
+            - 0
+            - 62.992
+          -
+            - 0
+            - 57.492
+          -
+            - 10
+            - 57.492
+          -
+            - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          -
+            - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          -
+            - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 2
+      min_sectional_area: 500
+  - id: 2211
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+  - id: 2212
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+  - id: 2213
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+  - id: 2214
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+  - id: 2215
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+  - id: 2216
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+  - id: 2217
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+  - id: 2218
+    type: CrossSection
+    name: SP71#断面#002
+    parameters:
+      cross_section_geometry:
+        data_points:
+          - - 0
+            - 62.992
+          - - 0
+            - 57.492
+          - - 10
+            - 57.492
+          - - 10
+            - 62.992
+        left_bank_geometry_coordination:
+          - - 115.39067441212269
+            - 39.20365984770055
+        right_bank_geometry_coordination:
+          - - 115.3923695682201
+            - 39.204003170454456
+      bottom_elevation: 57.492
+      cross_section_type: trapezoidal
+      t_bottom_width: 10
+      location: 0
+      t_side_slope_ratio: 0
+      boundary_type: 0
+      min_sectional_area: 500
+
+objects:
+  -
+    id: 2115
+    type: UnifiedCanal
+    name: sm-pbg
+    cross_section_children:
+      -
+        id: 2210
+        type: CrossSection
+        name: SP70#断面#001
+      -
+        id: 2211
+        type: CrossSection
+        name: SP71#断面#002
+  -
+    id: 2116
+    type: Station
+    name: 瀑布沟
+    cross_section_children:
+      -
+        id: 2211
+        type: CrossSection
+        name: SP71#断面#002
+      -
+        id: 2212
+        type: CrossSection
+        name: PS1#断面#001
+    device_children:
+      -
+        id: 2310
+        type: Turbine
+        name: 瀑布沟水轮机#1
+      -
+        id: 2311
+        type: Turbine
+        name: 瀑布沟水轮机#2
+      -
+        id: 2312
+        type: Turbine
+        name: 瀑布沟水轮机#3
+
+      -
+        id: 2313
+        type: Turbine
+        name: 瀑布沟水轮机#4
+
+      -
+        id: 2314
+        type: Turbine
+        name: 瀑布沟水轮机#5
+
+      -
+        id: 2315
+        type: Turbine
+        name: 瀑布沟水轮机#6
+
+      -
+        id: 2410
+        type: Gate
+        name: 瀑布闸#1
+
+      -
+        id: 2411
+        type: Gate
+        name: 瀑布闸#2
+
+      -
+        id: 2412
+        type: Gate
+        name: 瀑布闸#3
+
+  -
+    id: 2117
+    type: UnifiedCanal
+    name: pbg-sxg
+    cross_section_children:
+      -
+        id: 2212
+        type: CrossSection
+        name: PS1#断面#001
+      -
+        id: 2213
+        type: CrossSection
+        name: PS24#断面#002
+  -
+    id: 2118
+    type: Station
+    name: 深溪沟
+    cross_section_children:
+      -
+        id: 2213
+        type: CrossSection
+        name: PS24#断面#002
+      -
+        id: 2214
+        type: CrossSection
+        name: SZ1#断面#001
+    device_children:
+      -
+        id: 2316
+        type: Turbine
+        name: 深溪沟水轮机#1
+
+      -
+        id: 2317
+        type: Turbine
+        name: 深溪沟水轮机#2
+
+      -
+        id: 2318
+        type: Turbine
+        name: 深溪沟水轮机#3
+
+      -
+        id: 2319
+        type: Turbine
+        name: 深溪沟水轮机#4
+
+      -
+        id: 2413
+        type: Gate
+        name: 深溪闸#1
+
+      -
+        id: 2414
+        type: Gate
+        name: 深溪闸#2
+
+      -
+        id: 2415
+        type: Gate
+        name: 深溪闸#3
+
+  -
+    id: 2119
+    type: UnifiedCanal
+    name: sxg-ztb
+    cross_section_children:
+      -
+        id: 2214
+        type: CrossSection
+        name: SZ1#断面#001
+      -
+        id: 2215
+        type: CrossSection
+        name: SZ18#断面#002
+  -
+    id: 2120
+    type: Station
+    name: 枕头坝
+    cross_section_children:
+      -
+        id: 2215
+        type: CrossSection
+        name: SZ18#断面#002
+      -
+        id: 2216
+        type: CrossSection
+        name: ZS1#断面#001
+    device_children:
+      -
+        id: 2320
+        type: Turbine
+        name: 枕头坝水轮机#1
+
+      -
+        id: 2321
+        type: Turbine
+        name: 枕头坝水轮机#2
+
+      -
+        id: 2322
+        type: Turbine
+        name: 枕头坝水轮机#3
+
+      -
+        id: 2323
+        type: Turbine
+        name: 枕头坝水轮机#4
+
+      -
+        id: 2416
+        type: Gate
+        name: 枕头闸#1
+
+      -
+        id: 2417
+        type: Gate
+        name: 枕头闸#2
+
+      -
+        id: 2418
+        type: Gate
+        name: 枕头闸#3
+
+      -
+        id: 2419
+        type: Gate
+        name: 枕头闸#4
+
+      -
+        id: 2420
+        type: Gate
+        name: 枕头闸#5
+
+  -
+    id: 2121
+    type: UnifiedCanal
+    name: ztb-sp
+    cross_section_children:
+      -
+        id: 2216
+        type: CrossSection
+        name: ZS1#断面#001
+      -
+        id: 2217
+        type: CrossSection
+        name: ZS30#断面#002
+  -
+    id: 2122
+    type: Station
+    name: 沙坪
+    cross_section_children:
+      -
+        id: 2218
+        type: CrossSection
+        name: ZS30#断面#002
+    device_children:
+      -
+        id: 2324
+        type: Turbine
+        name: 沙坪坝水轮机#1
+
+      -
+        id: 2325
+        type: Turbine
+        name: 沙坪坝水轮机#2
+
+      -
+        id: 2326
+        type: Turbine
+        name: 沙坪坝水轮机#3
+
+      -
+        id: 2327
+        type: Turbine
+        name: 沙坪坝水轮机#4
+
+      -
+        id: 2328
+        type: Turbine
+        name: 沙坪坝水轮机#5
+
+      -
+        id: 2329
+        type: Turbine
+        name: 沙坪坝水轮机#6
+
+      -
+        id: 2421
+        type: Gate
+        name: 沙坪闸#1
+
+      -
+        id: 2422
+        type: Gate
+        name: 沙坪闸#2
+
+      -
+        id: 2423
+        type: Gate
+        name: 沙坪闸#3
+
+      -
+        id: 2424
+        type: Gate
+        name: 沙坪闸#4
+
+      -
+        id: 2425
+        type: Gate
+        name: 沙坪闸#5

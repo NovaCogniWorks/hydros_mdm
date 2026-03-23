@@ -1,6 +1,6 @@
-agent_code: CENTRAL_SCHEDULING_AGENT_POWER_MIND
+agent_code: CENTRAL_SCHEDULING_AGENT_POWER
 agent_type: CENTRAL_SCHEDULING_AGENT
-agent_name: 中央调度智能体-水电站
+agent_name: 水电站调度智能体
 version: v0.0.1
 release_at: 2026/03/03
 author:
@@ -15,7 +15,7 @@ properties:
   roll_steps: 10
   total_steps: 4320
   hydro_environment_type: NORMAL
-  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
+  hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/object_power.yaml
   mpc_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/mpc_config.yaml
   target_and_constrain_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/constrains_targets.yaml
   time_series_config_url: http://47.97.1.45:9000/hydros/mdm/大渡河/events/time_series_power_planning.json
