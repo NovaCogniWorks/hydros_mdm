@@ -1,6 +1,6 @@
 biz_scenario:
   biz_scenario_id: 100009
-  biz_scenario_name: 京石段-SDK-梯级泵站调水测试
+  biz_scenario_name: 东线徐洪河-梯级泵站调水演示场景
 waterway:
   waterway_id: 50
   waterway_name: 京石段
@@ -29,11 +29,9 @@ auto_hydro_events:
     auto_schedule_at_step: 5
     hydro_event_source_type: OUTFLOW_TIME_SERIES
     hydro_event_description: 系统预制的出流计划事件
-    start_step: 10
-    end_step: 30
-    value: 120
+    event_content_url: http://47.97.1.45:9000/hydros/mdm/东线-徐洪河/events/water_diversion.json
     priority: HIGH
-auto_schedule_event_enabled: false
+auto_schedule_event_enabled: true
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 sim_agent_properties:
   total_steps: 1200
