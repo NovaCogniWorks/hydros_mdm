@@ -1,4 +1,4 @@
-agent_code: CENTRAL_SCHEDULING_AGENT_001
+agent_code: CENTRAL_SCHEDULING_AGENT_PUMP
 agent_type: CENTRAL_SCHEDULING_AGENT
 agent_name: 中央调度智能体
 version: v0.0.1
