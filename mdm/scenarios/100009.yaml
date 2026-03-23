@@ -34,10 +34,11 @@ auto_hydro_events:
     value: 120
     priority: HIGH
 auto_schedule_event_enabled: false
-total_steps: 4320
-step_resolution: 60
-biz_start_time: 2025/01/01 00:00:00
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+sim_agent_properties:
+  total_steps: 1200
+  sim_step_size: 3600
+  biz_start_time: 2025/01/01 00:00:00
 default_rendering_objects:
   - object_id: 1041
     object_type: Gate
