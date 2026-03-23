@@ -1,6 +1,6 @@
 biz_scenario:
   biz_scenario_id: 100009
-  biz_scenario_name: 京石段-SDK-梯级泵站调水测试
+  biz_scenario_name: 东线徐洪河-梯级泵站调水演示场景
 waterway:
   waterway_id: 50
   waterway_name: 京石段
