@@ -1,0 +1,27 @@
+agent_code: OUTFLOW_PLAN_AGENT_POWER
+agent_type: OUTFLOW_PLAN_AGENT
+agent_name: 水电站出力规划智能体
+agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/outflow_plan/agent_config.yaml
+version: v0.0.1
+release_at: 2026/03/01
+author:
+  user_name: 高炳享/张雷
+description: 自动生成、优化、执行水库 / 闸站 / 水网的出流（下泄 / 放水）计划，实现防洪、供水、发电、生态等多目标的智能调度
+hydro_node_id: default_outflow
+waterway:
+  waterway_id: 60
+  waterway_name: 大渡河
+properties:
+  biz_start_time: 2026/03/01 00:00:00
+  step_resolution: 60
+  total_steps: 40
+  driven_by_coordinator: true  
+  hydro_environment_type: NORMAL
+  hydros_objects_modeling_url:  http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/object_power.yaml
+  output_config:
+    output_mode: MQTT
+    mqtt_broker:
+      mqtt_host: 192.168.1.24
+      mqtt_port: 1883
+      server_uri: tcp://192.168.1.24:1883
+    mqtt_topic: +/hydros/simulation/jobs/+/twins/objects

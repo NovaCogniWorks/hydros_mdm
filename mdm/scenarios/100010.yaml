@@ -17,31 +17,31 @@ agents:
   agent_name: 渠池智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/channel/agent_config.yaml
  -
-  agent_code: OUTFLOW_PLAN_AGENT_001
+  agent_code: OUTFLOW_PLAN_AGENT_POWER
   agent_type: OUTFLOW_PLAN_AGENT
   agent_name: 电站出力规划智能体
-  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/agent_config.yaml
+  agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/outflow_plan/agent_config.yaml
  -
   agent_code: CENTRAL_SCHEDULING_AGENT_POWER
   agent_type: CENTRAL_SCHEDULING_AGENT
   agent_name: 水电站调度智能体
   agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/大渡河/agents/power_gen_decision/agent_config.yaml
 auto_schedule_event_enabled: false
-hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/objects.yaml
+hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/大渡河/hydro_modeling/object_power.yaml
 sim_agent_properties:
   total_steps: 1200
   sim_step_size: 3600
   biz_start_time: 2026/03/11 00:00:00
 default_rendering_objects:
-  - object_id: 2310
-    object_type: Turbine
-    object_name: 瀑布沟水轮机#1
-  - object_id: 2311
-    object_type: Turbine
-    object_name: 瀑布沟水轮机#2
-  - object_id: 2410
+  - object_id: 2421
     object_type: Gate
-    object_name: 瀑布闸#1
-  - object_id: 2412
+    object_name: 沙坪闸#1
+  - object_id: 2422
     object_type: Gate
-    object_name: 瀑布闸#2
+    object_name: 沙坪闸#2
+  - object_id: 2423
+    object_type: Gate
+    object_name: 沙坪闸#3
+  - object_id: 2424
+    object_type: Gate
+    object_name: 沙坪闸#4
