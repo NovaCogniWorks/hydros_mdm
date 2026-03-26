@@ -32,13 +32,13 @@ components:
         mqtt_topic: +/hydros/simulation/jobs/+/realtime/objects
       step_speed: 1.0
       hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
-      step_resolution: 120
       driven_by_coordinator: true
       hydro_dyn_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/hydro_dyn_config.yaml
-      biz_start_time: 2017/12/27 00:00:00
       global_data: '{"channels":{"water_flow":0.0,"water_level":0.0}}'
-      calculation_resolution: 120
+      sim_step_size: 120
+      output_step_size: 120
       total_steps: 2160
+      biz_start_time: 2017/12/27 00:00:00
       time_series_config_url: http://47.97.1.45:9000/hydros/mdm/京石段/time_series/time_series.yaml
       simulation_mode: hydro1d_wxq
       steady:
