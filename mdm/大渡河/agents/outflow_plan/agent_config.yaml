@@ -13,7 +13,7 @@ waterway:
   waterway_name: 大渡河
 properties:
   biz_start_time: 2026/03/01 00:00:00
-  step_resolution: 60
+  output_step_size: 60
   total_steps: 40
   driven_by_coordinator: true  
   hydro_environment_type: NORMAL
