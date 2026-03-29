@@ -22,6 +22,8 @@ auto_hydro_events:
   - hydro_event_type: HYDRO_MONITOR_RULE
     hydro_event_id: template-AutoMonitorRuleEvent-001
     hydro_event_name: 自动预警规则下发事件
+    hydro_event_source_type: HYDRO_MONITOR_RULE
+    hydro_event_description: 自动预警规则下发事件
     auto_schedule_at_step: 1
     monitoring_rule:
       rule_id: MRULE_202601142210_5WZBL1BQ
