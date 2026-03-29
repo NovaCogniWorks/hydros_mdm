@@ -28,16 +28,16 @@ auto_hydro_events:
       rule_name: 自动下发的水位监控规则
       biz_status: NORMAL
       trigger_conditions:
-        object_id: 1064
-        object_name: QD-5#断面#001
-        trigger_expression: water_level > 60.8
+        object_id: 1031
+        object_name: QD-1#断面#001
+        trigger_expression: water_level > 63.41
     priority: MEDIUM
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
     hydro_event_name: '尾边界节点出流为0,模拟泵站故障'
     auto_schedule_at_step: 10
     hydro_event_source_type: DEVICE_FAULT
-    hydro_event_source: 模拟的故障
+    hydro_event_description: 模拟设备故障
     object_time_series:
       - object_id: 1064
         object_type: CrossSection
