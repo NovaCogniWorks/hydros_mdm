@@ -43,6 +43,7 @@ auto_hydro_events:
         object_type: CrossSection
         object_name: QD-14#断面#002
         metrics_code: water_flow
+
     priority: HIGH
     valid: true
   - hydro_event_type: WEATHER_FORECAST
