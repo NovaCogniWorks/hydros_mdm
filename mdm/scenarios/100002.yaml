@@ -36,7 +36,7 @@ auto_hydro_events:
     hydro_event_name: 天气预报事件
     auto_schedule_at_step: 60
     hydro_event_source_type: WEATHER_FOR_CAST
-    hydro_event_description: 系统预制的暴雨事件
+    hydro_event_description: 系统预制暴雨事件
     time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_weather_forecast.json
     direct_load_time_series: true
     priority: MEDIUM
@@ -45,7 +45,7 @@ auto_hydro_events:
     hydro_event_name: '尾边界节点出流为0,模拟泵站故障'
     auto_schedule_at_step: 10
     hydro_event_source_type: DEVICE_FAULT
-    hydro_event_source: 模拟的故障
+    hydro_event_description: 模拟设备故障
     object_time_series:
       - object_id: 1064
         object_type: CrossSection
