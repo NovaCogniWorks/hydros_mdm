@@ -43,6 +43,8 @@ auto_hydro_events:
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
     hydro_event_name: '尾边界节点出流为0,模拟泵站故障'
+    hydro_event_source_type: DEVICE_FAULT
+    hydro_event_description: 模拟设备故障
     auto_schedule_at_step: 2
     object_time_series:
       - time_series_name: 天气预报旁侧入流流量时间序列
