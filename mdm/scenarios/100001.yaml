@@ -85,7 +85,7 @@ auto_hydro_events:
     hydro_event_description: 系统预制的暴雨事件
     dem_data_file_url: http://testmockdata
     priority: MEDIUM
-auto_schedule_event_enabled: false
+auto_schedule_event_enabled: true
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 sim_agent_properties:
   total_steps: 1200
