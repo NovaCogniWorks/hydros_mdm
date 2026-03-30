@@ -33,7 +33,7 @@ auto_hydro_events:
       trigger_conditions:
         object_id: 1031
         object_name: QD-1#断面#001
-        trigger_expression: water_level > 63.41
+        trigger_expression: water_level > 63.40
     priority: MEDIUM
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001

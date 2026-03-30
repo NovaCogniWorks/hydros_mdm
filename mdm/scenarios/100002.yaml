@@ -53,31 +53,31 @@ auto_hydro_events:
         object_name: QD-6
         metrics_code: water_flow
         time_series:
-          - step: 600
+          - step: 200
             value: 26.51391526
-          - step: 720
+          - step: 320
             value: 28.81300714
-          - step: 840
+          - step: 440
             value: 27.206448
-          - step: 960
+          - step: 560
             value: 27.04495894
-          - step: 1080
+          - step: 680
             value: 27.78208941
-          - step: 1200
+          - step: 720
             value: 28.54880891
-          - step: 1320
+          - step: 840
             value: 27.56
-          - step: 1440
+          - step: 960
             value: 26.0583133
-          - step: 1560
+          - step: 1080
             value: 27.60811142
-          - step: 1680
+          - step: 1200
             value: 27.5377418
-          - step: 1800
+          - step: 1320
             value: 27.75938999
-          - step: 1920
+          - step: 1440
             value: 27.90066712
-          - step: 2040
+          - step: 1560
             value: 27.04867572
     priority: HIGH
     valid: true
