@@ -25,6 +25,7 @@ auto_hydro_events:
     hydro_event_source_type: HYDRO_MONITOR_RULE
     hydro_event_description: 自动预警规则下发事件
     auto_schedule_at_step: 1
+    auto_hydro_event_enable: true
     monitoring_rule:
       rule_id: MRULE_202601142210_5WZBL1BQ
       rule_name: 自动下发的水位监控规则
@@ -77,6 +78,8 @@ auto_hydro_events:
     valid: true
     auto_hydro_event_enable: true
     hydro_environment_type: NORMAL
+
+
   - hydro_event_type: WEATHER_FORECAST
     hydro_event_id: template-WeatherForecastHydroEvent-001
     hydro_event_name: 天气预报事件
@@ -85,6 +88,7 @@ auto_hydro_events:
     hydro_event_description: 系统预制的暴雨事件
     time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_weather_forecast.json
     direct_load_time_series: true
+    auto_hydro_event_enable: true
     priority: MEDIUM
 auto_schedule_event_enabled: true
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
@@ -103,6 +107,6 @@ default_rendering_objects:
   - object_id: 1040
     object_type: CrossSection
     object_name: QD-5#断面#001
-  - object_id: 1052
-    object_type: Gate
-    object_name: ZM2-节制闸#1
+  - object_id: 1064
+    object_type: CrossSection
+    object_name: QD-14#断面#002
