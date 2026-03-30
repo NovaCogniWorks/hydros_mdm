@@ -78,8 +78,22 @@ auto_hydro_events:
     valid: true
     auto_hydro_event_enable: true
     hydro_environment_type: NORMAL
-
-
+  - hydro_event_type: HYDRO_MONITOR_RULE
+    hydro_event_id: template-AutoMonitorRuleEvent-002
+    hydro_event_name: 自动预警规则下发事件
+    hydro_event_source_type: HYDRO_MONITOR_RULE
+    hydro_event_description: 自动预警规则下发事件
+    auto_schedule_at_step: 1
+    auto_hydro_event_enable: true
+    monitoring_rule:
+      rule_id: MRULE_202603302210_5WZBL1QD
+      rule_name: 自动下发的水位监控规则
+      biz_status: NORMAL
+      trigger_conditions:
+        object_id: 1064
+        object_name: QD-14#断面#002
+        trigger_expression: water_level <= 0
+    priority: MEDIUM
   - hydro_event_type: WEATHER_FORECAST
     hydro_event_id: template-WeatherForecastHydroEvent-001
     hydro_event_name: 天气预报事件
