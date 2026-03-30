@@ -41,7 +41,7 @@ auto_hydro_events:
     hydro_event_source_type: DEVICE_FAULT
     hydro_event_description: 模拟设备故障
     object_time_series:
-      - time_series_name: 天气预报旁侧出流时间序列
+      - time_series_name: 下流边界-水位时间序列
         object_id: 1064
         object_type: CrossSection
         object_name: QD-14#断面#002
