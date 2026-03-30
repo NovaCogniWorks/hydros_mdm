@@ -41,38 +41,38 @@ auto_hydro_events:
     hydro_event_source_type: DEVICE_FAULT
     hydro_event_description: 模拟设备故障
     object_time_series:
-      - time_series_name: 天气预报旁侧入流流量时间序列
-        object_id: 1012
-        object_type: UnifiedCanal
-        object_name: QD-6
+      - time_series_name: 天气预报旁侧出流时间序列
+        object_id: 1064
+        object_type: CrossSection
+        object_name: QD-14#断面#002
         metrics_code: water_flow
         time_series:
           - step: 120
-            value: 26.51391526
+            value: 0
           - step: 240
-            value: 28.81300714
+            value: 0
           - step: 360
-            value: 27.206448
+            value: 0
           - step: 480
-            value: 27.04495894
+            value: 0
           - step: 600
-            value: 27.78208941
+            value: 0
           - step: 720
-            value: 28.54880891
+            value: 0
           - step: 840
-            value: 27.56
+            value: 0
           - step: 960
-            value: 26.0583133
+            value: 0
           - step: 1080
-            value: 27.60811142
+            value: 0
           - step: 1200
-            value: 27.5377418
+            value: 0
           - step: 1320
-            value: 27.75938999
+            value: 0
           - step: 1440
-            value: 27.90066712
+            value: 0
           - step: 1560
-            value: 27.04867572
+            value: 0
     priority: HIGH
     valid: true
     auto_hydro_event_enable: true
