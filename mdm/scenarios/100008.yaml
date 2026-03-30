@@ -1,6 +1,6 @@
 biz_scenario:
   biz_scenario_id: 100008
-  biz_scenario_name: 京石段-SDK-测试
+  biz_scenario_name: 京石段-数字孪生智能体
 waterway:
   waterway_id: 50
   waterway_name: 京石段
@@ -8,7 +8,7 @@ hydro_environment_type: NORMAL
 agents:
   - agent_code: TWINS_SIMULATION_AGENT_demo001
     agent_type: TWINS_SIMULATION_AGENT
-    agent_name: IDZ测试Agent
+    agent_name: IDZ数字孪生智能体
     agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/idz_test/agent_config.yaml
   - agent_code: CHANNEL_AGENT
     agent_type: CHANNEL_AGENT
@@ -64,7 +64,8 @@ sim_agent_properties:
   sim_step_size: 60
   output_step_size: 3600
   biz_start_time: 2025/01/01 00:00:00
-  roll_steps: 60
+  roll_steps: 10
+  output_future_steps: 20
 default_rendering_objects:
   - object_id: 1041
     object_type: Gate
