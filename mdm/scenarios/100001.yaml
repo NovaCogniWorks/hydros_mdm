@@ -89,7 +89,7 @@ monitor_rules:
       object_id: 1031
       object_name: QD-1#断面#001
       trigger_expression: water_level > 63.40
-      alert_message: 【%s】水位过高预警，当前水位大于63.40
+      alert_message: 【QD-1#断面#001】水位过高预警，当前水位大于63.40
   - rule_id: MRULE_202603302210_5WZBL1QD
     rule_name: 自动下发的水位监控规则
     biz_status: NORMAL
@@ -97,7 +97,7 @@ monitor_rules:
       object_id: 1064
       object_name: QD-14#断面#002
       trigger_expression: water_level <= 0
-      alert_message: 【%s】水位过低预警，当前水位小于0
+      alert_message: 【QD-14#断面#002】水位过低预警，当前水位小于0
 auto_schedule_event_enabled: true
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 sim_agent_properties:
