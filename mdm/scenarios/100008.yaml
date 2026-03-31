@@ -10,57 +10,46 @@ agents:
     agent_type: TWINS_SIMULATION_AGENT
     agent_name: IDZ数字孪生智能体
     agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/idz_test/agent_config.yaml
-  - agent_code: CHANNEL_AGENT
-    agent_type: CHANNEL_AGENT
-    agent_name: 渠池智能体
-    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
 auto_hydro_events:
+  - hydro_event_type: WEATHER_FORECAST
+    hydro_event_id: template-WeatherForecastHydroEvent-001
+    hydro_event_name: 天气预报事件
+    auto_schedule_at_step: 10
+    hydro_event_source_type: WEATHER_FOR_CAST
+    hydro_event_description: 系统预制的暴雨事件
+    time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_weather_forecast.json
+    direct_load_time_series: true
+    auto_hydro_event_enable: true
+    priority: HIGH
+
+  - hydro_event_type: TIME_SERIES_DATA_UPDATED
+    hydro_event_id: TS_REQ_1001_202601141607
+    hydro_event_name: 用水计划事件
+    auto_schedule_at_step: 10
+    hydro_event_source_type: WATER_USE
+    hydro_event_description: 系统预制的用水计划
+    time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_water_use_residential.json
+    direct_load_time_series: true
+    auto_hydro_event_enable: true
+    priority: MEDIUM
+
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
-    hydro_event_name: '尾边界节点出流为0,模拟泵站故障'
-    auto_schedule_at_step: 2
-    object_time_series:
-      - time_series_name: 天气预报旁侧入流流量时间序列
-        object_id: 1012
-        object_type: UnifiedCanal
-        object_name: QD-6
-        metrics_code: water_flow
-        time_series:
-          - step: 600
-            value: 26.51391526
-          - step: 720
-            value: 28.81300714
-          - step: 840
-            value: 27.206448
-          - step: 960
-            value: 27.04495894
-          - step: 1080
-            value: 27.78208941
-          - step: 1200
-            value: 28.54880891
-          - step: 1320
-            value: 27.56
-          - step: 1440
-            value: 26.0583133
-          - step: 1560
-            value: 27.60811142
-          - step: 1680
-            value: 27.5377418
-          - step: 1800
-            value: 27.75938999
-          - step: 1920
-            value: 27.90066712
-          - step: 2040
-            value: 27.04867572
+    hydro_event_name: 应急检修事件
+    auto_schedule_at_step: 10
+    hydro_event_source_type: DEVICE_FAULT
+    hydro_event_description: 模拟设备故障
+    time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_device_fault.json
     priority: HIGH
     valid: true
-    auto_hydro_event_enable: false
+    auto_hydro_event_enable: true
     hydro_environment_type: NORMAL
-auto_schedule_event_enabled: false
+
+auto_schedule_event_enabled: true
 hydros_objects_modeling_url: 'http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml'
 biz_scene_configuration_url: 'http://47.97.1.45:9000/hydros/mdm/scenarios/100008.yaml'
 sim_agent_properties:
-  total_steps: 1200
+  total_steps: 100
   sim_step_size: 60
   output_step_size: 3600
   biz_start_time: 2025/01/01 00:00:00
