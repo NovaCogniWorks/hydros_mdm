@@ -14,7 +14,7 @@ waterway:
 properties:
   biz_start_time: 2025/01/01 00:00:00
   output_step_size: 60
-  total_steps: 40
+  total_steps: 100
   driven_by_coordinator: true  
   hydro_environment_type: NORMAL
   hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
