@@ -51,33 +51,6 @@ auto_hydro_events:
         object_type: CrossSection
         object_name: QD-14#断面#002
         metrics_code: water_flow
-        time_series:
-          - step: 120
-            value: 0
-          - step: 240
-            value: 0
-          - step: 360
-            value: 0
-          - step: 480
-            value: 0
-          - step: 600
-            value: 0
-          - step: 720
-            value: 0
-          - step: 840
-            value: 0
-          - step: 960
-            value: 0
-          - step: 1080
-            value: 0
-          - step: 1200
-            value: 0
-          - step: 1320
-            value: 0
-          - step: 1440
-            value: 0
-          - step: 1560
-            value: 0
     priority: HIGH
     valid: true
     auto_hydro_event_enable: true
