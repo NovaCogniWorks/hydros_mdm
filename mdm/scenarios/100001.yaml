@@ -18,6 +18,10 @@ agents:
     agent_type: GATE_STATION_AGENT
     agent_name: 闸站智能体
     agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+  - agent_code: WEATHER_FORECAST_AGENT
+    agent_type: WEATHER_FORECAST_AGENT
+    agent_name: 天气预报智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/weather_forecast/agent_config.yaml
 auto_hydro_events:
   - hydro_event_type: HYDRO_MONITOR_RULE
     hydro_event_id: template-AutoMonitorRuleEvent-001
