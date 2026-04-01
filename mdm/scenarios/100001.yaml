@@ -67,7 +67,7 @@ auto_hydro_events:
         object_name: QD-14#断面#002
         trigger_expression: water_level <= 0
     priority: MEDIUM
-  - hydro_event_type: TIME_SERIES_DATA_UPDATED
+  - hydro_event_type: WEATHER_FORECAST
     hydro_event_id: template-WeatherForecastHydroEvent-001
     hydro_event_name: 天气预报事件
     auto_schedule_at_step: 10
