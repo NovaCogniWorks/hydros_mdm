@@ -73,7 +73,7 @@ auto_hydro_events:
     auto_schedule_at_step: 10
     hydro_event_source_type: WEATHER_FOR_CAST
     hydro_event_description: 系统预制的暴雨事件
-    object_time_series: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_weather_forecast.json
+    time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_weather_forecast.json
     direct_load_time_series: true
     auto_hydro_event_enable: true
     priority: MEDIUM
