@@ -1511,7 +1511,7 @@ objects:
       outflow: 15.72590432077085
       water_level: 63.0240575682442
       inflow: 30.42490457138925
-      opening: 0.775
+      opening: 1.05
       water_level_back: 62.3945286588849
     parameters:
       gate_width: 5.5
@@ -1531,7 +1531,7 @@ objects:
       outflow: 15.72590432077085
       water_level: 63.0240575682442
       inflow: 30.42490457138925
-      opening: 0.775
+      opening: 1.05
       water_level_back: 62.3945286588849
     parameters:
       gate_width: 5.5
@@ -1881,7 +1881,7 @@ objects:
     initial_state:
       outflow: 15.2788574830541
       water_level: 62.1048113265128
-      opening: 0.54
+      opening: 0.85
       water_level_back: 60.9099998474121
       inflow: 27.057717620015
     parameters:
@@ -1901,7 +1901,7 @@ objects:
     initial_state:
       outflow: 15.2788574830541
       water_level: 62.1048113265128
-      opening: 0.54
+      opening: 0.8
       water_level_back: 60.9099998474121
       inflow: 27.057717620015
     parameters:
