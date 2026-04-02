@@ -11,6 +11,32 @@ agents:
     agent_name: IDZ数字孪生智能体
     agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/idz_test/agent_config.yaml
 auto_hydro_events:
+  - hydro_event_type: HYDRO_MONITOR_RULE
+    hydro_event_id: template-AutoMonitorRuleEvent-001
+    hydro_event_name: 自动预警规则下发事件
+    hydro_event_source_type: HYDRO_MONITOR_RULE
+    hydro_event_description: 自动预警规则下发事件
+    consumption_mode: RULE_ENGINE
+    auto_schedule_at_step: 1
+    auto_hydro_event_enable: true
+    priority: MEDIUM
+    monitor_rules:
+      - rule_id: MRULE_202601142210_5WZBL1AB
+        rule_name: 水位预警监控
+        biz_status: NORMAL
+        trigger_conditions:
+          object_id: 1031
+          object_name: QD-1#断面#001
+          trigger_expression: water_level > 63.40
+          alert_message: 【QD-1#断面#001】水位过高预警，当前水位大于63.40
+      - rule_id: MRULE_202603302210_5WZBL1AD
+        rule_name: 水位预警监控
+        biz_status: NORMAL
+        trigger_conditions:
+          object_id: 1064
+          object_name: QD-14#断面#002
+          trigger_expression: water_level <= 0
+          alert_message: 【QD-14#断面#002】水位过低预警，当前水位小于0
   - hydro_event_type: WEATHER_FORECAST
     hydro_event_id: template-WeatherForecastHydroEvent-001
     hydro_event_name: 天气预报事件
