@@ -82,15 +82,15 @@ sim_agent_properties:
   roll_steps: 10
   output_future_steps: 20
 default_rendering_objects:
-  - object_id: 1041
-    object_type: Gate
-    object_name: 'ZM1-节制闸#1'
-  - object_id: 1053
-    object_type: Gate
-    object_name: 'ZM2-节制闸#2'
+  - object_id: 1039
+    object_type: CrossSection
+    object_name: 'ZM1-入口断面'
   - object_id: 1040
     object_type: CrossSection
     object_name: 'QD-5#断面#001'
-  - object_id: 1052
-    object_type: Gate
-    object_name: 'ZM2-节制闸#1'
+  - object_id: 1049
+    object_type: CrossSection
+    object_name: 'QD-8#断面#002'
+  - object_id: 1051
+    object_type: CrossSection
+    object_name: 'QD-9#断面#001'
