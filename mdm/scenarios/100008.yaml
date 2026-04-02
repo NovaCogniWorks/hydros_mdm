@@ -25,18 +25,18 @@ auto_hydro_events:
         rule_name: 水位预警监控
         biz_status: NORMAL
         trigger_conditions:
-          object_id: 1031
-          object_name: QD-1#断面#001
-          trigger_expression: water_level > 63.40
-          alert_message: 【QD-1#断面#001】水位过高预警，当前水位大于63.40
+          object_id: 1039
+          object_name: ZM1-入口断面
+          trigger_expression: water_level > 60
+          alert_message: 【ZM1-入口断面】水位过高预警，当前水位大于60
       - rule_id: MRULE_202603302210_5WZBL1AD
         rule_name: 水位预警监控
         biz_status: NORMAL
         trigger_conditions:
-          object_id: 1064
-          object_name: QD-14#断面#002
-          trigger_expression: water_level <= 0
-          alert_message: 【QD-14#断面#002】水位过低预警，当前水位小于0
+          object_id: 1040
+          object_name: QD-5#断面#001
+          trigger_expression: water_level <= 63
+          alert_message: 【QD-5#断面#001】水位过低预警，当前水位小于63
   - hydro_event_type: WEATHER_FORECAST
     hydro_event_id: template-WeatherForecastHydroEvent-001
     hydro_event_name: 天气预报事件
