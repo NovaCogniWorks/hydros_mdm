@@ -23,7 +23,6 @@ auto_hydro_events:
     hydro_event_id: TS_DEFAULT_DEVICE_STATUS_CHAGNE_001
     hydro_event_name: '故障场景例行检修'
     auto_schedule_at_step: 1
-    hydro_event_source_type: DEVICE_FAULT
     hydro_event_description: 模拟设备故障
     time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_device_status_change.json
     priority: HIGH
