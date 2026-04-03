@@ -47,7 +47,7 @@ auto_hydro_events:
     direct_load_time_series: true
     auto_hydro_event_enable: true
     priority: HIGH
-  - hydro_event_type: TIME_SERIES_DATA_UPDATED
+  - hydro_event_type: WATER_USE
     hydro_event_id: TS_REQ_1001_202601141607
     hydro_event_name: 用水计划事件
     auto_schedule_at_step: 10
