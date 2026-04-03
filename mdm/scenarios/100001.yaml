@@ -39,6 +39,7 @@ auto_hydro_events:
           object_id: 1031
           object_name: QD-1#断面#001
           trigger_expression: water_level > 63
+          alert_level: RISK_HIGH
           alert_message: 【QD-1#断面#001】水位过高预警，当前水位大于63
       - rule_id: MRULE_202603302210_5WZBL1QD
         rule_name: 流量过低
@@ -46,6 +47,7 @@ auto_hydro_events:
         trigger_conditions:
           object_id: 1064
           object_name: QD-14#断面#002
+          alert_level: RISK_HIGH
           trigger_expression: water_flow <= 5
           alert_message: 【QD-14#断面#002】流量过低预警，当前流量小于5
   - hydro_event_type: WEATHER_FORECAST
