@@ -25,52 +25,7 @@ auto_hydro_events:
     auto_schedule_at_step: 1
     hydro_event_source_type: DEVICE_FAULT
     hydro_event_description: 模拟设备故障
-    object_time_series:
-      - time_series_name: 设备状态变更
-        object_id: 1041
-        object_type: Gate
-        object_name: ZM1-节制闸#1
-        metrics_code: gate_opening
-        time_series:
-          - step: 200
-            status: Maintenance
-            value: 0.0
-          - step: 320
-            status: Maintenance
-            value: 0.0
-          - step: 440
-            status: Maintenance
-            value: 0.0
-          - step: 560
-            status: Maintenance
-            value: 0.0
-          - step: 680
-            status: Maintenance
-            value: 0.0
-          - step: 720
-            status: Maintenance
-            value: 0.0
-          - step: 840
-            status: Maintenance
-            value: 0.0
-          - step: 960
-            status: Maintenance
-            value: 0.0
-          - step: 1080
-            status: Maintenance
-            value: 0.0
-          - step: 1200
-            status: Maintenance
-            value: 0.0
-          - step: 1320
-            status: Maintenance
-            value: 0.0
-          - step: 1440
-            status: Maintenance
-            value: 0.0
-          - step: 1560
-            status: Maintenance
-            value: 0.0
+    time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_device_status_change.json
     priority: HIGH
     valid: true
     auto_hydro_event_enable: true
