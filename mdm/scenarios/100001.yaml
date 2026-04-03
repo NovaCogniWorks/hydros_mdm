@@ -46,8 +46,8 @@ auto_hydro_events:
         trigger_conditions:
           object_id: 1064
           object_name: QD-14#断面#002
-          trigger_expression: water_level <= 0
-          alert_message: 【QD-14#断面#002】水位过低预警，当前水位小于0
+          trigger_expression: water_level <= 0.5
+          alert_message: 【QD-14#断面#002】水位过低预警，当前水位小于0.5
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
     hydro_event_name: '尾边界节点出流为0,模拟泵站故障'
