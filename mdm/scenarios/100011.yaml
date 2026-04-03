@@ -1,9 +1,9 @@
 biz_scenario:
-  biz_scenario_id: 100012
-  biz_scenario_name: 京石段-例行/紧急检修场景
+  biz_scenario_id: 1000011
+  biz_scenario_name: 完整京石段-本体仿真智能体升级
 waterway:
-  waterway_id: 50
-  waterway_name: 京石段
+  waterway_id: 51
+  waterway_name: 完整京石段
 hydro_environment_type: NORMAL
 agents:
   - agent_code: ONTOLOGY_SIMULATION_AGENT
@@ -19,17 +19,41 @@ agents:
     agent_name: 闸站智能体
     agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
 auto_hydro_events:
-  - hydro_event_type: DEVICE_STATUS_CHANGE
-    hydro_event_id: TS_DEFAULT_DEVICE_STATUS_CHAGNE_001
-    hydro_event_name: '故障场景例行检修'
+  - hydro_event_type: HYDRO_MONITOR_RULE
+    hydro_event_id: template-AutoMonitorRuleEvent-001
+    hydro_event_name: 自动预警规则下发事件
     auto_schedule_at_step: 1
-    hydro_event_description: 模拟设备故障
-    time_series_url: http://47.97.1.45:9000/hydros/mdm/京石段/events/time_series_device_status_change.json
+    monitoring_rule:
+      rule_id: MRULE_202601142210_5WZBL1BQ
+      rule_name: 自动下发的水位监控规则
+      biz_status: NORMAL
+      trigger_conditions:
+        object_id: 1064
+        object_name: QD-5#断面#001
+        trigger_expression: water_level > 60.8
+    priority: MEDIUM
+  - hydro_event_type: TIME_SERIES_DATA_UPDATED
+    hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
+    hydro_event_name: '尾边界节点出流为0,模拟泵站故障'
+    auto_schedule_at_step: 10
+    hydro_event_source_type: DEVICE_FAULT
+    hydro_event_source: 模拟的故障
+    object_time_series:
+      - object_id: 1064
+        object_type: CrossSection
+        object_name: QD-14#断面#002
+        metrics_code: water_flow
     priority: HIGH
     valid: true
-    auto_hydro_event_enable: true
-    hydro_environment_type: NORMAL
-auto_schedule_event_enabled: true
+  - hydro_event_type: WEATHER_FORECAST
+    hydro_event_id: template-WeatherForecastHydroEvent-001
+    hydro_event_name: 天气预报事件
+    auto_schedule_at_step: 10
+    hydro_event_source_type: WEATHER_FOR_CAST
+    hydro_event_description: 系统预制的暴雨事件
+    dem_data_file_url: http://testmockdata
+    priority: MEDIUM
+auto_schedule_event_enabled: false
 hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
 sim_agent_properties:
   total_steps: 1200
@@ -46,6 +70,6 @@ default_rendering_objects:
   - object_id: 1040
     object_type: CrossSection
     object_name: QD-5#断面#001
-  - object_id: 1064
-    object_type: CrossSection
-    object_name: QD-14#断面#002
+  - object_id: 1052
+    object_type: Gate
+    object_name: ZM2-节制闸#1
