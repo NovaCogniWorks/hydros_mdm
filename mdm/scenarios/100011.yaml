@@ -1,0 +1,97 @@
+biz_scenario:
+  biz_scenario_id: 100011
+  biz_scenario_name: 京石段-例行/紧急检修场景
+waterway:
+  waterway_id: 50
+  waterway_name: 京石段
+hydro_environment_type: NORMAL
+agents:
+  - agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/ontology_simulation/agent_config.yaml
+  - agent_code: CHANNEL_AGENT
+    agent_type: CHANNEL_AGENT
+    agent_name: 渠池智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/channel/agent_config.yaml
+  - agent_code: GATE_STATION_AGENT
+    agent_type: GATE_STATION_AGENT
+    agent_name: 闸站智能体
+    agent_configuration_url: http://47.97.1.45:9000/hydros/mdm/京石段/agents/gate_station/agent_config.yaml
+auto_hydro_events:
+  - hydro_event_type: DEVICE_STATUS_CHANGE
+    hydro_event_id: TS_DEFAULT_DEVICE_STATUS_CHAGNE_001
+    hydro_event_name: '故障场景例行检修'
+    auto_schedule_at_step: 1
+    hydro_event_source_type: DEVICE_FAULT
+    hydro_event_description: 模拟设备故障
+    object_time_series:
+      - time_series_name: 设备状态变更
+        object_id: 1041
+        object_type: Gate
+        object_name: ZM1-节制闸#1
+        metrics_code: gate_opening
+        time_series:
+          - step: 200
+            status: Maintenance
+            value: 0.0
+          - step: 320
+            status: Maintenance
+            value: 0.0
+          - step: 440
+            status: Maintenance
+            value: 0.0
+          - step: 560
+            status: Maintenance
+            value: 0.0
+          - step: 680
+            status: Maintenance
+            value: 0.0
+          - step: 720
+            status: Maintenance
+            value: 0.0
+          - step: 840
+            status: Maintenance
+            value: 0.0
+          - step: 960
+            status: Maintenance
+            value: 0.0
+          - step: 1080
+            status: Maintenance
+            value: 0.0
+          - step: 1200
+            status: Maintenance
+            value: 0.0
+          - step: 1320
+            status: Maintenance
+            value: 0.0
+          - step: 1440
+            status: Maintenance
+            value: 0.0
+          - step: 1560
+            status: Maintenance
+            value: 0.0
+    priority: HIGH
+    valid: true
+    auto_hydro_event_enable: true
+    hydro_environment_type: NORMAL
+auto_schedule_event_enabled: true
+hydros_objects_modeling_url: http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml
+sim_agent_properties:
+  total_steps: 1200
+  sim_step_size: 120
+  output_step_size: 7200
+  biz_start_time: 2017/12/27 00:00:00
+default_rendering_objects:
+  - object_id: 1041
+    object_type: Gate
+    object_name: ZM1-节制闸#1
+  - object_id: 1053
+    object_type: Gate
+    object_name: ZM2-节制闸#2
+  - object_id: 1040
+    object_type: CrossSection
+    object_name: QD-5#断面#001
+  - object_id: 1064
+    object_type: CrossSection
+    object_name: QD-14#断面#002
