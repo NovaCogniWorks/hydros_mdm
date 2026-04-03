@@ -1,8 +1,8 @@
 connections:
   -
     from:
-      type: UnifiedCanal
-      name: sm-pbg
+      type: Station
+      name: 泗洪站下游
       id: 2115
       from_port: outlet
     to:
@@ -106,7 +106,7 @@ objects:
     device_children:
       -
         id: 2310
-        type: Turbine
+        type: Pump
         name: 瀑布沟水轮机#1
         parameters:
           f2:
