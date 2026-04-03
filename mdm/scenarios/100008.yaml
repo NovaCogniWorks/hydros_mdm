@@ -47,7 +47,6 @@ auto_hydro_events:
     direct_load_time_series: true
     auto_hydro_event_enable: true
     priority: HIGH
-
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_REQ_1001_202601141607
     hydro_event_name: 用水计划事件
@@ -58,7 +57,6 @@ auto_hydro_events:
     direct_load_time_series: true
     auto_hydro_event_enable: true
     priority: MEDIUM
-
   - hydro_event_type: TIME_SERIES_DATA_UPDATED
     hydro_event_id: TS_DEFAULT_DEVICE_FAULT_001
     hydro_event_name: 应急检修事件
@@ -70,7 +68,6 @@ auto_hydro_events:
     valid: true
     auto_hydro_event_enable: true
     hydro_environment_type: NORMAL
-
 auto_schedule_event_enabled: true
 hydros_objects_modeling_url: 'http://47.97.1.45:9000/hydros/mdm/京石段/hydro_modeling/objects.yaml'
 biz_scene_configuration_url: 'http://47.97.1.45:9000/hydros/mdm/scenarios/100008.yaml'
