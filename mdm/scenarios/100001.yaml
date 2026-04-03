@@ -41,7 +41,7 @@ auto_hydro_events:
           trigger_expression: water_level > 63
           alert_message: 【QD-1#断面#001】水位过高预警，当前水位大于63
       - rule_id: MRULE_202603302210_5WZBL1QD
-        rule_name: 自动下发的水位监控规则
+        rule_name: 流量过低
         biz_status: NORMAL
         trigger_conditions:
           object_id: 1064
