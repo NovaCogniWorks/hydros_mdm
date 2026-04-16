@@ -1,0 +1,135 @@
+biz_scenario:
+  biz_scenario_id: 200030
+  biz_scenario_name: 京石段-HIL场景（一中心多边缘）
+waterway:
+  waterway_id: 100
+  waterway_name: 京石段-全
+hydro_environment_type: XIL
+agents:
+  -
+    agent_code: ONTOLOGY_SIMULATION_AGENT
+    agent_type: ONTOLOGY_SIMULATION_AGENT
+    agent_name: 本体仿真智能体
+    agent_configuration_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/ONTOLOGY_SIMULATION_AGENT/agent_config_multi_edge.yaml
+    edge_node_code: EDGE_NODE_1
+  -
+    agent_code: GATE_STATION_AGENT_1
+    agent_type: GATE_STATION_AGENT
+    agent_name: 闸站智能体
+    agent_configuration_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/GATE_STATION_AGENT/agent_config_multi_edge_1.yaml
+    edge_node_code: EDGE_NODE_1
+    hydro_environment_type: NORMAL
+  -
+    agent_code: CHANNEL_AGENT_1
+    agent_type: CHANNEL_AGENT
+    agent_name: 渠池智能体
+    agent_configuration_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/CHANNEL_AGENT/agent_config_multi_edge_1.yaml
+    edge_node_code: EDGE_NODE_1
+    hydro_environment_type: NORMAL
+  - agent_code: GATE_STATION_AGENT_2
+    agent_type: GATE_STATION_AGENT
+    agent_name: 闸站智能体
+    agent_configuration_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/GATE_STATION_AGENT/agent_config_multi_edge_2.yaml
+    edge_node_code: EDGE_NODE_2
+  - agent_code: CHANNEL_AGENT_2
+    agent_type: CHANNEL_AGENT
+    agent_name: 渠池智能体
+    agent_configuration_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/CHANNEL_AGENT/agent_config_multi_edge_2.yaml
+    edge_node_code: EDGE_NODE_2
+  - agent_code: GATE_STATION_AGENT_3
+    agent_type: GATE_STATION_AGENT
+    agent_name: 闸站智能体
+    agent_configuration_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/GATE_STATION_AGENT/agent_config_multi_edge_3.yaml
+    edge_node_code: EDGE_NODE_3
+  - agent_code: CHANNEL_AGENT_3
+    agent_type: CHANNEL_AGENT
+    agent_name: 渠池智能体
+    agent_configuration_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/CHANNEL_AGENT/agent_config_multi_edge_3.yaml
+    edge_node_code: EDGE_NODE_3
+auto_hydro_events:
+  -
+    hydro_event_type: HYDRO_MONITOR_RULE
+    hydro_event_id: template-AutoMonitorRuleEvent-001
+    hydro_event_name: 自动预警规则下发事件
+    hydro_event_description: 自动预警规则下发事件
+    consumption_mode: DIRECT_AGENT
+    auto_schedule_at_step: 1
+    auto_hydro_event_enable: true
+    priority: MEDIUM
+    monitor_rules:
+      -
+        rule_id: MRULE_202601142210_5WZBL1BQ
+        rule_name: 流量过低
+        biz_status: NORMAL
+        trigger_conditions:
+          object_id: 20801
+          object_name: CH568-1
+          trigger_expression: water_flow < 20
+          alert_level: RISK_HIGH
+          alert_message: 【CH568-1】流量过低预警，当前流量小于20
+      -
+        rule_id: MRULE_202603302210_5WZBL1QD
+        rule_name: 水位超限
+        biz_status: NORMAL
+        trigger_conditions:
+          object_id: 21801
+          object_name: CH576-1
+          alert_level: RISK_HIGH
+          trigger_expression: water_level >= 74.14
+          alert_message: 【CH576-1】流量过低预警，当前水位大于于74.14
+  -
+    hydro_event_type: WEATHER_FORECAST
+    hydro_event_id: template-WeatherForecastHydroEvent-001
+    hydro_event_name: 天气预报事件
+    auto_schedule_at_step: 10
+    hydro_event_description: 系统预制的暴雨事件
+    time_series_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/events/time_series_weather_forecast.json
+    direct_load_time_series: true
+    auto_hydro_event_enable: true
+    priority: MEDIUM
+  -
+    hydro_event_type: WATER_USE
+    hydro_event_id: template-WaterUserHydroEvent-001
+    hydro_event_name: 紧急用水事件
+    auto_schedule_at_step: 0
+    hydro_event_description: 系统预制的紧急用水事件
+    time_series_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/events/time_series_water_use_industrial.json
+    direct_load_time_series: true
+    auto_hydro_event_enable: true
+    priority: MEDIUM
+  -
+    hydro_event_type: DEVICE_STATUS_CHANGE
+    hydro_event_id: TS_DEFAULT_DEVICE_STATUS_CHAGNE_001
+    hydro_event_name: 设备例行检修
+    auto_schedule_at_step: 0
+    hydro_event_description: 设备例行检修
+    time_series_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/events/time_series_device_status_change.json
+    direct_load_time_series: true
+    auto_hydro_event_enable: true
+    priority: MEDIUM
+auto_schedule_event_enabled: false
+hydros_objects_modeling_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/waternetwork/objects.yaml
+sim_agent_properties:
+  total_steps: 36
+  sim_step_size: 120
+  output_step_size: 7200
+  biz_start_time: 2020/05/20 00:00:00
+  roll_steps: 60
+  properties: {}
+default_rendering_objects:
+  -
+    object_id: 20501
+    object_name: 5-滹沱河倒虹吸尾
+    object_type: CrossSection
+  -
+    object_id: 20801
+    object_name: CH568-1
+    object_type: CrossSection
+  -
+    object_id: 21601
+    object_name: 14-DHX90-磁河渠道倒虹吸（尾）
+    object_type: CrossSection
+  -
+    object_id: 21801
+    object_name: CH576-1
+    object_type: CrossSection

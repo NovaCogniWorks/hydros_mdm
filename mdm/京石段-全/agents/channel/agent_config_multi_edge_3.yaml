@@ -1,0 +1,155 @@
+agent_code: CHANNEL_AGENT_3
+agent_type: CHANNEL_AGENT
+agent_name: 京石段-全渠道智能体
+componentized: true
+version: v0.0.1-local
+release_at: 2026-03-29T08:30:00+08:00
+author:
+  user_name: Codex
+description: wxq 多智能体渠道骨架占位配置
+waterway:
+  waterway_id: 100
+  waterway_name: 京石段-全
+properties:
+  hydros_objects_modeling_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/waternetwork/objects.yaml
+  attatch_device: false
+  mapping_scheme_code: ""
+  device_mapping_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/waternetwork/device_mapping.yaml
+components:
+  -
+    component_id: HAC000000006
+    component_name: 边缘数据采集器
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 渠道边缘数据采集组件占位
+    enabled: true
+    properties:
+      sink_configs:
+        -
+          name: MetricsMqttDataSink
+          enabled: true
+          properties: {}
+        -
+          name: MetricsSqliteDataSink
+          enabled: true
+          properties: {}
+      processor_configs:
+        -
+          name: AggregationProcessor
+          enabled: true
+          properties:
+            biz_start_time: 2020/05/20 00:00:00
+            sample_data_aggregate_method: AVG
+            data_resolution: 60
+        -
+          name: ImputationProcessor
+          enabled: false
+          properties: {}
+        -
+          name: NoiseRemovalProcessor
+          enabled: true
+          properties: {}
+        -
+          name: AttributeFixProcessor
+          enabled: true
+          properties: {}
+  -
+    component_id: HAC000000007
+    component_name: 监控告警器
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 渠道监控告警组件占位
+    enabled: false
+    properties: {}
+  -
+    component_id: HAC000000008
+    component_name: 硬件适配器
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 渠道硬件适配器组件占位
+    enabled: false
+    properties: {}
+hydro_node_id: default_edge
+edge:
+  edge_name: 边缘节点
+  edge_code: default_edge
+managed_top_objects:
+  -
+    object_id: 32900
+    object_type: GateStation
+    object_name: 108-DHX103-坟庄河渠道倒虹吸（尾）站(2闸)
+  -
+    object_id: 33400
+    object_type: DisturbanceNode
+    object_name: F73-下车亭分水口
+  -
+    object_id: 33600
+    object_type: DisturbanceNode
+    object_name: T52-水北沟退水闸
+  -
+    object_id: 34200
+    object_type: DisturbanceNode
+    object_name: F74-三岔沟分水口
+  -
+    object_id: 34400
+    object_type: DisturbanceNode
+    object_name: T53-北拒马退水闸
+
+device_mapping:
+  controllers:
+    -
+      endpoint_uri: opc.tcp://47.97.1.45:4842/hydros
+      controller_id: SOFTWARE_PLC_002
+      controller_name: 软件PLC
+      controller_type: SOFTWARE
+  devices:
+    -
+      object_id: 32801
+      object_type: CrossSection
+      object_name: 108-DHX103-坟庄河渠道倒虹吸（尾）
+      points:
+        -
+          controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterLevelSensor.SENSOR001
+          metrics_code: water_level
+        -
+          controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterFlowSensor.SENSOR001
+          metrics_code: water_flow
+    -
+      object_id: 33001
+      object_type: CrossSection
+      object_name: CH671-1
+      points:
+        -
+          controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterLevelSensor.SENSOR002
+          metrics_code: water_level
+        -
+          controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterFlowSensor.SENSOR002
+          metrics_code: water_flow
+    -
+      object_id: 32901
+      object_type: Gate
+      object_name: JZZ60-坟庄河倒虹吸出口节制闸1#
+      points:
+        -
+          controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.Gate.GATE001
+          metrics_code: gate_opening
+    -
+      object_id: 32902
+      object_type: Gate
+      object_name: JZZ60-坟庄河倒虹吸出口节制闸2#
+      points:
+        -
+          controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.Gate.GATE002
+          metrics_code: gate_opening

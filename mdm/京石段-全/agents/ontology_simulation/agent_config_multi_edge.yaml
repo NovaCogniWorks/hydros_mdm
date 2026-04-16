@@ -1,0 +1,589 @@
+agent_code: ONTOLOGY_SIMULATION_AGENT
+agent_type: ONTOLOGY_SIMULATION_AGENT
+agent_name: 京石段-全本体仿真智能体
+componentized: true
+version: v0.0.1-local
+release_at: 2026-03-29T08:30:00+08:00
+author:
+  user_name: Codex
+description: 由 jingshiduan_1774322524089wxq.json 转换生成的本体仿真工件包
+waterway:
+  waterway_name: 京石段-全
+  waterway_id: 100
+properties:
+  hydro_environment_type: XIL
+  hydros_objects_modeling_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/waternetwork/objects.yaml
+  time_series_config_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/waternetwork/time_series.yaml
+hydro_node_id: default_edge
+components:
+  -
+    component_id: HAC000000001
+    component_name: 一维水动力仿真
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 京石段-全一维水动力仿真组件配置
+    enabled: true
+    properties:
+      hydro_dynamic_simulation_endpoint: 192.168.1.24:8083
+      sim_step_size: 120
+      driven_by_coordinator: true
+      simulation_mode: hydro1d_wxq
+      hydro_dyn_config_url: https://hydroos.cn/s3/hydros-mdm/wxq/jingshiduan_1774322524089wxq.json
+      name_resolution_index_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/agents/ONTOLOGY_SIMULATION_AGENT/name_resolution_index.yaml
+      output_config:
+        mqtt_topic: +/hydros/simulation/jobs/+/realtime/objects
+        output_mode: MQTT
+      pause_at_steps: []
+      total_steps: 36
+      output_step_size: 7200
+      biz_start_time: 2026/01/01 00:00:00
+      sensor_noise_enabled: false
+      actuator_acceleration_enabled: true
+  -
+    component_id: HAC000000002
+    component_name: 传感器模拟
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 传感器模拟组件占位
+    enabled: false
+    properties: {}
+  -
+    component_id: HAC000000003
+    component_name: 控制器模拟
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 控制器模拟组件占位
+    enabled: false
+    properties: {}
+  -
+    component_id: HAC000000004
+    component_name: HIL适配
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: HIL适配组件占位
+    enabled: false
+    properties: {}
+managed_top_objects:
+  -
+    object_id: 20000
+    object_type: UnifiedCanal
+    object_name: CH561-古运河暗渠
+  -
+    object_id: 20100
+    object_type: UnifiedCanal
+    object_name: CH562-古运河暗渠-石津渠暗渠
+  -
+    object_id: 20200
+    object_type: UnifiedCanal
+    object_name: CH564-渠道渐变段-渠道渐变段
+  -
+    object_id: 20400
+    object_type: UnifiedCanal
+    object_name: CH565-渠道渐变段-滹沱河退水闸
+  -
+    object_id: 20500
+    object_type: Pipe
+    object_name: DHX89-滹沱河渠道倒虹吸
+  -
+    object_id: 20800
+    object_type: UnifiedCanal
+    object_name: CH568-渠道渐变段-永安分水口
+  -
+    object_id: 20900
+    object_type: UnifiedCanal
+    object_name: CH569-永安分水口-渠道渐变段
+  -
+    object_id: 21000
+    object_type: UnifiedCanal
+    object_name: CH570-渠道渐变段-磁河古道退水闸
+  -
+    object_id: 21200
+    object_type: UnifiedCanal
+    object_name: CH571-渠道渐变段-磁河古道退水闸
+  -
+    object_id: 21300
+    object_type: UnifiedCanal
+    object_name: CH572-磁河古道退水闸-渠道渐变段
+  -
+    object_id: 21400
+    object_type: UnifiedCanal
+    object_name: CH573-渠道渐变段-渠道渐变段
+  -
+    object_id: 21500
+    object_type: UnifiedCanal
+    object_name: CH574-渠道渐变段-磁河倒虹吸
+  -
+    object_id: 21600
+    object_type: Pipe
+    object_name: DHX90-磁河渠道倒虹吸
+  -
+    object_id: 21800
+    object_type: UnifiedCanal
+    object_name: CH576-磁河倒虹吸-西名村分水口
+  -
+    object_id: 22000
+    object_type: UnifiedCanal
+    object_name: CH577-渠道渐变段-西名村分水口
+  -
+    object_id: 22200
+    object_type: UnifiedCanal
+    object_name: CH579-渠道渐变段-沙河(北)退水闸
+  -
+    object_id: 22300
+    object_type: Pipe
+    object_name: DHX91-沙河（北）渠道倒虹吸
+  -
+    object_id: 22500
+    object_type: UnifiedCanal
+    object_name: CH581-沙河北倒虹吸出口渠道
+  -
+    object_id: 22600
+    object_type: UnifiedCanal
+    object_name: CH583-渠道渐变段-朔黄铁路涵洞
+  -
+    object_id: 22800
+    object_type: UnifiedCanal
+    object_name: CH585-朔黄铁路涵洞-留营分水口
+  -
+    object_id: 22900
+    object_type: UnifiedCanal
+    object_name: CH586-留营分水口-孟良河倒虹吸
+  -
+    object_id: 23000
+    object_type: Pipe
+    object_name: DHX92-孟良河渠道倒虹吸
+  -
+    object_id: 23200
+    object_type: UnifiedCanal
+    object_name: CH587-孟良河渠道倒虹吸-中管头分水口
+  -
+    object_id: 23300
+    object_type: Pipe
+    object_name: DHX93-漠道沟渠道倒虹吸
+  -
+    object_id: 23500
+    object_type: UnifiedCanal
+    object_name: CH589-漠道沟倒虹吸出口渠道
+  -
+    object_id: 23700
+    object_type: UnifiedCanal
+    object_name: CH590-渠道渐变段-唐河退水闸
+  -
+    object_id: 23800
+    object_type: UnifiedCanal
+    object_name: CH591-唐河退水闸-唐河渠道倒虹吸进口
+  -
+    object_id: 23900
+    object_type: Pipe
+    object_name: DHX94-唐河渠道倒虹吸
+  -
+    object_id: 24100
+    object_type: UnifiedCanal
+    object_name: CH592-唐河倒虹吸出口-渠道渐变段
+  -
+    object_id: 24200
+    object_type: UnifiedCanal
+    object_name: CH593-渠道渐变段-渠道渐变段
+  -
+    object_id: 24300
+    object_type: UnifiedCanal
+    object_name: CH594-渠道渐变段-渠道渐变段
+  -
+    object_id: 24500
+    object_type: UnifiedCanal
+    object_name: CH595-渠道渐变段-高昌分水口
+  -
+    object_id: 24700
+    object_type: UnifiedCanal
+    object_name: CH596-渠道渐变段-高昌分水口
+  -
+    object_id: 24800
+    object_type: UnifiedCanal
+    object_name: CH597-高昌分水口-放水河渡槽进口
+  -
+    object_id: 25000
+    object_type: UnifiedCanal
+    object_name: CH599-放水河渡槽出口渠道
+  -
+    object_id: 25200
+    object_type: UnifiedCanal
+    object_name: CH600-放水河渡槽-曲逆中支退水闸
+  -
+    object_id: 25300
+    object_type: UnifiedCanal
+    object_name: CH601-曲逆中支退水闸-塔坡分水口
+  -
+    object_id: 25500
+    object_type: UnifiedCanal
+    object_name: CH602-渠道渐变段-塔坡分水口
+  -
+    object_id: 25600
+    object_type: UnifiedCanal
+    object_name: CH603-塔坡分水口-渠道渐变段
+  -
+    object_id: 25700
+    object_type: UnifiedCanal
+    object_name: CH604-渠道渐变段-渠道渐变段
+  -
+    object_id: 25800
+    object_type: UnifiedCanal
+    object_name: CH605-渠道渐变段-渠道渐变段
+  -
+    object_id: 26000
+    object_type: UnifiedCanal
+    object_name: CH606-渠道渐变段-蒲阳河退水闸
+  -
+    object_id: 26100
+    object_type: Pipe
+    object_name: DHX95-蒲阳河渠道倒虹吸
+  -
+    object_id: 26300
+    object_type: UnifiedCanal
+    object_name: CH608-蒲阳河倒虹吸出口渠段
+  -
+    object_id: 26400
+    object_type: UnifiedCanal
+    object_name: CH609-蒲阳河倒虹吸-渠道渐变段
+  -
+    object_id: 26500
+    object_type: UnifiedCanal
+    object_name: CH610-渠道渐变段-渠道渐变段
+  -
+    object_id: 26600
+    object_type: UnifiedCanal
+    object_name: CH611-渠道渐变段-渠道渐变段
+  -
+    object_id: 26700
+    object_type: UnifiedCanal
+    object_name: CH613-渠道渐变段-雾山一隧洞
+  -
+    object_id: 26800
+    object_type: UnifiedCanal
+    object_name: CH614-雾山一隧洞
+  -
+    object_id: 27000
+    object_type: UnifiedCanal
+    object_name: CH616-雾山二隧洞
+  -
+    object_id: 27100
+    object_type: Pipe
+    object_name: DHX96-界河渠道倒虹吸
+  -
+    object_id: 27200
+    object_type: UnifiedCanal
+    object_name: CH619-界河倒虹吸出口-渠道渐变段
+  -
+    object_id: 27300
+    object_type: UnifiedCanal
+    object_name: CH620-渠道渐变段-渠道渐变段
+  -
+    object_id: 27500
+    object_type: UnifiedCanal
+    object_name: CH621-渠道渐变段-郑家佐分水口（F70）
+  -
+    object_id: 27600
+    object_type: UnifiedCanal
+    object_name: CH622-郑家佐分水口-吴庄隧洞
+  -
+    object_id: 27700
+    object_type: UnifiedCanal
+    object_name: CH623-吴庄隧洞
+  -
+    object_id: 27800
+    object_type: UnifiedCanal
+    object_name: CH624-吴庄隧洞出口-漕河渡槽进口
+  -
+    object_id: 27900
+    object_type: UnifiedCanal
+    object_name: CH625-漕河渡槽
+  -
+    object_id: 28100
+    object_type: UnifiedCanal
+    object_name: CH627-漕河退水闸-岗头隧洞进口
+  -
+    object_id: 28300
+    object_type: UnifiedCanal
+    object_name: CH628-岗头隧洞
+  -
+    object_id: 28400
+    object_type: UnifiedCanal
+    object_name: CH629-岗头隧洞出口-渠道渐变段
+  -
+    object_id: 28500
+    object_type: UnifiedCanal
+    object_name: CH630-渠道渐变段-渠道渐变段
+  -
+    object_id: 28700
+    object_type: UnifiedCanal
+    object_name: CH631-渠道渐变段-渠道渐变段（F71）
+  -
+    object_id: 28800
+    object_type: UnifiedCanal
+    object_name: CH634-渠道渐变段-渠道渐变段
+  -
+    object_id: 29000
+    object_type: UnifiedCanal
+    object_name: CH635-渠道渐变段-西黑山分水口(F86)
+  -
+    object_id: 29200
+    object_type: UnifiedCanal
+    object_name: CH637-西黑山节制闸出口渠段
+  -
+    object_id: 29300
+    object_type: UnifiedCanal
+    object_name: CH639-渠道渐变段-渠道渐变段
+  -
+    object_id: 29400
+    object_type: UnifiedCanal
+    object_name: CH640-渠道渐变段-釜山隧洞进口
+  -
+    object_id: 29500
+    object_type: UnifiedCanal
+    object_name: CH642-釜山隧洞出口-渠道渐变段
+  -
+    object_id: 29600
+    object_type: UnifiedCanal
+    object_name: CH644-渠道渐变段-渠道渐变段
+  -
+    object_id: 29800
+    object_type: UnifiedCanal
+    object_name: CH645-渠道渐变段-瀑河退水闸（T50）
+  -
+    object_id: 29900
+    object_type: Pipe
+    object_name: DHX97-瀑河渠道倒虹吸
+  -
+    object_id: 30100
+    object_type: UnifiedCanal
+    object_name: CH647-瀑河渠道倒虹吸出口渠道
+  -
+    object_id: 30200
+    object_type: UnifiedCanal
+    object_name: CH649-渠道渐变段-渠道渐变段
+  -
+    object_id: 30300
+    object_type: UnifiedCanal
+    object_name: CH651-渠道渐变段-中易水渠道倒虹吸进口
+  -
+    object_id: 30400
+    object_type: Pipe
+    object_name: DHX98-中易水渠道倒虹吸
+  -
+    object_id: 30500
+    object_type: UnifiedCanal
+    object_name: CH652-中易水渠道倒虹吸-渠道渐变段
+  -
+    object_id: 30600
+    object_type: UnifiedCanal
+    object_name: CH653-渠道渐变段-西市隧洞进口
+  -
+    object_id: 30700
+    object_type: UnifiedCanal
+    object_name: CH654-西市隧洞
+  -
+    object_id: 30800
+    object_type: UnifiedCanal
+    object_name: CH655-渠道渐变段-渠道渐变段
+  -
+    object_id: 31000
+    object_type: UnifiedCanal
+    object_name: CH657-渠道渐变段-荆柯山分水口(F72)
+  -
+    object_id: 31200
+    object_type: UnifiedCanal
+    object_name: CH659-北易水退水闸-北易水倒虹吸（T51）
+  -
+    object_id: 31300
+    object_type: Pipe
+    object_name: DHX99-北易水渠道倒虹吸
+  -
+    object_id: 31500
+    object_type: UnifiedCanal
+    object_name: CH660-北易水倒虹出口-渠道渐变段
+  -
+    object_id: 31600
+    object_type: Pipe
+    object_name: DHX100-厂城渠道倒虹吸
+  -
+    object_id: 31700
+    object_type: UnifiedCanal
+    object_name: CH662-厂城渠道倒虹吸出口-渠道渐变段
+  -
+    object_id: 31800
+    object_type: UnifiedCanal
+    object_name: CH663-渠道渐变段-渠道渐变段
+  -
+    object_id: 31900
+    object_type: UnifiedCanal
+    object_name: CH664-渠道渐变段-七里庄沟渠道倒虹吸进口
+  -
+    object_id: 32000
+    object_type: Pipe
+    object_name: DHX101-七里庄沟渠道倒虹吸
+  -
+    object_id: 32100
+    object_type: UnifiedCanal
+    object_name: CH665-七里庄沟倒虹吸-渠道渐变段
+  -
+    object_id: 32200
+    object_type: UnifiedCanal
+    object_name: CH666-渠道渐变段-渠道渐变段
+  -
+    object_id: 32300
+    object_type: UnifiedCanal
+    object_name: CH667-渠道渐变段-渠道渐变段
+  -
+    object_id: 32400
+    object_type: UnifiedCanal
+    object_name: CH668-渠道渐变段-渠道渐变段
+  -
+    object_id: 32500
+    object_type: UnifiedCanal
+    object_name: CH669-渠道渐变段-马头沟渠道倒虹吸进口
+  -
+    object_id: 32600
+    object_type: Pipe
+    object_name: DHX102-马头沟渠道倒虹吸
+  -
+    object_id: 32700
+    object_type: UnifiedCanal
+    object_name: CH670-马头沟倒虹吸-坟庄河倒虹吸
+  -
+    object_id: 32800
+    object_type: Pipe
+    object_name: DHX103-坟庄河渠道倒虹吸
+  -
+    object_id: 33000
+    object_type: UnifiedCanal
+    object_name: CH671-渠道渐变段-渠道渐变段
+  -
+    object_id: 33100
+    object_type: UnifiedCanal
+    object_name: CH673-渠道渐变段-渠道渐变段
+  -
+    object_id: 33200
+    object_type: UnifiedCanal
+    object_name: CH675-渠道渐变段-渠道渐变段
+  -
+    object_id: 33300
+    object_type: UnifiedCanal
+    object_name: CH677-渠道渐变段-下车亭隧洞
+  -
+    object_id: 33500
+    object_type: UnifiedCanal
+    object_name: CH679-下车亭隧洞-下车亭分水口（F73）
+  -
+    object_id: 33700
+    object_type: UnifiedCanal
+    object_name: CH681-渠道渐变段终点-水北沟退水闸(T52)
+  -
+    object_id: 33800
+    object_type: UnifiedCanal
+    object_name: CH684-水北沟渡槽-南距马河倒虹吸
+  -
+    object_id: 33900
+    object_type: Pipe
+    object_name: DHX104-南拒马河渠道倒虹吸
+  -
+    object_id: 34000
+    object_type: UnifiedCanal
+    object_name: CH685-南拒马河倒虹吸-北拒马河南支倒虹吸
+  -
+    object_id: 34100
+    object_type: Pipe
+    object_name: DHX105-北拒马河南支渠道倒虹吸
+  -
+    object_id: 34300
+    object_type: UnifiedCanal
+    object_name: CH686-北拒马河南支渠道倒虹吸-三岔沟分水口(F47)
+  -
+    object_id: 34500
+    object_type: UnifiedCanal
+    object_name: CH687-三岔沟分水口-北拒马河退水闸(T53)
+device_mapping:
+  controllers:
+    - endpoint_uri: opc.tcp://47.97.1.45:4841/hydros
+      controller_id: SOFTWARE_PLC_001
+      controller_name: 软件PLC
+      controller_type: SOFTWARE
+    - endpoint_uri: opc.tcp://47.97.1.45:4842/hydros
+      controller_id: SOFTWARE_PLC_002
+      controller_name: 软件PLC
+      controller_type: SOFTWARE
+  devices:
+    - object_id: 31301
+      object_type: CrossSection
+      object_name: 93-DHX99-北易水渠道倒虹吸（尾）
+      points:
+        - controller_id: SOFTWARE_PLC_001
+          device_id: HIL|Hydros.WaterLevelSensor.SENSOR001
+          metrics_code: water_level
+        - controller_id: SOFTWARE_PLC_001
+          device_id: HIL|Hydros.WaterFlowSensor.SENSOR001
+          metrics_code: water_flow
+    - object_id: 31501
+      object_type: CrossSection
+      object_name: CH660-1
+      points:
+        - controller_id: SOFTWARE_PLC_001
+          device_id: HIL|Hydros.WaterLevelSensor.SENSOR002
+          metrics_code: water_level
+        - controller_id: SOFTWARE_PLC_001
+          device_id: HIL|Hydros.WaterFlowSensor.SENSOR002
+          metrics_code: water_flow
+    - object_id: 31401
+      object_type: Gate
+      object_name: JZZ59-北易水倒虹吸出口节制闸1#
+      points:
+        - controller_id: SOFTWARE_PLC_001
+          device_id: HIL|Hydros.Gate.GATE001
+          metrics_code: gate_opening
+    - object_id: 31402
+      object_type: Gate
+      object_name: JZZ59-北易水倒虹吸出口节制闸2#
+      points:
+        - controller_id: SOFTWARE_PLC_001
+          device_id: HIL|Hydros.Gate.GATE002
+          metrics_code: gate_opening
+    - object_id: 32801
+      object_type: CrossSection
+      object_name: 108-DHX103-坟庄河渠道倒虹吸（尾）
+      points:
+        - controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterLevelSensor.SENSOR001
+          metrics_code: water_level
+        - controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterFlowSensor.SENSOR001
+          metrics_code: water_flow
+    - object_id: 33001
+      object_type: CrossSection
+      object_name: CH671-1
+      points:
+        - controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterLevelSensor.SENSOR002
+          metrics_code: water_level
+        - controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.WaterFlowSensor.SENSOR002
+          metrics_code: water_flow
+    - object_id: 32901
+      object_type: Gate
+      object_name: JZZ60-坟庄河倒虹吸出口节制闸1#
+      points:
+        - controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.Gate.GATE001
+          metrics_code: gate_opening
+    - object_id: 32902
+      object_type: Gate
+      object_name: JZZ60-坟庄河倒虹吸出口节制闸2#
+      points:
+        - controller_id: SOFTWARE_PLC_002
+          device_id: HIL|Hydros.Gate.GATE002
+          metrics_code: gate_opening

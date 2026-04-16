@@ -1,0 +1,206 @@
+agent_code: CHANNEL_AGENT_1
+agent_type: CHANNEL_AGENT
+agent_name: 京石段-全渠道智能体
+componentized: true
+version: v0.0.1-local
+release_at: 2026-03-29T08:30:00+08:00
+author:
+  user_name: Codex
+description: wxq 多智能体渠道骨架占位配置
+waterway:
+  waterway_id: 100
+  waterway_name: 京石段-全
+properties:
+  hydros_objects_modeling_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/waternetwork/objects.yaml
+  attatch_device: false
+  mapping_scheme_code: ""
+  device_mapping_url: https://hydroos.cn/s3/hydros-mdm/waternetworks/京石段-全_100/waternetwork/device_mapping.yaml
+components:
+  -
+    component_id: HAC000000006
+    component_name: 边缘数据采集器
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 渠道边缘数据采集组件占位
+    enabled: true
+    properties:
+      sink_configs:
+        -
+          name: MetricsMqttDataSink
+          enabled: true
+          properties: {}
+        -
+          name: MetricsSqliteDataSink
+          enabled: true
+          properties: {}
+      processor_configs:
+        -
+          name: AggregationProcessor
+          enabled: true
+          properties:
+            biz_start_time: 2020/05/20 00:00:00
+            sample_data_aggregate_method: AVG
+            data_resolution: 60
+        -
+          name: ImputationProcessor
+          enabled: false
+          properties: {}
+        -
+          name: NoiseRemovalProcessor
+          enabled: true
+          properties: {}
+        -
+          name: AttributeFixProcessor
+          enabled: true
+          properties: {}
+  -
+    component_id: HAC000000007
+    component_name: 监控告警器
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 渠道监控告警组件占位
+    enabled: false
+    properties: {}
+  -
+    component_id: HAC000000008
+    component_name: 硬件适配器
+    version: v0.0.1-local
+    release_at: 2026-03-29T08:30:00+08:00
+    author:
+      user_name: Codex
+    description: 渠道硬件适配器组件占位
+    enabled: false
+    properties: {}
+hydro_node_id: default_edge
+edge:
+  edge_name: 边缘节点
+  edge_code: default_edge
+managed_top_objects:
+  -
+    object_id: 20300
+    object_type: DisturbanceNode
+    object_name: T42-滹沱河退水闸
+  -
+    object_id: 20600
+    object_type: GateStation
+    object_name: 5-滹沱河倒虹吸尾站(3闸)
+  -
+    object_id: 20700
+    object_type: DisturbanceNode
+    object_name: F63-永安分水口
+  -
+    object_id: 21100
+    object_type: DisturbanceNode
+    object_name: T43-磁河古道退水闸
+  -
+    object_id: 21700
+    object_type: GateStation
+    object_name: 14-DHX90-磁河渠道倒虹吸（尾）站(3闸)
+  -
+    object_id: 21900
+    object_type: DisturbanceNode
+    object_name: F64-西名分水口
+  -
+    object_id: 22100
+    object_type: DisturbanceNode
+    object_name: T44-沙河(北)退水闸
+  -
+    object_id: 22400
+    object_type: GateStation
+    object_name: 19-DHX91-沙河（北）渠道倒虹吸（尾）站(3闸)
+  -
+    object_id: 22700
+    object_type: DisturbanceNode
+    object_name: F65-留营分水口
+  -
+    object_id: 23100
+    object_type: DisturbanceNode
+    object_name: F66-中管头分水口
+  -
+    object_id: 23400
+    object_type: GateStation
+    object_name: 27-DHX93-漠道沟渠道倒虹吸（尾）站(3闸)
+  -
+    object_id: 23600
+    object_type: DisturbanceNode
+    object_name: T45-唐河退水闸
+  -
+    object_id: 24000
+    object_type: GateStation
+    object_name: 32-DHX94-唐河渠道倒虹吸（尾）站(3闸)
+  -
+    object_id: 24400
+    object_type: DisturbanceNode
+    object_name: F67-大寺城涧分水口
+  -
+    object_id: 24600
+    object_type: DisturbanceNode
+    object_name: F68-高昌分水口
+  -
+    object_id: 24900
+    object_type: GateStation
+    object_name: 39-CH597-高昌分水口-放水河渡槽进口（尾）站(3闸)
+  -
+    object_id: 25100
+    object_type: DisturbanceNode
+    object_name: T46-曲逆中支退水闸
+  -
+    object_id: 25400
+    object_type: DisturbanceNode
+    object_name: F69-塔坡分水口
+  -
+    object_id: 25900
+    object_type: DisturbanceNode
+    object_name: T47-蒲阳河退水闸
+  -
+    object_id: 26200
+    object_type: GateStation
+    object_name: 49-DHX95-蒲阳河渠道倒虹吸(尾)站(3闸)
+  -
+    object_id: 26900
+    object_type: DisturbanceNode
+    object_name: T48-界河退水闸
+  -
+    object_id: 27400
+    object_type: DisturbanceNode
+    object_name: F70-郑家佐分水口
+  -
+    object_id: 28000
+    object_type: DisturbanceNode
+    object_name: T49-漕河退水闸
+  -
+    object_id: 28200
+    object_type: GateStation
+    object_name: 66-CH627-漕河退水闸-岗头隧洞进口（尾）站(2闸)
+  -
+    object_id: 28600
+    object_type: DisturbanceNode
+    object_name: F71-徐水刘庄分水口
+  -
+    object_id: 28900
+    object_type: DisturbanceNode
+    object_name: F86-F97-西黑山分水口
+  -
+    object_id: 29100
+    object_type: GateStation
+    object_name: 73-CH635-渠道渐变段-西黑山分水口(尾)站(3闸)
+  -
+    object_id: 29700
+    object_type: DisturbanceNode
+    object_name: T50-瀑河退水闸
+  -
+    object_id: 30000
+    object_type: GateStation
+    object_name: 81-DHX97-瀑河渠道倒虹吸（尾）站(2闸)
+  -
+    object_id: 30900
+    object_type: DisturbanceNode
+    object_name: F72-荆柯山分水口
+  -
+    object_id: 31100
+    object_type: DisturbanceNode
+    object_name: T51-北易水退水闸
